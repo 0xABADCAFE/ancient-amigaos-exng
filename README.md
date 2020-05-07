@@ -1,11 +1,13 @@
 # ancient-amigaos-exng
-Ancient AmigaOS C++ framework, iteration 1
+Ancient AmigaOS C with Classes framework, iteration 1
 
-This represented the first attempt to build a reusable application development framework, primarily for AmigaOS3 using C++. Only a restricted subset of C++ was allowed for various reasons (compiler support, runtime support, executable size, performance etc) and is therefore best described as C with classes.
+This represented the first attempt to build a reusable application development framework, primarily for AmigaOS3 using C++. Only a restricted subset of C++ was allowed for various reasons (compiler support, runtime support, executable size, performance etc) and is therefore best described as C with Classes rather than C++.
 
 A notable omission from the standard was the use of Exceptions for error handling as this suffered all of the complications above. Instead, a large enumerated set of error codes was defined.
 
 The framework was designed to compile into a set of modular libraries that application code would link.
+
+The framework was built from the lessons and mistakes of an older project here: https://github.com/0xABADCAFE/ancient-extropia-amiga68k
 
 Multiplatform support was intended but never realised. The library source structure is organised as follows.
 ```
