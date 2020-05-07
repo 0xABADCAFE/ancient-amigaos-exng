@@ -1,0 +1,27 @@
+Hello Karl
+
+On 09/05/2003, you wrote:
+
+> Hi Tim!
+> 
+> When you get a minute, could you please run the pixeltest and drawtest
+> programs and email me the output, along with your CPU type / speed, Gfx
+> software (p96, I guess), GPU (Voodoo3 was it?) and bus type. Here's the
+> tests I'd like you to run
+>
+
+oh boy ! :)
+
+CPU : 603e 200 and 040/25 MHZ
+
+GFX: P96 ofcourse
+
+3dCARD: Voodoo3
+
+MediatorPCI1200
+
+attached are results,
+
+but not 1024x768
+
+no time yet  !:)

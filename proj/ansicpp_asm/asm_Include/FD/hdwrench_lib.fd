@@ -1,0 +1,38 @@
+##base _HDWBase
+##bias 30
+##public
+* Open and close a device for use with other library functions
+HDWOpenDevice(devName,unit)(a0,d0)
+HDWCloseDevice()()
+* Disk access functions
+RawRead(bbk,size)(a0,d0)
+RawWrite(bb)(a0)
+WriteBlock(bb)(a0)
+* Disk RDB access functions
+ReadRDBs()()
+WriteRDBs()()
+* Simple query functions.
+QueryReady(errorcode)(a0)
+QueryInquiry(inqbuf,errorcode)(a0/a1)
+QueryModeSense(page,msbsize,msbuf,errorcode)(d0/d1/a0/a1)
+QueryFindValid(validIDs,devicename,board,types,wide_scsi,callBack)(a0/a1,d0/d1/d2/a2)
+QueryCapacity(totalblocks,blocksize)(a0/a1)
+* File and memory IO for RDB information in the two formats recognized
+ReadMountfile(unit,filename,controller)(d0/a0/a1)
+ReadRDBStructs(filename,unit)(a0,d0)
+WriteMountfile(filename,ldir,unit)(a0/a1,d0)
+WriteRDBStructs(filename)(a0)
+InMemMountfile(unit,mfdata,controller)(d0/a0/a1)
+InMemRDBStructs(rdbp,sizerdb,unit)(a0,d0/d1)
+OutMemMountfile(mfp,sizew,sizeb,unit)(a0/a1,d0/d1)
+OutMemRDBStructs(rdbp,sizew,sizeb)(a0/a1,d0)
+* Complex query functions.
+FindDiskName(diskname)(a0)
+FindControllerID(devname,selfid)(a0/a1)
+FindLastSector()()
+FindDefaults(optimize,result)(d0/a0)
+* The following two functions benefit from an active callback hook.
+* Please see the HDW_CallBackMsgs.h file for suggested messages.
+LowlevelFormat(callBack)(a0)
+VerifyDrive(callBack)(a0)
+##end

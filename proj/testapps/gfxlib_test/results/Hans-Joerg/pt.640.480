@@ -1,0 +1,23 @@
+Surface width: 640, height: 480, modulus: 0
+
+Test data pixel format
+
+Bytes   : 2, endian swapped
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+Window pixel format
+
+Bytes   : 2, endian swapped
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+
+Set  :    4593644 pix/sec  8971.96 K/sec
+Zero :    3058618 pix/sec  5973.86 K/sec
+Copy :    3904050 pix/sec  7625.09 K/sec
+Conv :    3913375 pix/sec  7643.31 K/sec
+
+Conversion attained 100.23% copy speed

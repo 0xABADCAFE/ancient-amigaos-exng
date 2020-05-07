@@ -1,0 +1,42 @@
+
+
+Rasterizer test application log file
+----------------------------------------------
+Display Properties
+Width: 800, Height: 600, Modulus: 0
+
+Pixel format
+
+Bytes   : 2, endian swapped
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+
+States shade:gouraud, cull:off, zbuff:off
+
+Testing Rasterizer::drawTriMesh()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   800 x 600    6 ms    75000 80.0000
+ 32 x  32   800 x 600   25 ms    76880 19.2000
+ 48 x  48   800 x 600   61 ms    72426  7.8689
+ 64 x  64   800 x 600  110 ms    72163  4.3636
+ 80 x  80   800 x 600  172 ms    72569  2.7907
+ 96 x  96   800 x 600  247 ms    73076  1.9433
+112 x 112   800 x 600  343 ms    71842  1.3994
+128 x 128   800 x 600  446 ms    72327  1.0762
+
+Testing Rasterizer::drawTriMesh2()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   800 x 600    3 ms   150000 160.0000
+ 32 x  32   800 x 600   10 ms   192200 48.0000
+ 48 x  48   800 x 600   22 ms   200818 21.8181
+ 64 x  64   800 x 600   40 ms   198450 12.0000
+ 80 x  80   800 x 600   63 ms   198126  7.6190
+ 96 x  96   800 x 600   92 ms   196195  5.2174
+112 x 112   800 x 600  125 ms   197136  3.8400
+128 x 128   800 x 600  167 ms   193161  2.8743

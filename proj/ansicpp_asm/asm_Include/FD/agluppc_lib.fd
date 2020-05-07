@@ -1,0 +1,55 @@
+##base _gluppcBase
+##abi PPC
+##bias 30
+registerGLU(ptr)()
+*Miscellaneous--------------------------------------------------------
+gluLookAt(GLdouble_eyex,GLdouble_eyey,GLdouble_eyez,GLdouble_centerx,GLdouble_centery,GLdouble_centerz,GLdouble_upx,GLdouble_upy,GLdouble_upz)()
+gluOrtho2D(GLdouble_left,GLdouble_right,GLdouble_bottom,GLdouble_top)()
+gluPerspective(GLdouble_fovy,GLdouble_aspect,GLdouble_zNear,GLdouble_zFar)()
+gluPickMatrix(GLdouble_x,GLdouble_y,GLdouble_width,GLdouble_height,GLint_viewport)()
+gluProject(GLdouble_objx,GLdouble_objy,GLdouble_objz,GLdouble_modelMatrix,GLdouble_projMatrix,GLint_viewport,GLdouble_winx,GLdouble_winy,GLdouble_winz)()
+gluUnProject(GLdouble_winx,GLdouble_winy,GLdouble_winz,GLdouble_modelMatrix,GLdouble_projMatrix,GLint_viewport,GLdouble_objx,GLdouble_objy,GLdouble_objz)()
+gluErrorString(GLenum_errorCode)()
+*Mipmapping_ImageScaling--------------------------------------------------------
+gluScaleImage(GLenum_format,GLint_widthin,GLint_heightin,GLenum_typein,void_datain,GLint_widthout,GLint_heightout,GLenum_typeout,void_dataout)()
+gluBuild1DMipmaps(GLenum_target,GLint_components,GLint_width,GLenum_format,GLenum_type,void_data)()
+gluBuild2DMipmaps(GLenum_target,GLint_components,GLint_width,GLint_height,GLenum_format,GLenum_type,void_data)()
+*Quadrics----------------------------------------------------------------
+gluNewQuadric()()
+gluDeleteQuadric(GLUquadricObj_state)()
+gluQuadricDrawStyle(GLUquadricObj_quadObject,GLenum_drawStyle)()
+gluQuadricOrientation(GLUquadricObj_quadObject,GLenum_orientation)()
+gluQuadricNormals(GLUquadricObj_quadObject,GLenum_normals)()
+gluQuadricTexture(GLUquadricObj_quadObject,GLboolean_textureCoords)()
+gluQuadricCallback(GLUquadricObj_qobj,GLenum_which,void_fn)()
+gluCylinder( GLUquadricObj_qobj,GLdouble_baseRadius,GLdouble_topRadius,GLdouble_height,GLint_slices,GLint_stacks)()
+gluSphere(GLUquadricObj_obj,GLdouble_radius,GLint_slices,GLint_stacks)()
+gluDisk(GLUquadricObj_qobj,GLdouble_InnerRadius,GLdouble_outerRadius,GLint_slices,GLint_loops)()
+gluPartialDisk(GLUquadricObj_qobj,GLdouble_innerRadius,GLdouble_outerRadius,GLint_slices,GLint_loops,GLdouble_startAngle,GLdouble_sweepAngle)()
+*Nurbs----------------------------------------------------------------------
+gluNewNurbsRenderer()()
+gluDeleteNurbsRenderer(GLUnurbsObj_nobj)()
+gluLoadSamplingMatrices(GLUnurbsObj_nobj,GLfloat_modelMatrix,GLfloat_projMatrix,GLint_viewport)()
+gluNurbsProperty(GLUnurbsObj_nobj,GLenum_property,GLfloat_value)()
+gluGetNurbsProperty(GLUnurbsObj_nobj,GLenum_property,GLfloat_value)()
+gluBeginCurve(GLUnurbsObj_nobj)()
+gluEndCurve(GLUnurbsObj_nobj)()
+gluNurbsCurve(GLUnurbsObj_nobj,GLint_nknots, GLfloat_knot,GLint_stride,GLfloat_ctlarray,GLint_order,GLenum_type)()
+gluBeginSurface(GLUnurbsObj_nobj)()
+gluEndSurface(GLUnurbsObj_nobj)()
+gluNurbsSurface(GLUnurbsObj_nobj,GLint_sknot_count,GLfloat_sknot,GLint_tknot_count,GLfloat_tknot,GLint_s_stride,GLint_t_stride,GLfloat_ctlarray,GLint_sorder,GLint_torder,GLenum_type)()
+gluBeginTrim(GLUnurbsObj_nobj)()
+gluEndTrim(GLUnurbsObj_nobj)()
+gluPwlCurve(GLUnurbsObj_nobj,GLint_count,GLfloat_array,GLint_stride,GLenum_type)()
+gluNurbsCallback(GLUnurbsObj_nobj,GLenum_which,void_fn)()
+*Polygon_tesselation--------------------------------------------------------
+gluNewTess()()
+gluTessCallback(GLUtriangulatorObj_tobj,GLenum_which,void_fn)()
+gluDeleteTess(GLUtriangulatorObj_tobj)()
+gluBeginPolygon(GLUtriangulatorObj_tobj)()
+gluEndPolygon(GLUtriangulatorObj_tobj)()
+gluNextContour(GLUtriangulatorObj_tobj,GLenum_type)()
+gluTessVertex(GLUtriangulatorObj_tobj,GLdouble_v,void_data)()
+*GLU1_1_Misc----------------------------------------------------------------
+gluGetString(GLenum_name)()
+##end

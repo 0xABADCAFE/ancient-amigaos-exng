@@ -1,0 +1,7 @@
+StormLibrarian Document (0003)
+lib/guilib.lib
+1 0 0
+obj/guilib/guibase.o
+obj/guilib/guiobject.o
+obj/guilib/abstract.o
+EOD

@@ -1,0 +1,316 @@
+Storm Shell Project (0018)
+Settings (Start)
+C/C++ Environment
+"StormC:include"
+0
+"EXNG:include"
+0
+Includepath (End)
+0 "" 256
+0 ""
+1 0 "makelog.txt"
+""
+0
+0 0
+0
+0 0
+C/C++ Preprozessor
+1 "NDEBUG" ""
+0
+0 "PARANOID" ""
+0
+1 "KARL_FIXES" ""
+0
+0 "_INLINE_INCLUDES" ""
+0
+0 "X_DEBUG" ""
+0
+1 "STORMPRAGMAS" ""
+0
+Defines (End)
+1 1 1
+0 0
+C/C++ Options
+1 0 0 0 0 0 2 1 0 1 0 3 1 0 0
+0 0 0
+0
+0 1 0
+C/C++ Optimizer
+5
+C/C++ Warnings
+1 1 1 1 1 0 0 1
+0 0
+GCC Options (1)
+Defines (End)
+1 0 0 1 0
+3 0 1 1 0 1 0
+1 2 1 0 0
+1 0 0 0 0 1 0
+3 1 0 0
+1 ""
+2 0 0 0
+1 0 0 1 0 1 0 1 0 1
+1 1 0 1 0 1
+0 1 1 1 1 0 0
+1 0 0 0 0
+Assembler
+0 ""
+0 "CON://640/200/Storm Assembler/AUTO/WAIT/SCREEN StormScreen"
+0 0
+0 1 60 0 1 0 0 20 0
+Sets (End)
+0 1 0 0 0 2 1 0 0
+1 1 1 1 0 0 0 0 0
+1 0
+0 0 0 0 0
+Linker
+0 0 "PROGDIR:startup.o" 0 0 1 0 0 0 0
+"StormC:lib/" 0 "StormC:lib/logfile" 0 1 1
+0 "_WizardSurface"
+0 0 50 0 50 0 50 0 0
+0 0 0 0 0 0 0 0
+Run
+30 "" "" "" 0
+""
+scale 2 mesh 24 image arnie.ppm
+1 "CON://400/300/Storm Console/AUTO/WAIT/SCREEN StormScreen" "RAM:Output" "RAM:Input"
+1 0
+0 0 0 "" ""
+Settings (End)
+Storm Shell Project (Custom Sections End)
+Section
+12 1 90
+0 1 1 0
+4
+File
+12 "asmfuncs.asm"
+"asmfuncs.asm"
+Storm Shell Project (Dependencies)
+"asmfuncs.o" ""
+"StormC:rexx/phxass.srx"
+1 1
+Section
+9 1 -128
+0 0 0 0
+5
+File
+9 "Developer:eXtropia/Hyperion/Warp3D/Source/Permedia2_v43b/_W3D_Permedia2.¶"
+"Developer:eXtropia/Hyperion/Warp3D/Source/Permedia2_v43b/_W3D_Permedia2.¶"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+1 1 100
+0 1 1 0
+4
+File
+1 "testw3d.cpp"
+"testw3d.cpp"
+"testw3d.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"testw3d.o" "testw3d.debug"
+""
+1 1
+File
+1 "impquality.cpp"
+"impquality.cpp"
+"testw3d.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"impquality.o" "impquality.debug"
+""
+1 1
+File
+1 "perf.cpp"
+"perf.cpp"
+"testw3d.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"perf.o" "perf.debug"
+""
+1 1
+File
+1 "buffperf.cpp"
+"buffperf.cpp"
+"testw3d.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"buffperf.o" "buffperf.debug"
+""
+1 1
+File
+1 "texperf.cpp"
+"texperf.cpp"
+"testw3d.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"texperf.o" "texperf.debug"
+""
+1 1
+File
+1 "pointsperf.cpp"
+"pointsperf.cpp"
+"testw3d.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"pointsperf.o" "pointsperf.debug"
+""
+1 1
+File
+1 "linesperf.cpp"
+"linesperf.cpp"
+"testw3d.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"linesperf.o" "linesperf.debug"
+""
+1 1
+File
+1 "trisperf.cpp"
+"trisperf.cpp"
+"testw3d.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"trisperf.o" "trisperf.debug"
+""
+1 1
+File
+1 "tstripperf.cpp"
+"tstripperf.cpp"
+"testw3d.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"tstripperf.o" "tstripperf.debug"
+""
+1 1
+File
+1 "trisv3perf.cpp"
+"trisv3perf.cpp"
+"testw3d.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"trisv3perf.o" "trisv3perf.debug"
+""
+1 1
+File
+1 "tstripv3perf.cpp"
+"tstripv3perf.cpp"
+"testw3d.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"tstripv3perf.o" "tstripv3perf.debug"
+""
+1 1
+Section
+2 1 95
+0 1 1 0
+2
+File
+2 "testw3d.hpp"
+"testw3d.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "Developer:eXtropia/eXtropiaNG/include/plat/amigaos3_68k/systemlib/base.hpp"
+"Developer:eXtropia/eXtropiaNG/include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/gfxlib/gfx3D.hpp"
+"exng:include/gfxlib/gfx3D.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/plat/amigaos3_68k/gfxlib/gfx3D.hpp"
+"exng:include/plat/amigaos3_68k/gfxlib/gfx3D.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/plat/amigaos3_68k/gfxlib/gfx3Dinline.hpp"
+"exng:include/plat/amigaos3_68k/gfxlib/gfx3Dinline.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "include:Warp3d/Warp3D.h"
+"include:Warp3d/Warp3D.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+10 1 40
+0 0 0 0
+7
+File
+10 "testw3d"
+"testw3d"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+5 1 -50
+0 0 0 0
+7
+File
+5 "exng:libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib"
+"exng:libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+5 "exng:libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib"
+"exng:libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+5 "exng:libsrc/plat/amigaos3_68k/Projects/lib/iolib.lib"
+"exng:libsrc/plat/amigaos3_68k/Projects/lib/iolib.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+5 "exng:libsrc/plat/amigaos3_68k/Projects/lib/utilitylib.lib"
+"exng:libsrc/plat/amigaos3_68k/Projects/lib/utilitylib.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+5 "stormgcc020.lib"
+"stormgcc020.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+5 "amiga.lib"
+"amiga.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+5 "warp3d_v4_68k.lib"
+"warp3d_v4_68k.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Storm Shell Project (End)

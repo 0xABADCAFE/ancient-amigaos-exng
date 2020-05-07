@@ -1,0 +1,10 @@
+StormLibrarian Document (0003)
+lib/iolib.lib
+1 0 0
+obj/iolib/inpdevs.o
+obj/iolib/console.o
+obj/iolib/inputcomm.o
+obj/iolib/stream.o
+obj/iolib/xsf.o
+obj/iolib/inprecord.o
+EOD

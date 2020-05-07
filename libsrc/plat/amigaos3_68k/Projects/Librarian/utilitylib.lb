@@ -1,0 +1,8 @@
+StormLibrarian Document (0003)
+lib/utilitylib.lib
+1 0 0
+obj/utilitylib/quickmath.o
+obj/utilitylib/keys.o
+obj/utilitylib/pool.o
+obj/utilitylib/list.o
+EOD

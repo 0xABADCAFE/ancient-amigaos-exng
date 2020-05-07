@@ -1,0 +1,19 @@
+##base _gleBase
+##bias 30
+registerGLE(ptr)(a0)
+gleGetJoinStyle()()
+gleSetJoinStyle(int_style)(d0)
+gleGetNumSlices()()
+gleSetNumSlices(int_slices)(d0)
+glePolyCylinder(int_npoints,gleDouble_point_array,float_color_array,gleDouble_radius)(d0/a0/a1/fp0)
+glePolyCone(int_npoints,gleDouble_point_array,float_color_array,gleDouble_radius_array)(d0/a0/a1/a2)
+gleExtrusion(int_ncp,gleDouble_contour,gleDouble_cont_normal,gleDouble_up,int_npoints,gleDouble_point_array,float_color_array)(d0/a0/a1/a2/d1/a3/d2)
+gleTwistExtrusion(int_ncp,gleDouble_contour,gleDouble_cont_normal,gleDouble_up,int_npoints,gleDouble_point_array,float_color_array,gleDouble_twist_array)(d0/a0/a1/a2/d1/a3/d2/d3)
+gleSuperExtrusion(int_ncp,gleDouble_contour,gleDouble_cont_normal,gleDouble_up,int_npoints,gleDouble_point_array,float_color_array,gleDouble_xform_array)(d0/a0/a1/a2/d1/a3/d2/d3)
+gleSpiral(int_ncp,gleDouble_contour,gleDouble_cont_normal,gleDouble_up,gleDouble_startRadius,gleDouble_drdTheta,gleDouble_startZ,gleDouble_dzdTheta,gleDouble_startXform,gleDouble_dXformdTheta,gleDouble_startTheta,gleDouble_sweepTheta)(d0/a0/a1/a2/fp0/fp1/fp2/fp3/a3/d1/fp4/fp5)
+gleLathe(int_ncp,gleDouble_contour,gleDouble_cont_normal,gleDouble_up,gleDouble_startRadius,gleDouble_drdTheta,gleDouble_startZ,gleDouble_dzdTheta,gleDouble_startXform,gleDouble_dXformdTheta,gleDouble_startTheta,gleDouble_sweepTheta)(d0/a0/a1/a2/fp0/fp1/fp2/fp3/a3/d1/fp4/fp5)
+gleHelicoid(gleDouble_rToroid,gleDouble_startRadius,gleDouble_drdTheta,gleDouble_startZ,gleDouble_dzdTheta,gleDouble_startXform,gleDouble_dXformdTheta,gleDouble_startTheta,gleDouble_sweepTheta)(fp0/fp1/fp2/fp3/fp4/a0/a1/fp5/fp6)
+gleToroid(gleDouble_rToroid,gleDouble_startRadius,gleDouble_drdTheta,gleDouble_startZ,gleDouble_dzdTheta,gleDouble_startXform,gleDouble_dXformdTheta,gleDouble_startTheta,gleDouble_sweepTheta)(fp0/fp1/fp2/fp3/fp4/a0/a1/fp5/fp6)
+gleScrew(int_ncp,gleDouble_contour,gleDouble_cont_normal,gleDouble_up,gleDouble_startz,gleDouble_endz,gleDouble_twist)(d0/a0/a1/a2/fp0/fp1/fp2)
+gleTextureMode(int_mode)(d0)
+##end

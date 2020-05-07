@@ -1,0 +1,420 @@
+Storm Shell Project (0018)
+Settings (Start)
+C/C++ Environment
+"StormC:include"
+0
+"exng:include"
+0
+Includepath (End)
+0 "" 256
+1 "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib"
+1 0 "makelog.txt"
+""
+0
+0 0
+0
+0 0
+C/C++ Preprozessor
+1 "NDEBUG" ""
+0
+0 "_INLINE_INCLUDES" ""
+0
+0 "X_DEBUG" ""
+0
+1 "STORMPRAGMAS" ""
+0
+Defines (End)
+1 1 1
+0 0
+C/C++ Options
+1 0 0 0 0 0 2 1 0 1 0 3 1 0 0
+0 0 0
+0
+0 1 0
+C/C++ Optimizer
+6
+C/C++ Warnings
+1 1 1 1 1 1 0 1
+0 0
+GCC Options (1)
+Defines (End)
+1 0 0 1 0
+3 0 1 1 0 1 0
+1 0 0 0 1
+1 0 0 0 1 1 0
+3 1 0 0
+1 ""
+2 1 1 0
+1 0 0 1 0 1 0 1 0 1
+1 1 0 1 0 1
+0 1 1 1 1 0 0
+1 0 0 0 0
+Assembler
+0 ""
+0 "CON://640/200/Storm Assembler/AUTO/WAIT/SCREEN StormScreen"
+0 0
+0 1 60 0 1 0 0 20 0
+Sets (End)
+0 1 0 0 0 2 1 0 0
+1 1 1 1 0 0 0 0 0
+1 0
+0 0 0 0 0
+Linker
+1 0 "PROGDIR:startup.o" 0 0 1 0 0 0 0
+"StormC:lib/" 0 "StormC:lib/logfile" 0 1 1
+0 "_WizardSurface"
+0 0 50 0 50 0 50 0 0
+0 0 0 0 0 0 0 0
+Run
+30 "" "" "" 0
+""
+
+1 "CON://400/180/Storm Console/AUTO/WAIT/SCREEN StormScreen" "RAM:Output" "RAM:Input"
+1 0
+0 0 0 "" ""
+Settings (End)
+Storm Shell Project (Custom Sections End)
+Section
+26 1 110
+0 0 1 0
+9
+File
+26 "gfxlib.qiq"
+"gfxlib.qiq"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+9 1 -10
+0 0 0 0
+5
+File
+9 "Developer:eXtropia/eXtropiaNG/proj/gfxlib_debug/listmodes.¶"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+9 "Developer:eXtropia/eXtropiaNG/proj/gfxlib_debug/display.¶"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+18 1 -128
+0 0 0 0
+7
+File
+18 "exng:libsrc/plat/amigaos3_68k/Projects/Librarian/gfxlib.lb"
+"exng:libsrc/plat/amigaos3_68k/Projects/Librarian/gfxlib.lb"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+2 1 95
+0 1 1 0
+2
+File
+2 "exng:include/gfxlib/gfx.hpp"
+"exng:include/gfxlib/gfx.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/gfxlib/gfx3D.hpp"
+"exng:include/gfxlib/gfx3D.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/gfxlib/draw.hpp"
+"exng:include/gfxlib/draw.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/gfxlib/gfxutil.hpp"
+"exng:include/gfxlib/gfxutil.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/gfxlib/gfxutil3d.hpp"
+"exng:include/gfxlib/gfxutil3d.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/gfxlib/gfxapp.hpp"
+"exng:include/gfxlib/gfxapp.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/plat/amigaos3_68k/gfxlib/gfx.hpp"
+"exng:include/plat/amigaos3_68k/gfxlib/gfx2D.hpp"
+"exng:include/plat/amigaos3_68k/gfxlib/gfx.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/plat/amigaos3_68k/gfxlib/surface.hpp"
+"exng:include/plat/amigaos3_68k/gfxlib/surface.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/plat/amigaos3_68k/gfxlib/display.hpp"
+"exng:include/plat/amigaos3_68k/gfxlib/display.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/plat/amigaos3_68k/gfxlib/gfx3D.hpp"
+"exng:include/plat/amigaos3_68k/gfxlib/gfx3D.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/plat/amigaos3_68k/gfxlib/gfx3Dinline.hpp"
+"exng:include/plat/amigaos3_68k/gfxlib/gfx3Dinline.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "Developer:eXtropia/eXtropiaNG/include/plat/amigaos3_68k/systemlib/base.hpp"
+"Developer:eXtropia/eXtropiaNG/include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "Developer:eXtropia/eXtropiaNG/include/gfxlib/gfx_private.hpp"
+"Developer:eXtropia/eXtropiaNG/include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+1 1 -128
+0 1 1 0
+4
+File
+1 "exng:libsrc/common/gfxlib/gfxcomm.cpp"
+"///common/gfxlib/gfxcomm.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/gfxcomm.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/gfxcomm.debug"
+""
+1 1
+File
+1 "exng:libsrc/common/gfxlib/gfxapp.cpp"
+"exng:libsrc/common/gfxlib/gfxapp.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/gfxapp.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/gfxapp.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/gfxlib/native2D.cpp"
+"/gfxlib/native2D.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/native2D.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/native2D.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/gfxlib/pix8.cpp"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/pix8.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/pix8.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/pix8.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/gfxlib/pix15.cpp"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/pix15.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/pix15.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/pix15.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/gfxlib/pix16.cpp"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/pix16.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/pix16.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/pix16.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/gfxlib/pix24.cpp"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/pix24.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/pix24.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/pix24.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/gfxlib/pix32.cpp"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/pix32.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/pix32.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/pix32.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/gfxlib/surface.cpp"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/surface.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/surface.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/surface.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/gfxlib/display.cpp"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/display.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/display.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/display.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/gfxlib/dispinput.cpp"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/dispinput.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/dispinput.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/dispinput.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/gfxlib/native3D.cpp"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/native3D.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/native3D.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/native3D.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/gfxlib/rasterizer.cpp"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/rasterizer.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/rasterizer.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/rasterizer.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/gfxlib/rastdraw.cpp"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/rastdraw.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/rastdraw.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/rastdraw.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/gfxlib/texture.cpp"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/texture.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/texture.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/texture.debug"
+""
+1 1
+File
+1 "exng:libsrc/common/gfxlib/gfxutil3d.cpp"
+"exng:libsrc/common/gfxlib/gfxutil3d.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/gfxutil3d.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/gfxutil3d.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/gfxlib/gfxutil.cpp"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/gfxutil.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/gfxutil.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/gfxutil.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/gfxlib/drawhw.cpp"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/drawhw.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/drawhw.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/drawhw.debug"
+""
+1 1
+Section
+13 1 -128
+0 1 1 0
+2
+File
+13 "exng:libsrc/plat/amigaos3_68k/gfxlib/pixopt.i"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/pixopt.i"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+12 1 -128
+0 1 1 0
+4
+File
+12 "exng:libsrc/plat/amigaos3_68k/gfxlib/pix15opt.asm"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/pix15opt.asm"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/pix15opt.o" ""
+"StormC:rexx/phxass.srx"
+1 1
+File
+12 "exng:libsrc/plat/amigaos3_68k/gfxlib/pix16opt.asm"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/pix16opt.asm"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/pix16opt.o" ""
+"StormC:rexx/phxass.srx"
+1 1
+File
+12 "exng:libsrc/plat/amigaos3_68k/gfxlib/pix24opt.asm"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/pix24opt.asm"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/pix24opt.o" ""
+"StormC:rexx/phxass.srx"
+1 1
+File
+12 "exng:libsrc/plat/amigaos3_68k/gfxlib/pix32opt.asm"
+"exng:libsrc/plat/amigaos3_68k/gfxlib/pix32opt.asm"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/gfxlib/pix32opt.o" ""
+"StormC:rexx/phxass.srx"
+1 1
+Storm Shell Project (End)

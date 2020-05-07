@@ -1,0 +1,46 @@
+Surface width: 640, height: 480, modulus: 0
+
+Test data pixel format
+
+Bytes   : 2, endian swapped
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+Window pixel format
+
+Bytes   : 2, endian swapped
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+
+Set  :    3387456 pix/sec  6616.12 K/sec
+Zero :    2253645 pix/sec  4401.65 K/sec
+Copy :    2611689 pix/sec  5100.95 K/sec
+Conv :    2618646 pix/sec  5114.54 K/sec
+
+Conversion attained 100.26% copy speed
+Surface width: 640, height: 480, modulus: 0
+
+Test data pixel format
+
+Bytes   : 2, endian native
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+Window pixel format
+
+Bytes   : 2, endian swapped
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+
+Set  :    3387456 pix/sec  6616.12 K/sec
+Zero :    2254678 pix/sec  4403.66 K/sec
+Copy :    2629855 pix/sec  5136.43 K/sec
+Conv :    2595142 pix/sec  5068.63 K/sec
+
+Conversion attained  98.68% copy speed

@@ -1,0 +1,41 @@
+##base _ChunkyPPCBase
+##bias 30
+##public
+##abi PPC
+ChunkyNoffFast(address,data,w,h,bpr)()
+ChunkyNoffFastest(address,data,w,h,bpr)()
+ChunkyNoffNormal(address,data,w,h,bpr)()
+ChunkyFast(address,data,x,y,w,h,bpr)()
+ChunkyFastest(address,data,x,y,w,h,bpr)()
+ChunkyNormal(address,data,x,y,w,h,bpr)()
+ChunkyFastFull(address,data,dest,size,bpr,soff,sbpr)()
+ChunkyFastestFull(address,data,dest,size,bpr,soff,sbpr)()
+ChunkyNormalFull(address,data,dest,size,bpr,soff,sbpr)()
+c2p_1(buffer,bm,width,height)()
+c2p_2(buffer,plane0,helpbfr,PlaneSize)()
+c2p_3(chunky,bitplanes,chunkyx,chunkyy,dest,bitplanesize,depth)()
+c2p_4(chunky,Planar,temp,size,off,screensize)()
+ChunkyNoffFastHT(address,data,w,h,bpr,gfx_type)()
+ChunkyNoffFastestHT(address,data,w,h,bpr,gfx_type)()
+ChunkyNoffNormalHT(address,data,w,h,bpr,gfx_type)()
+ChunkyFastHT(address,data,off,w,h,bpr,gfx_type)()
+ChunkyFastestHT(address,data,off,w,h,bpr,gfx_type)()
+ChunkyNormalHT(address,data,off,w,h,bpr,gfx_type)()
+ChunkyFastFullHT(address,data,dest,size,bpr,soff,gfx_type)()
+ChunkyFastestFullHT(address,data,dest,size,bpr,soff,gfx_type)()
+ChunkyNormalFullHT(address,data,dest,size,bpr,soff,gfx_type)()
+ChunkyNoffMask(address,data,w,h,bpr,gfx_type)()
+ChunkyMask(address,data,dest,w,h,bpr,gfx_type)()
+ChunkyMaskFull(address,data,dest,size,bpr,soff,gfx_type)()
+c2p_HI(address,num,bpl0,bpl1,bpl2,bpl3,bpl4)()
+ham_c2p(chunky,planar,width,height,depth,qual,ham_width)()
+ChunkyInit(ms,srcformat)()
+##abi M68K
+##bias 198
+ChunkyInit68k(ms, srcformat)(a0/d0)
+OpenGraphics(title, ms, override)(a0/a1/d0)
+CloseGraphics(ms, shutdownlibs)(a0/d0)
+LoadColors(ms, table)(a0/a1)
+DoubleBuffer(ms)(a0)
+##end
+

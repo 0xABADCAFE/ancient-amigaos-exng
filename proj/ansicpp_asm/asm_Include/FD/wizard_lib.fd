@@ -1,0 +1,52 @@
+##base _WizardBase
+##bias 30
+##public
+*------------------------------------------------
+*---       functions in V 37 or higher        ---
+*---      written by Thomas Mittelsdorf       ---
+*---   © 1996 HAAGE & PARTNER Computer GmbH   ---
+*------------------------------------------------
+*
+* Public entries
+*
+WZ_OpenSurfaceA(name,memaddr,tagList)(a0/a1/a2)
+WZ_CloseSurface(surface)(a0)
+WZ_AllocWindowHandleA(screen,user_sizeof,surface,tagList)(d0/d1/a0/a1)
+WZ_CreateWindowObjA(winhandle,id,tagList)(a0/d0/a1)
+WZ_OpenWindowA(winhandle,newwin,tagList)(a0/a1/a2)
+WZ_CloseWindow(winhandle)(a0)
+WZ_FreeWindowHandle(winhandle)(a0)
+WZ_LockWindow(winhandle)(a0)
+WZ_UnlockWindow(winhandle)(a0)
+WZ_LockWindows(surface)(a0)
+WZ_UnlockWindows(surface)(a0)
+WZ_GadgetHelp(windowhandle,sfgadget)(a0/a1)
+WZ_GadgetConfig(windowhandle,sfgadget)(a0/a1)
+WZ_MenuHelp(windowhandle,menucode)(a0/d0)
+WZ_MenuConfig(windowhandle,menucode)(a0/d0)
+WZ_InitEasyStruct(surface,easystruct,id,size)(a0/a1/d0/d1)
+WZ_SnapShotA(surface,tagList)(a0/a1)
+WZ_GadgetKeyA(windowhandle,code,qualifier,tagList)(a0/d0/d1/a1)
+WZ_DrawVImageA(vimage,x,y,w,h,type,rp,drinfo,tagList)(a0/d0/d1/d2/d3/d4/d5/d6/a1)
+WZ_EasyRequestArgs(surface,window,id,args)(a0/a1/d0/a2)
+WZ_GetNode(minlist,nr)(a0/d0)
+WZ_ListCount(list)(a0)
+WZ_NewObjectA(surface,class,tagList)(a1/d0/a0)
+WZ_GadgetHelpMsg(winhandle,winhaddress,iaddress,mousex,mousey,flags)(a0/a1/a2/d0/d1/d2)
+WZ_ObjectID(surface,id,objectname)(a0/a2/a1)
+WZ_InitNodeA(wizardnode,entrys,tagList)(a0/d0/a1)
+WZ_InitNodeEntryA(wizardnode,entry,tagList)(a0/d0/a1)
+WZ_CreateImageBitMap(transpen,drinfo,newimage,screen,reg)(d0/a0/a1/a2/a3)
+WZ_DeleteImageBitMap(bm,newimage,screen,reg)(a0/a1/a2/a3)
+WZ_GetDataAddress(surface,type,id)(a0/d0/d1)
+WZ_GadgetObjectname(windowhandle,sfgadget)(a0/a1)
+WZ_MenuObjectname(windowhandle,menucode)(a0/d0)
+WZ_WindowGadgets(surface,id)(a0/d0)
+WZ_HandleIMessage(winhandle,imsg)(a0/a1)
+WZ_ControlBubbleHelpA(surface,tagList)(a0/a1)
+WZ_WindowObjectname(surface,id)(a0/d0)
+WZ_RequestObjectname(surface,id)(a0/d0)
+WZ_FontObjectname(surface,id)(a0/d0)
+WZ_LibraryObjectname(surface,id)(a0/d0)
+WZ_ImageObjectname(surface,id)(a0/d0)
+##end

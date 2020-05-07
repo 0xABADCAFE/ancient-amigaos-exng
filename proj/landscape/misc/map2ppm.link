@@ -1,0 +1,14 @@
+"Developer:C_CPlusPlus/StormC/StormSYS/startups/gccstartup.o"
+0,0,0,496,code_68k
+-
+2,2,0,164,bss
+-
+-
+5,2,164,4,bss
+"Developer:eXtropia/eXtropiaNG/proj/Landscape/misc/objects/map2ppm.o"
+0,0,496,696,code_68k
+-
+-
+-
+-
+!0,738 ; _main

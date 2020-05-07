@@ -1,0 +1,227 @@
+Storm Shell Project (0018)
+Settings (Start)
+C/C++ Environment
+"StormC:include"
+0
+"exng:include"
+0
+Includepath (End)
+0 "" 256
+1 "exng:libsrc/plat/amigaos3_68k/projects/obj/systemlib"
+1 0 "makelog.txt"
+""
+0
+0 0
+0
+0 0
+C/C++ Preprozessor
+1 "NDEBUG" ""
+0
+0 "_INLINE_INCLUDES" ""
+0
+1 "STORMPRAGMAS" ""
+0
+Defines (End)
+1 1 1
+0 0
+C/C++ Options
+1 0 0 0 0 0 2 1 0 1 0 3 1 0 0
+0 0 0
+0
+0 1 0
+C/C++ Optimizer
+6
+C/C++ Warnings
+1 1 1 1 1 1 0 1
+1 0
+GCC Options (1)
+Defines (End)
+1 0 0 1 0
+3 0 1 1 0 1 0
+1 0 0 0 1
+1 0 0 0 1 1 0
+3 1 0 0
+1 ""
+2 1 1 0
+1 0 0 1 0 1 0 1 0 1
+1 1 0 1 0 1
+0 1 1 1 1 0 0
+1 0 0 1 0
+Assembler
+0 ""
+0 "CON://640/200/Storm Assembler/AUTO/WAIT/SCREEN StormScreen"
+0 0
+0 1 60 0 1 0 0 20 0
+Sets (End)
+0 1 0 0 0 2 1 0 0
+1 1 1 1 0 0 0 0 0
+1 0
+0 0 0 0 0
+Linker
+1 0 "PROGDIR:startup.o" 0 0 1 0 0 0 0
+"StormC:lib/" 0 "StormC:lib/logfile" 0 1 1
+0 "_WizardSurface"
+0 0 50 0 50 0 50 0 0
+0 0 0 0 0 0 0 0
+Run
+30 "" "" "" 0
+""
+
+1 "CON://400/180/Storm Console/AUTO/WAIT/SCREEN StormScreen" "RAM:Output" "RAM:Input"
+1 0
+0 0 0 "" ""
+Settings (End)
+Storm Shell Project (Custom Sections End)
+Section
+26 1 110
+0 0 1 0
+9
+File
+26 "systemlib.qiq"
+"systemlib.qiq"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+18 1 -128
+0 0 0 0
+7
+File
+18 "exng:libsrc/plat/amigaos3_68k/Projects/Librarian/systemlib.lb"
+"exng:libsrc/plat/amigaos3_68k/Projects/Librarian/BaseLib.lb"
+"exng:libsrc/plat/amigaos3_68k/Projects/Librarian/systemlib.lb"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+2 1 -128
+0 1 1 0
+2
+File
+2 "exng:include/xbase.hpp"
+"exng:include/xbase.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/systemlib/cpu.hpp"
+"exng:include/systemlib/cpu.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/systemlib/timer.hpp"
+"exng:include/systemlib/timer.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/systemlib/thread.hpp"
+"exng:include/systemlib/thread.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/plat/amigaos3_68k/systemlib/base.hpp"
+"exng:include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/plat/amigaos3_68k/systemlib/timer.hpp"
+"exng:include/plat/amigaos3_68k/systemlib/timer.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/plat/amigaos3_68k/systemlib/thread.hpp"
+"exng:include/plat/amigaos3_68k/systemlib/thread.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/plat/amigaos3_68k/systemlib/cpu.hpp"
+"exng:include/plat/amigaos3_68k/systemlib/cpu.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+1 1 100
+0 1 1 0
+4
+File
+1 "exng:libsrc/common/xbase.cpp"
+"exng:libsrc/common/xbase.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/systemlib/xbase.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/systemlib/xbase.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/systemlib/cpu.cpp"
+"exng:libsrc/plat/amigaos3_68k/systemlib/cpu.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/systemlib/cpu.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/systemlib/cpu.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/systemlib/base.cpp"
+"exng:libsrc/plat/amigaos3_68k/systemlib/base.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/systemlib/base.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/systemlib/base.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/systemlib/timer.cpp"
+"exng:libsrc/plat/amigaos3_68k/systemlib/timer.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/systemlib/timer.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/systemlib/timer.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/systemlib/thread.cpp"
+"/systemlib/thread.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/systemlib/thread.o" "exng:libsrc/plat/amigaos3_68k/projects/obj/systemlib/thread.debug"
+""
+1 1
+Section
+12 1 90
+0 1 1 0
+4
+File
+12 "exng:libsrc/plat/amigaos3_68k/systemlib/memopt.asm"
+"exng:libsrc/plat/amigaos3_68k/systemlib/memopt.asm"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/systemlib/memopt.o" ""
+"StormC:rexx/phxass.srx"
+1 1
+File
+12 "exng:libsrc/plat/amigaos3_68k/systemlib/cpuopt.asm"
+"exng:libsrc/plat/amigaos3_68k/systemlib/cpuopt.asm"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/systemlib/cpuopt.o" ""
+"StormC:rexx/phxass.srx"
+1 1
+File
+12 "exng:libsrc/plat/amigaos3_68k/systemlib/fpuopt.asm"
+"exng:libsrc/plat/amigaos3_68k/systemlib/fpuopt.asm"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/projects/obj/systemlib/fpuopt.o" ""
+"StormC:rexx/phxass.srx"
+1 1
+Storm Shell Project (End)

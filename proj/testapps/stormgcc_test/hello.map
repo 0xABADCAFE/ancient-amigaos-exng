@@ -1,0 +1,617 @@
+Global M68K Construktors
+	_INIT_1_DOSBaseDOS_c
+	_INIT_1_IntuitionBaseIntuition_c
+	_INIT_4_MixedMem
+	_INIT_5_InitFiles
+	_INIT_6_InitStdIOFiles
+Global M68K Destruktors
+	_EXIT_6_InitStdIOFiles
+	_EXIT_5_InitFiles
+	_EXIT_4_MixedMem
+	_EXIT_1_IntuitionBaseIntuition_c
+	_EXIT_1_DOSBaseDOS_c
+	_EXIT_0_Main
+No Global PPC Destruktors
+No Global PPC Destruktors
+
+M68K Code
+
+
+  Hunk #0 ( Far Public ) 52180 Bytes (0xcbd4)
+  __startup68K = 384 (0x180) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/startups/gccstartup.o
+  __cleanup = 396 (0x18c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/startups/gccstartup.o
+  __exit = 404 (0x194) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/startups/gccstartup.o
+  __exit_68k = 434 (0x1b2) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/startups/gccstartup.o
+  abort__STANDARD = 464 (0x1d0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/startups/gccstartup.o
+  _main = 514 (0x202) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/proj/StormGCCTest/objects_debug/hello.o
+  _testAsmFunc = 632 (0x278) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/proj/StormGCCTest/objects_debug/test.o
+  _amigaclose = 640 (0x280) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigaeof = 768 (0x300) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigaflush = 788 (0x314) referenced 9 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigagetc = 1016 (0x3f8) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigagetcunget = 1064 (0x428) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigaputc = 1104 (0x450) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigaread = 1164 (0x48c) referenced 7 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigareadunget = 1544 (0x608) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigaseek = 1648 (0x670) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigaungetc = 1972 (0x7b4) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigawrite = 2008 (0x7d8) referenced 4 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _bzero = 2500 (0x9c4) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _fflush = 2572 (0xa0c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___putfilech = 3080 (0xc08) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___putstringch = 3108 (0xc24) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___putfilestr = 3134 (0xc3e) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___putstringstr = 3162 (0xc5a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___getfilech = 3218 (0xc92) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___getstringch = 3238 (0xca6) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___ungetfilech = 3264 (0xcc0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___ungetstringch = 3292 (0xcdc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _formatted_out = 3314 (0xcf2) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _formatted_in = 5046 (0x13b6) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _INIT_5_InitFiles = 6136 (0x17f8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _EXIT_5_InitFiles = 6224 (0x1850) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___ioErr = 6348 (0x18cc) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _memcpy = 6436 (0x1924) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _memmove = 6466 (0x1942) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _memcmp = 6520 (0x1978) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _memchr = 6580 (0x19b4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _memset = 6618 (0x19da) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _bcmp = 6652 (0x19fc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _bcopy = 6712 (0x1a38) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _ffs = 6844 (0x1abc) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _malloc = 7420 (0x1cfc) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _free = 7948 (0x1f0c) referenced 8 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _calloc = 7966 (0x1f1e) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _realloc = 8042 (0x1f6a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _INIT_4_MixedMem = 8220 (0x201c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _EXIT_4_MixedMem = 8376 (0x20b8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _printf = 8512 (0x2140) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _setvbuf = 8556 (0x216c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _INIT_6_InitStdIOFiles = 8740 (0x2224) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _EXIT_6_InitStdIOFiles = 8916 (0x22d4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _strlen = 8960 (0x2300) referenced 4 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _signed_out = 8984 (0x2318) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _signed_out_l = 9660 (0x25bc) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _unsigned_out = 9744 (0x2610) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _unsigned_out_l = 10392 (0x2898) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _char_out = 10906 (0x2a9a) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _string_out = 11072 (0x2b40) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _int_in = 11262 (0x2bfe) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _char_in = 12122 (0x2f5a) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _string_in = 12244 (0x2fd4) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _InitXSemaphore = 12420 (0x3084) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _FreeXSemaphore = 12514 (0x30e2) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _ObtainXSemaphore = 12562 (0x3112) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _ReleaseXSemaphore = 12596 (0x3134) referenced 6 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  Input = 12632 (0x3158) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _Input = 12632 (0x3158) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  Output = 12648 (0x3168) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _Output = 12648 (0x3168) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  IsInteractive = 12664 (0x3178) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _IsInteractive = 12664 (0x3178) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  GetProgramName = 12684 (0x318c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _GetProgramName = 12684 (0x318c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  FilePart = 12712 (0x31a8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _FilePart = 12712 (0x31a8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  AddPart = 12732 (0x31bc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _AddPart = 12732 (0x31bc) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  VPrintf = 12760 (0x31d8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _VPrintf = 12760 (0x31d8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  AllocMem = 12788 (0x31f4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _AllocMem = 12788 (0x31f4) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  FreeMem = 12812 (0x320c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _FreeMem = 12812 (0x320c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  FindTask = 12836 (0x3224) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _FindTask = 12836 (0x3224) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  CloseLibrary = 12856 (0x3238) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _CloseLibrary = 12856 (0x3238) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  OpenLibrary = 12876 (0x324c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _OpenLibrary = 12876 (0x324c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  EasyRequest = 12900 (0x3264) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _EasyRequest = 12900 (0x3264) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _floor__r = 12932 (0x3284) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _floor = 12956 (0x329c) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _pow__r = 12988 (0x32bc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _pow = 13026 (0x32e2) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _fabs = 13072 (0x3310) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _sin = 13096 (0x3328) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _cos = 13120 (0x3340) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _tan = 13144 (0x3358) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _sinh = 13168 (0x3370) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _cosh = 13192 (0x3388) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _tanh = 13216 (0x33a0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _asin = 13240 (0x33b8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _acos = 13264 (0x33d0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _atan = 13288 (0x33e8) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _exp = 13312 (0x3400) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _log = 13336 (0x3418) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _log10 = 13360 (0x3430) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _sqrt = 13384 (0x3448) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _fmod = 13408 (0x3460) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  facoss::_060LSP() = 13444 (0x3484) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _acos__r = 13452 (0x348c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  facosx::_060LSP() = 13460 (0x3494) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fasins::_060LSP() = 13468 (0x349c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fasind::_060LSP() = 13476 (0x34a4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _asin__r = 13476 (0x34a4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fasinx::_060LSP() = 13484 (0x34ac) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fatans::_060LSP() = 13492 (0x34b4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fatand::_060LSP() = 13500 (0x34bc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _atan__r = 13500 (0x34bc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fatanx::_060LSP() = 13508 (0x34c4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fatanhs::_060LSP() = 13516 (0x34cc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fatanhd::_060LSP() = 13524 (0x34d4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fatanhx::_060LSP() = 13532 (0x34dc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fcoss::_060LSP() = 13540 (0x34e4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fcosd::_060LSP() = 13548 (0x34ec) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _cos__r = 13548 (0x34ec) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fcosx::_060LSP() = 13556 (0x34f4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fcoshs::_060LSP() = 13564 (0x34fc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fcoshd::_060LSP() = 13572 (0x3504) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _cosh__r = 13572 (0x3504) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fcoshx::_060LSP() = 13580 (0x350c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fetoxs::_060LSP() = 13588 (0x3514) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fetoxd::_060LSP() = 13596 (0x351c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _exp__r = 13596 (0x351c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fetoxx::_060LSP() = 13604 (0x3524) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fetoxm1s::_060LSP() = 13612 (0x352c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fetoxm1d::_060LSP() = 13620 (0x3534) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fetoxm1x::_060LSP() = 13628 (0x353c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fgetexps::_060LSP() = 13636 (0x3544) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fgetexpd::_060LSP() = 13644 (0x354c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fgetexpx::_060LSP() = 13652 (0x3554) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fgetmans::_060LSP() = 13660 (0x355c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fgetmand::_060LSP() = 13668 (0x3564) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fgetmanx::_060LSP() = 13676 (0x356c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  flog10s::_060LSP() = 13684 (0x3574) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  flog10d::_060LSP() = 13692 (0x357c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _log10__r = 13692 (0x357c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  flog10x::_060LSP() = 13700 (0x3584) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  flog2s::_060LSP() = 13708 (0x358c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  flog2d::_060LSP() = 13716 (0x3594) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  flog2x::_060LSP() = 13724 (0x359c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  flogns::_060LSP() = 13732 (0x35a4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  flognd::_060LSP() = 13740 (0x35ac) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _log__r = 13740 (0x35ac) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  flognx::_060LSP() = 13748 (0x35b4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  flognp1s::_060LSP() = 13756 (0x35bc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  flognp1d::_060LSP() = 13764 (0x35c4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  flognp1x::_060LSP() = 13772 (0x35cc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fmods::_060LSP() = 13780 (0x35d4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fmodd::_060LSP() = 13788 (0x35dc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _fmod__r = 13788 (0x35dc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fmodx::_060LSP() = 13796 (0x35e4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  frems::_060LSP() = 13804 (0x35ec) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fremd::_060LSP() = 13812 (0x35f4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fremx::_060LSP() = 13820 (0x35fc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fscales::_060LSP() = 13828 (0x3604) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fscaled::_060LSP() = 13836 (0x360c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fscalex::_060LSP() = 13844 (0x3614) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fsins::_060LSP() = 13852 (0x361c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fsind::_060LSP() = 13860 (0x3624) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _sin__r = 13860 (0x3624) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fsinx::_060LSP() = 13868 (0x362c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fsincoss::_060LSP() = 13876 (0x3634) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fsincosd::_060LSP() = 13884 (0x363c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fsincosx::_060LSP() = 13892 (0x3644) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fsinhs::_060LSP() = 13900 (0x364c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fsinhd::_060LSP() = 13908 (0x3654) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _sinh__r = 13908 (0x3654) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fsinhx::_060LSP() = 13916 (0x365c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  ftans::_060LSP() = 13924 (0x3664) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  ftand::_060LSP() = 13932 (0x366c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _tan__r = 13932 (0x366c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  ftanx::_060LSP() = 13940 (0x3674) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  ftanhs::_060LSP() = 13948 (0x367c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  ftanhd::_060LSP() = 13956 (0x3684) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _tanh__r = 13956 (0x3684) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  ftanhx::_060LSP() = 13964 (0x368c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  ftentoxs::_060LSP() = 13972 (0x3694) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  ftentoxd::_060LSP() = 13980 (0x369c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  ftentoxx::_060LSP() = 13988 (0x36a4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  ftwotoxs::_060LSP() = 13996 (0x36ac) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  ftwotoxd::_060LSP() = 14004 (0x36b4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  ftwotoxx::_060LSP() = 14012 (0x36bc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fabss::_060LSP() = 14020 (0x36c4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fabsd::_060LSP() = 14028 (0x36cc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _fabs__r = 14028 (0x36cc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fabsx::_060LSP() = 14036 (0x36d4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fadds::_060LSP() = 14044 (0x36dc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  faddd::_060LSP() = 14052 (0x36e4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  faddx::_060LSP() = 14060 (0x36ec) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fdivs::_060LSP() = 14068 (0x36f4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fdivd::_060LSP() = 14076 (0x36fc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fdivx::_060LSP() = 14084 (0x3704) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fints::_060LSP() = 14092 (0x370c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fintd::_060LSP() = 14100 (0x3714) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fintx::_060LSP() = 14108 (0x371c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fintrzs::_060LSP() = 14116 (0x3724) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fintrzd::_060LSP() = 14124 (0x372c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fintrzx::_060LSP() = 14132 (0x3734) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fmuls::_060LSP() = 14140 (0x373c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fmuld::_060LSP() = 14148 (0x3744) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fmulx::_060LSP() = 14156 (0x374c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fnegs::_060LSP() = 14164 (0x3754) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fnegd::_060LSP() = 14172 (0x375c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fnegx::_060LSP() = 14180 (0x3764) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fsqrts::_060LSP() = 14188 (0x376c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fsqrtd::_060LSP() = 14196 (0x3774) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _sqrt__r = 14196 (0x3774) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fsqrtx::_060LSP() = 14204 (0x377c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fsubs::_060LSP() = 14212 (0x3784) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fsubd::_060LSP() = 14220 (0x378c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  fsubx::_060LSP() = 14228 (0x3794) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  facosd::_060LSP() = 13452 (0x348c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _060FPLSP_TOP = 13444 (0x3484) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _setjmp = 44580 (0xae24) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _longjmp = 44602 (0xae3a) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _isinf = 44628 (0xae54) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _isnan = 44668 (0xae7c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _atan2 = 44712 (0xaea8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _ldexp = 44962 (0xafa2) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _frexp = 45030 (0xafe6) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _modf = 45112 (0xb038) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _double_out = 45574 (0xb206) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _double_in = 46926 (0xb74e) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _va_putd = 47428 (0xb944) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc060.lib
+  _wbmain__FP9WBStartup = 47500 (0xb98c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  wbmain(WBStartup *) = 47500 (0xb98c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _wbmain = 47508 (0xb994) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  __gcc_main__ = 47522 (0xb9a2) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _EXIT_0_Main = 47982 (0xbb6e) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _INIT_1_DOSBaseDOS_c = 48102 (0xbbe6) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _EXIT_1_DOSBaseDOS_c = 48122 (0xbbfa) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _InitModules = 48140 (0xbc0c) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _CleanupModules = 48220 (0xbc5c) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _INIT_1_IntuitionBaseIntuition_c = 48372 (0xbcf4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _EXIT_1_IntuitionBaseIntuition_c = 48392 (0xbd08) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  ___8LibBaseCPcUls = 48550 (0xbda6) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  __$_8LibBaseC = 48908 (0xbf0c) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _version__C8LibBaseC = 48960 (0xbf40) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  ___mulsi3 = 48988 (0xbf5c) referenced 13 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___udivsi3 = 49028 (0xbf84) referenced 9 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___divsi3 = 49116 (0xbfdc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___umodsi3 = 49160 (0xc008) referenced 4 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___modsi3 = 49246 (0xc05e) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___builtin_delete = 49298 (0xc092) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___builtin_vec_delete = 49320 (0xc0a8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___dl__FPvRC9nothrow_t = 49342 (0xc0be) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___vd__FPvRC9nothrow_t = 49364 (0xc0d4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  _exit = 49388 (0xc0ec) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___negdi2 = 49416 (0xc108) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___lshrdi3 = 49456 (0xc130) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ashldi3 = 49534 (0xc17e) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ashrdi3 = 49610 (0xc1ca) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ffsdi2 = 49692 (0xc21c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___cmpdi2 = 49752 (0xc258) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ucmpdi2 = 49806 (0xc28e) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___udivmoddi4 = 49860 (0xc2c4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___muldi3 = 51438 (0xc8ee) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___divdi3 = 51610 (0xc99a) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___moddi3 = 51716 (0xca04) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___umoddi3 = 51842 (0xca82) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___udivdi3 = 51882 (0xcaaa) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___udiv_w_sdiv = 51912 (0xcac8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+
+PowerPC Code
+
+
+Data
+
+
+  Hunk #1 ( Far Public ) 924 Bytes (0x39c)
+  ___sF = 388 (0x184) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _std__out = 392 (0x188) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _std__in = 480 (0x1e0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _std__err = 568 (0x238) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  __8LibBaseC$not_open = 856 (0x358) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  ___stacksize = 860 (0x35c) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  ___init_table68k = 864 (0x360) referenced 1 times
+    File <Internal Assembled>
+  ___exit_table68k = 896 (0x380) referenced 1 times
+    File <Internal Assembled>
+
+BSS
+
+
+  Hunk #2 ( Far Public ) 2024 Bytes (0x7e8)
+  _SysBase = 164 (0xa4) referenced 30 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/startups/gccstartup.o
+  ___fileList = 1192 (0x4a8) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___tmpnamList = 1208 (0x4b8) referenced 4 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___tmpnamNext = 1220 (0x4c4) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___protectFileList = 1224 (0x4c8) referenced 4 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___protectTmpnamList = 1272 (0x4f8) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___mempool = 1320 (0x528) referenced 33 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _DOSBase = 2016 (0x7e0) referenced 28 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _IntuitionBase = 2020 (0x7e4) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+
+END

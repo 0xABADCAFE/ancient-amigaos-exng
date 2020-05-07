@@ -1,0 +1,58 @@
+W3DTest Log
+
+3D Chipset                 : 3DLabs Permedia2
+
+Display information:
+
+Dimensions [visible]       : 640 x 480
+Dimensions [hardware]      : 640 x 480
+Bytes per Pixel            : 2, endian native
+Bits per Gun               : A[  0] R[  5] G[  6] B[  5]
+Bitwise Offset             : A[  0] R[ 11] G[  5] B[  0]
+Gun Maxima                 : A[  0] R[ 31] G[ 63] B[ 31]
+
+No Quality of Implementation tests performed
+
+Performance tests:
+
+VRAM Access Bandwidth      : User skipped test
+
+Z Buffer Access Bandwidth  : User skipped test
+
+Texture Upload Bandwidth   : User skipped test
+
+
+V1+ Single Triangle Render
+Backface culled            : 16 x 16  81420 tris/s
+Colour Format [Flat]       : 16 x 16  28327 tris/s
+Colour Format RGBA_F       : 16 x 16  17408 tris/s
+Backface culled            : 32 x 32  74931 tris/s
+Colour Format [Flat]       : 32 x 32  27457 tris/s
+Colour Format RGBA_F       : 32 x 32  17191 tris/s
+Backface culled            : 48 x 48  74377 tris/s
+Colour Format [Flat]       : 48 x 48  27313 tris/s
+Colour Format RGBA_F       : 48 x 48  17325 tris/s
+Backface culled            : 64 x 64  74325 tris/s
+Colour Format [Flat]       : 64 x 64  27419 tris/s
+Colour Format RGBA_F       : 64 x 64  17294 tris/s
+
+
+V1+ Triangle Strip Render
+Backface culled            : 16 x 16  51340 tris/s
+Colour Format [Flat]       : 16 x 16  84507 tris/s
+Colour Format RGBA_F       : 16 x 16  45170 tris/s
+Backface culled            : 32 x 32  47927 tris/s
+Colour Format [Flat]       : 32 x 32  74896 tris/s
+Colour Format RGBA_F       : 32 x 32  41986 tris/s
+Backface culled            : 48 x 48  47463 tris/s
+Colour Format [Flat]       : 48 x 48  74161 tris/s
+Colour Format RGBA_F       : 48 x 48  41827 tris/s
+Backface culled            : 64 x 64  47048 tris/s
+Colour Format [Flat]       : 64 x 64  74226 tris/s
+Colour Format RGBA_F       : 64 x 64  41984 tris/s
+
+
+Triangle Render [Array Linear] User skipped test
+
+
+Triangle Strip Render [Array Linear] User skipped test

@@ -1,0 +1,66 @@
+Display width: 640, height: 480, modulus: 0
+Window pixel format
+
+Bytes   : 2, endian native
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+
+Rasterizer setup
+shade:flat, cull:enabled (CCW), zbuff:disabled
+
+Testing Rasterizer::drawTriMesh()
+
+Mesh1 :  16 x  16 [640 x 480]    4 ms   112500 76.80
+Mesh1 :  32 x  32 [640 x 480]   19 ms   101157 16.16
+Mesh1 :  48 x  48 [640 x 480]   44 ms   100409  6.98
+Mesh1 :  64 x  64 [640 x 480]   79 ms   100481  3.89
+Mesh1 :  80 x  80 [640 x 480]  124 ms   100661  2.48
+Mesh1 :  96 x  96 [640 x 480]  180 ms   100277  1.71
+Mesh1 : 112 x 112 [640 x 480]  253 ms    97399  1.21
+Mesh1 : 128 x 128 [640 x 480]  323 ms    99869  0.95
+
+Testing Rasterizer::drawTriMesh2()
+
+Mesh2 :  16 x  16 [640 x 480]    7 ms    64285 43.8857
+Mesh2 :  32 x  32 [640 x 480]   30 ms    64066 10.2400
+Mesh2 :  48 x  48 [640 x 480]   70 ms    63114  4.3886
+Mesh2 :  64 x  64 [640 x 480]  124 ms    64016  2.4774
+Mesh2 :  80 x  80 [640 x 480]  198 ms    63040  1.5515
+Mesh2 :  96 x  96 [640 x 480]  281 ms    64234  1.0932
+Mesh2 : 112 x 112 [640 x 480]  384 ms    64171  0.8000
+Mesh2 : 128 x 128 [640 x 480]  506 ms    63750  0.6071
+Display width: 640, height: 480, modulus: 0
+Window pixel format
+
+Bytes   : 2, endian native
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+
+Rasterizer setup
+shade:flat, cull:enabled (CCW), zbuff:enabled (LESS,UPDATE)
+
+Testing Rasterizer::drawTriMesh()
+
+Mesh1 :  16 x  16 [640 x 480]    4 ms   112500 76.80
+Mesh1 :  32 x  32 [640 x 480]   19 ms   101157 16.16
+Mesh1 :  48 x  48 [640 x 480]   45 ms    98177  6.83
+Mesh1 :  64 x  64 [640 x 480]   79 ms   100481  3.89
+Mesh1 :  80 x  80 [640 x 480]  124 ms   100661  2.48
+Mesh1 :  96 x  96 [640 x 480]  179 ms   100837  1.72
+Mesh1 : 112 x 112 [640 x 480]  254 ms    97015  1.21
+Mesh1 : 128 x 128 [640 x 480]  321 ms   100492  0.95
+
+Testing Rasterizer::drawTriMesh2()
+
+Mesh2 :  16 x  16 [640 x 480]    9 ms    50000 34.1333
+Mesh2 :  32 x  32 [640 x 480]   31 ms    62000  9.9097
+Mesh2 :  48 x  48 [640 x 480]   71 ms    62225  4.3268
+Mesh2 :  64 x  64 [640 x 480]  126 ms    63000  2.4381
+Mesh2 :  80 x  80 [640 x 480]  202 ms    61792  1.5208
+Mesh2 :  96 x  96 [640 x 480]  284 ms    63556  1.0817
+Mesh2 : 112 x 112 [640 x 480]  387 ms    63674  0.7938
+Mesh2 : 128 x 128 [640 x 480]  514 ms    62758  0.5976

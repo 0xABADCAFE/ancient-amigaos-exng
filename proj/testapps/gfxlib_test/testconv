@@ -1,0 +1,59 @@
+echo "Testing 15-bit conversions : 320x240 [768000 pix]...."
+echo > testlog.txt "*n15 Bit conversions, no modulus*n"
+
+pixeltest width 320 height 240 fmt RGB15B >>testlog.txt
+pixeltest width 320 height 240 fmt BGR15B >>testlog.txt
+pixeltest width 320 height 240 fmt RGB15L >>testlog.txt
+pixeltest width 320 height 240 fmt BGR15L >>testlog.txt
+
+echo "Testing 15-bit conversions : 300x256 [768000 pix]...."
+echo >> testlog.txt "*n16 Bit conversions, modulus*n"
+
+pixeltest width 300 height 256 fmt RGB15B >>testlog.txt
+pixeltest width 300 height 256 fmt BGR15B >>testlog.txt
+pixeltest width 300 height 256 fmt RGB15L >>testlog.txt
+pixeltest width 300 height 256 fmt BGR15L >>testlog.txt
+
+echo "Testing 16-bit conversions : 320x240 [768000 pix]...."
+echo >> testlog.txt "*n16 Bit conversions, no modulus*n"
+
+pixeltest width 320 height 240 fmt RGB16B >>testlog.txt
+pixeltest width 320 height 240 fmt BGR16B >>testlog.txt
+pixeltest width 320 height 240 fmt RGB16L >>testlog.txt
+pixeltest width 320 height 240 fmt BGR16L >>testlog.txt
+
+echo "Testing 16-bit conversions : 300x256 [768000 pix]...."
+echo >> testlog.txt "*n16 Bit conversions, modulus*n"
+
+pixeltest width 300 height 256 fmt RGB16B >>testlog.txt
+pixeltest width 300 height 256 fmt BGR16B >>testlog.txt
+pixeltest width 300 height 256 fmt RGB16L >>testlog.txt
+pixeltest width 300 height 256 fmt BGR16L >>testlog.txt
+
+echo "Testing 24-bit conversions : 320x240 [768000 pix]...."
+echo >> testlog.txt "*n24 Bit conversions, no modulus*n"
+
+pixeltest width 320 height 240 fmt RGB24P >>testlog.txt
+pixeltest width 320 height 240 fmt BGR24P >>testlog.txt
+
+echo "Testing 24-bit conversions : 300x256 [768000 pix]...."
+echo >> testlog.txt "*n24 Bit conversions, modulus*n"
+
+pixeltest width 300 height 256 fmt RGB24P >>testlog.txt
+pixeltest width 300 height 256 fmt BGR24P >>testlog.txt
+
+echo "Testing 32-bit conversions : 320x240 [768000 pix]...."
+echo >> testlog.txt "*n32 Bit conversions, no modulus*n"
+
+pixeltest width 320 height 240 fmt ARGB32B >>testlog.txt
+pixeltest width 320 height 240 fmt ABGR32B >>testlog.txt
+pixeltest width 320 height 240 fmt ARGB32L >>testlog.txt
+pixeltest width 320 height 240 fmt ABGR32L >>testlog.txt
+
+echo "Testing 32-bit conversions : 300x256 [768000 pix]...."
+echo >> testlog.txt "*n32 Bit conversions, modulus*n"
+
+pixeltest width 300 height 256 fmt ARGB32B >>testlog.txt
+pixeltest width 300 height 256 fmt ABGR32B >>testlog.txt
+pixeltest width 300 height 256 fmt ARGB32L >>testlog.txt
+pixeltest width 300 height 256 fmt ABGR32L >>testlog.txt

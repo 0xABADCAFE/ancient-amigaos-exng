@@ -1,0 +1,21 @@
+##base _MathIeeeDoubTransBase
+##bias 30
+##public
+IEEEDPAtan(parm1,parm2)(d0/d1)
+IEEEDPSin(parm1,parm2)(d0/d1)
+IEEEDPCos(parm1,parm2)(d0/d1)
+IEEEDPTan(parm1,parm2)(d0/d1)
+IEEEDPSincos(pf2,parm1,parm2)(a0,d0/d1)
+IEEEDPSinh(parm1,parm2)(d0/d1)
+IEEEDPCosh(parm1,parm2)(d0/d1)
+IEEEDPTanh(parm1,parm2)(d0/d1)
+IEEEDPExp(parm1,parm2)(d0/d1)
+IEEEDPLog(parm1,parm2)(d0/d1)
+IEEEDPPow(exp1,exp2,arg1,arg2)(d2/d3,d0/d1)
+IEEEDPSqrt(parm1,parm2)(d0/d1)
+IEEEDPTieee(parm1,parm2)(d0/d1)
+IEEEDPFieee(single)(d0)
+IEEEDPAsin(parm1,parm2)(d0/d1)
+IEEEDPAcos(parm1,parm2)(d0/d1)
+IEEEDPLog10(parm1,parm2)(d0/d1)
+##end

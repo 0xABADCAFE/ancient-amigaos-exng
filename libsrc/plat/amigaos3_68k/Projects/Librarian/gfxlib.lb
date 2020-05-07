@@ -1,0 +1,21 @@
+StormLibrarian Document (0003)
+lib/gfxlib.lib
+1 0 0
+obj/gfxlib/dispinput.o
+obj/gfxlib/display.o
+obj/gfxlib/gfxapp.o
+obj/gfxlib/gfxcomm.o
+obj/gfxlib/gfxutil.o
+obj/gfxlib/gfxutil3d.o
+obj/gfxlib/native2D.o
+obj/gfxlib/native3D.o
+obj/gfxlib/pix15opt.o
+obj/gfxlib/pix16opt.o
+obj/gfxlib/pix24opt.o
+obj/gfxlib/pix32opt.o
+obj/gfxlib/rasterizer.o
+obj/gfxlib/rastdraw.o
+obj/gfxlib/surface.o
+obj/gfxlib/texture.o
+obj/gfxlib/pix8.o
+EOD

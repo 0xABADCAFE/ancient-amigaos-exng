@@ -1,0 +1,21 @@
+"Developer:C_CPlusPlus/StormC/StormSYS/startups/gccstartup.o"
+0,0,0,496,code_68k
+-
+2,3,0,164,bss
+-
+-
+5,3,164,4,bss
+"Developer:eXtropia/eXtropiaNG/proj/fader/objects/graphics.o"
+0,0,496,4816,code_68k
+1,2,0,112,data
+2,3,168,16,bss
+-
+-
+"Developer:eXtropia/eXtropiaNG/proj/fader/objects/main.o"
+0,0,5312,2432,code_68k
+1,2,112,40,data
+-
+-
+-
+5,3,184,112,bss
+!0,7302 ; _main

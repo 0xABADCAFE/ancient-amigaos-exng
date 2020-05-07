@@ -1,0 +1,207 @@
+Storm Shell Project (0018)
+Settings (Start)
+C/C++ Environment
+"StormC:include"
+0
+"exng:include"
+0
+Includepath (End)
+0 "" 256
+1 "exng:libsrc/plat/amigaos3_68k/Projects/obj/iolib"
+1 0 "makelog.txt"
+""
+0
+0 0
+0
+0 0
+C/C++ Preprozessor
+1 "NDEBUG" ""
+0
+0 "_INLINE_INCLUDES" ""
+0
+0 "X_DEBUG" ""
+0
+1 "STORMPRAGMAS" ""
+0
+Defines (End)
+1 1 1
+0 0
+C/C++ Options
+1 0 0 0 0 0 0 1 0 1 0 3 1 0 0
+0 0 0
+0
+0 1 0
+C/C++ Optimizer
+6
+C/C++ Warnings
+1 1 1 1 1 1 0 1
+0 0
+GCC Options (1)
+Defines (End)
+1 0 0 1 0
+3 0 1 1 0 1 0
+1 0 0 0 1
+1 0 0 0 1 1 0
+3 1 0 0
+1 ""
+2 1 1 0
+1 0 0 1 0 1 0 1 0 1
+1 1 0 1 0 1
+0 1 1 1 1 0 0
+1 0 0 0 0
+Assembler
+0 ""
+0 "CON://640/200/Storm Assembler/AUTO/WAIT/SCREEN StormScreen"
+0 0
+0 1 60 0 1 0 0 20 0
+Sets (End)
+0 1 0 0 0 2 1 0 0
+1 1 1 1 0 0 0 0 0
+1 0
+0 0 0 0 0
+Linker
+1 0 "PROGDIR:startup.o" 0 0 1 0 0 0 0
+"StormC:lib/" 0 "StormC:lib/logfile" 0 1 1
+0 "_WizardSurface"
+0 0 50 0 50 0 50 0 0
+0 0 0 0 0 0 0 0
+Run
+30 "" "" "" 0
+""
+
+1 "CON://400/180/Storm Console/AUTO/WAIT/SCREEN StormScreen" "RAM:Output" "RAM:Input"
+1 0
+0 0 0 "" ""
+Settings (End)
+Storm Shell Project (Custom Sections End)
+Section
+18 1 -128
+0 0 0 0
+7
+File
+18 "Librarian/iolib.lb"
+"Librarian/iolib.lb"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+2 1 95
+0 1 1 0
+2
+File
+2 "exng:include/iolib/fileio.hpp"
+"exng:include/iolib/fileio.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/iolib/inpdevs.hpp"
+"exng:include/iolib/inpdevs.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/iolib/console.hpp"
+"exng:include/iolib/console.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/plat/amigaos3_68k/iolib/fileio.hpp"
+"exng:include/plat/amigaos3_68k/iolib/fileio.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/plat/amigaos3_68k/iolib/inpdevs.hpp"
+"exng:include/plat/amigaos3_68k/iolib/inpdevs.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/plat/amigaos3_68k/iolib/console.hpp"
+"exng:include/plat/amigaos3_68k/iolib/console.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/iolib/xsfio.hpp"
+"exng:include/iolib/xsfio.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/iolib/inprecord.hpp"
+"exng:include/iolib/inprecord.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "Developer:eXtropia/eXtropiaNG/include/plat/amigaos3_68k/systemlib/base.hpp"
+"Developer:eXtropia/eXtropiaNG/include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+1 1 -128
+0 1 1 0
+4
+File
+1 "exng:libsrc/common/iolib/inputcomm.cpp"
+"exng:libsrc/common/iolib/inputcomm.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/Projects/obj/iolib/inputcomm.o" "exng:libsrc/plat/amigaos3_68k/Projects/obj/iolib/inputcomm.debug"
+""
+1 1
+File
+1 "exng:libsrc/common/iolib/inprecord.cpp"
+"exng:libsrc/common/iolib/inprecord.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/Projects/obj/iolib/inprecord.o" "exng:libsrc/plat/amigaos3_68k/Projects/obj/iolib/inprecord.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/iolib/inpdevs.cpp"
+"exng:libsrc/plat/amigaos3_68k/iolib/inpdevs.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/Projects/obj/iolib/inpdevs.o" "exng:libsrc/plat/amigaos3_68k/Projects/obj/iolib/inpdevs.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/iolib/console.cpp"
+"exng:libsrc/plat/amigaos3_68k/iolib/console.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/Projects/obj/iolib/console.o" "exng:libsrc/plat/amigaos3_68k/Projects/obj/iolib/console.debug"
+""
+1 1
+File
+1 "exng:libsrc/plat/amigaos3_68k/iolib/stream.cpp"
+"exng:libsrc/plat/amigaos3_68k/iolib/stream.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/Projects/obj/iolib/stream.o" "exng:libsrc/plat/amigaos3_68k/Projects/obj/iolib/stream.debug"
+""
+1 1
+File
+1 "exng:libsrc/common/iolib/xsf.cpp"
+"///common/iolib/xsf.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/Projects/obj/iolib/xsf.o" "exng:libsrc/plat/amigaos3_68k/Projects/obj/iolib/xsf.debug"
+""
+1 1
+Storm Shell Project (End)

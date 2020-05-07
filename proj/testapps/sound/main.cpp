@@ -1,0 +1,86 @@
+
+#include <xbase.hpp>
+#include "sound.hpp"
+#include <new>
+
+class SoundApp : public AppBase {
+  private:
+    SoundMixer* mixer;
+
+  protected:
+    // AppBase
+    sint32  initApplication();
+    sint32  runApplication();
+    void    doneApplication();
+
+  public:
+    SoundApp();
+    ~SoundApp();
+};
+
+////////////////////////////////////////////////////////////////////////////////
+
+sint32 AppBase::init()
+{
+  return OK;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+void AppBase::done()
+{
+  puts("finished");
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+AppBase* AppBase::createApplicationInstance()
+{
+  return new(nothrow) SoundApp;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+void AppBase::destroyApplicationInstance(AppBase* app)
+{
+  delete app;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+SoundApp::SoundApp()
+{
+  mixer = new (nothrow) SoundMixer;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+SoundApp::~SoundApp()
+{
+  delete mixer;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+sint32 SoundApp::runApplication()
+{
+  puts("64 iterations (press ctrl-c to interrupt)");
+  mixer->test(64);
+  return OK;
+}
+////////////////////////////////////////////////////////////////////////////////
+
+sint32 SoundApp::initApplication()
+{
+  if (!mixer) {
+    return ERR_RSC;
+  }
+  return mixer->open();
+}
+
+void SoundApp::doneApplication()
+{
+  if (mixer) {
+    mixer->close();
+  }
+}

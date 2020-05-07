@@ -1,0 +1,175 @@
+//****************************************************************************//
+//**                                                                        **//
+//** File:         include/utilitylib/list.hpp                              **//
+//** Description:  Simple container types                                   **//
+//** Comment(s):                                                            **//
+//** Library:      utilitylib                                               **//
+//** Created:      2003-02-09                                               **//
+//** Updated:      2003-02-09                                               **//
+//** Author(s):    Karl Churchill                                           **//
+//** Note(s):                                                               **//
+//** Copyright:    (C)1996-2003, eXtropia Studios                           **//
+//**               Serkan YAZICI, Karl Churchill                            **//
+//**               All Rights Reserved.                                     **//
+//**                                                                        **//
+//****************************************************************************//
+
+#ifndef _EXTROPIA_UTILITYLIB_LIST_HPP
+#define _EXTROPIA_UTILITYLIB_LIST_HPP
+
+#include <xbase.hpp>
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//  _LLBase
+//
+//  Simple linked list of generic pointers, used as a common code base for
+//  the type-safe list based containers. This prevents the usual template
+//  bloat since all the real work is done here and the template is just
+//  used as a type safe wrapper.
+//
+//  The actual link mechanism employed is private to this class. A link is
+//  required for each reference, implying considerable numbers of small link
+//  objects at runtime.
+//
+//  TO DO
+//
+//  Change Link to use prev/next index values (from a common base) rather than
+//  pointers. A statically allocated pool of links can then be set up that grows
+//  in block ingrements as needed. All individual links would be allocated from
+//  his pool keeping memory fragmentation to a minimum.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+#define LINKCACHEINITSIZE	256
+#define LINKCACHEGROWSIZE	128
+
+class _LLBase {
+	private:
+		struct Link {
+			Link* prev;
+			Link* next;
+			void*	item;
+			Link(void* p) : prev(0), next(0), item(p) {}
+		};
+
+		Link*		head;
+		Link*		tail;
+		Link*		crnt;
+		sint32	num;
+
+		Link* createLink(void* p);
+		void	destroyLink(Link* l);
+		Link*	findLink(void *p);
+
+	protected:
+
+		bool 	insertLast(void* p);
+		bool 	insertFirst(void* p);
+		bool 	insertCurr(void* p);
+		// remove operations return Link.item for link removed
+		void*	removeLast();
+		void*	removeFirst();
+		void*	removeCurr();
+		void*	remove(void* p);
+		bool	contains(void* p)		{ return (findLink(p)!=0); }
+		void*	curr()							{ return crnt->item; }
+
+		void*	first()	{
+			if (num>0) {
+				crnt = head->next;
+				return crnt->item;
+			}
+			return 0;
+		}
+
+		void* last() {
+			if (num>0) {
+				crnt = tail->prev;
+				return crnt->item;
+			}
+			return 0;
+		}
+
+		void* next() {
+			if (crnt->next) {
+				crnt = crnt->next;
+				return crnt->item;
+			}
+			return 0;
+		}
+
+		void* prev() {
+			if (crnt->prev) {
+				crnt = crnt->prev;
+				return crnt->item;
+			}
+			return 0;
+		}
+
+		sint32 numLinks()	{ return num; }
+
+	protected:
+		_LLBase();
+		~_LLBase();
+};
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//  RefList<class T*>
+//
+//	Maintains a doubly linked list of references to objects of a specified type.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+template<class T> class RefList : private _LLBase {
+	public:
+
+		T*			first()						{ return (T*)_LLBase::first(); }
+		T*			last()						{ return (T*)_LLBase::last(); }
+		T*			next()						{ return (T*)_LLBase::next(); }
+		T*			prev()						{ return (T*)_LLBase::prev(); }
+		T*			curr()						{ return (T*)_LLBase::curr(); }
+		bool		insertLast(T* t)	{ return _LLBase::insertLast(t); }
+		bool		insertFirst(T* t)	{ return _LLBase::insertFirst(t); }
+		bool		insertCurr(T* t)	{ return _LLBase::insertCurr(t);	}
+		bool		removeFirst()			{ return _LLBase::removeFirst()!=0; }
+		bool		removeLast()			{ return _LLBase::removeLast()!=0; }
+		bool		removeCurr()			{ return _LLBase::removeCurr()!=0; }
+		bool		remove(T* t)			{ return _LLBase::remove(t)!=0; }
+		bool		contains(T* t)		{ return _LLBase::contains(t); }
+		sint32	length()					{ return _LLBase::numLinks(); }
+
+	public:
+		RefList() : _LLBase() {}
+		~RefList() {}
+};
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//  RefQueue<class T*>
+//
+//	Maintains a queue of references to objects of a specified type.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+template<class T> class RefQueue : private _LLBase {
+	public:
+		bool	add(T* t)						{ return _LLBase::insertLast(t); }
+		T*		get()	{
+			T* t = _LLBase::first();
+			if (t)
+				removeFirst();
+			return t;
+		}
+		sint32	length()					{ return _LLBase::length(t); }
+		bool		contains(T* t)		{ return _LLBase::contains(t); }
+
+	public:
+		RefQueue() : _LLBase() {}
+		~RefQueue() {}
+};
+
+#endif
+

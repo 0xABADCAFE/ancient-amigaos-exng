@@ -1,0 +1,51 @@
+512x384
+
+Testing drawLine() : 560 lines took 231 millis, 2424.24 lines/s
+Testing drawLine() : 560 lines took 227 millis, 2466.96 lines/s
+Testing drawLine() : 560 lines took 228 millis, 2456.14 lines/s
+Testing drawLine() : 560 lines took 230 millis, 2434.78 lines/s
+Testing drawLine() : 560 lines took 232 millis, 2413.79 lines/s
+Testing SoftRender::line16() : 560 lines took 124 millis, 4516.12 lines/s
+Testing SoftRender::line16() : 560 lines took 123 millis, 4552.84 lines/s
+Testing SoftRender::line16() : 560 lines took 126 millis, 4444.44 lines/s
+Testing SoftRender::line16() : 560 lines took 124 millis, 4516.12 lines/s
+Testing SoftRender::line16() : 560 lines took 124 millis, 4516.12 lines/s
+
+640x480
+
+Testing drawLine() : 1120 lines took 490 millis, 2285.71 lines/s
+Testing drawLine() : 1120 lines took 489 millis, 2290.38 lines/s
+Testing drawLine() : 1120 lines took 483 millis, 2318.84 lines/s
+Testing drawLine() : 1120 lines took 483 millis, 2318.84 lines/s
+Testing drawLine() : 1120 lines took 491 millis, 2281.05 lines/s
+Testing SoftRender::line16() : 1120 lines took 654 millis, 1712.53 lines/s
+Testing SoftRender::line16() : 1120 lines took 656 millis, 1707.31 lines/s
+Testing SoftRender::line16() : 1120 lines took 657 millis, 1704.71 lines/s
+Testing SoftRender::line16() : 1120 lines took 655 millis, 1709.92 lines/s
+Testing SoftRender::line16() : 1120 lines took 652 millis, 1717.79 lines/s
+
+800x600
+
+Testing drawLine() : 1400 lines took 632 millis, 2215.18 lines/s
+Testing drawLine() : 1400 lines took 635 millis, 2204.72 lines/s
+Testing drawLine() : 1400 lines took 638 millis, 2194.35 lines/s
+Testing drawLine() : 1400 lines took 635 millis, 2204.72 lines/s
+Testing drawLine() : 1400 lines took 638 millis, 2194.35 lines/s
+Testing SoftRender::line16() : 1400 lines took 1130 millis, 1238.93 lines/s
+Testing SoftRender::line16() : 1400 lines took 1132 millis, 1236.74 lines/s
+Testing SoftRender::line16() : 1400 lines took 1128 millis, 1241.13 lines/s
+Testing SoftRender::line16() : 1400 lines took 1129 millis, 1240.03 lines/s
+Testing SoftRender::line16() : 1400 lines took 1127 millis, 1242.23 lines/s
+
+1024x768
+
+Testing drawLine() : 1792 lines took 851 millis, 2105.75 lines/s
+Testing drawLine() : 1792 lines took 856 millis, 2093.45 lines/s
+Testing drawLine() : 1792 lines took 851 millis, 2105.75 lines/s
+Testing drawLine() : 1792 lines took 853 millis, 2100.82 lines/s
+Testing drawLine() : 1792 lines took 852 millis, 2103.28 lines/s
+Testing SoftRender::line16() : 1792 lines took 2025 millis, 884.93 lines/s
+Testing SoftRender::line16() : 1792 lines took 2028 millis, 883.62 lines/s
+Testing SoftRender::line16() : 1792 lines took 2027 millis, 884.06 lines/s
+Testing SoftRender::line16() : 1792 lines took 2076 millis, 863.19 lines/s
+Testing SoftRender::line16() : 1792 lines took 2026 millis, 884.50 lines/s

@@ -1,0 +1,178 @@
+Storm Shell Project (0018)
+Settings (Start)
+C/C++ Environment
+"StormC:include"
+0
+"EXNG:include"
+0
+Includepath (End)
+0 "" 256
+0 ""
+1 0 "makelog.txt"
+""
+0
+0 0
+0
+0 0
+C/C++ Preprozessor
+1 "NDEBUG" ""
+0
+0 "PARANOID" ""
+0
+1 "KARL_FIXES" ""
+0
+0 "_INLINE_INCLUDES" ""
+0
+0 "X_DEBUG" ""
+0
+1 "STORMPRAGMAS" ""
+0
+Defines (End)
+1 1 1
+0 0
+C/C++ Options
+1 0 0 0 0 0 2 1 0 1 0 3 1 0 0
+0 0 0
+0
+0 1 0
+C/C++ Optimizer
+6
+C/C++ Warnings
+1 1 1 1 1 1 0 1
+0 0
+GCC Options (1)
+Defines (End)
+1 0 0 1 0
+3 0 0 1 0 1 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+3 1 0 0
+0 ""
+2 0 0 0
+1 0 0 1 0 1 0 1 0 1
+1 1 0 1 0 1
+0 1 1 1 1 0 0
+1 0 0 0 0
+Assembler
+0 ""
+0 "CON://640/200/Storm Assembler/AUTO/WAIT/SCREEN StormScreen"
+0 0
+0 1 60 0 1 0 0 20 0
+Sets (End)
+0 1 0 0 0 2 1 0 0
+1 1 1 1 0 0 0 0 0
+1 0
+0 0 0 0 0
+Linker
+0 0 "PROGDIR:startup.o" 0 0 1 0 0 0 0
+"StormC:lib/" 0 "StormC:lib/logfile" 0 1 1
+0 "_WizardSurface"
+0 0 50 0 50 0 50 0 0
+0 0 0 0 0 0 0 0
+Run
+30 "" "" "" 0
+""
+test.png
+1 "CON://400/300/Storm Console/AUTO/WAIT/SCREEN StormScreen" "RAM:Output" "RAM:Input"
+1 0
+0 0 0 "" ""
+Settings (End)
+Storm Shell Project (Custom Sections End)
+Section
+1 1 100
+0 1 1 0
+4
+File
+1 "testdisplay.cpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+"testdisplay.cpp"
+"//include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"testdisplay.o" "testdisplay.debug"
+""
+1 1
+Section
+2 1 95
+0 1 1 0
+2
+File
+2 "Developer:eXtropia/eXtropiaNG/include/plat/amigaos3_68k/systemlib/base.hpp"
+"Developer:eXtropia/eXtropiaNG/include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "Developer:eXtropia/eXtropiaNG/include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+10 1 40
+0 0 0 0
+7
+File
+10 "testdisplay"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+9 1 -10
+0 0 0 0
+5
+File
+9 "Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/gfxlib.¶"
+"Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/gfxlib.¶"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+5 1 -50
+0 0 0 0
+7
+File
+5 "exng:libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib"
+"exng:libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+5 "exng:libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib"
+"exng:libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+5 "exng:libsrc/plat/amigaos3_68k/Projects/lib/iolib.lib"
+"exng:libsrc/plat/amigaos3_68k/Projects/lib/iolib.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+5 "exng:libsrc/plat/amigaos3_68k/Projects/lib/utilitylib.lib"
+"exng:libsrc/plat/amigaos3_68k/Projects/lib/utilitylib.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+5 "stormgcc020.lib"
+"stormgcc020.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+5 "amiga.lib"
+"amiga.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Storm Shell Project (End)

@@ -1,0 +1,20 @@
+##base _gleppcBase
+##abi PPC
+##bias 30
+registerGLE(ptr)()
+gleGetJoinStyle()()
+gleSetJoinStyle(int_style)()
+gleGetNumSlices()()
+gleSetNumSlices(int_slices)()
+glePolyCylinder(int_npoints,gleDouble_point_array,float_color_array,gleDouble_radius)()
+glePolyCone(int_npoints,gleDouble_point_array,float_color_array,gleDouble_radius_array)()
+gleExtrusion(int_ncp,gleDouble_contour,gleDouble_cont_normal,gleDouble_up,int_npoints,gleDouble_point_array,float_color_array)()
+gleTwistExtrusion(int_ncp,gleDouble_contour,gleDouble_cont_normal,gleDouble_up,int_npoints,gleDouble_point_array,float_color_array,gleDouble_twist_array)()
+gleSuperExtrusion(int_ncp,gleDouble_contour,gleDouble_cont_normal,gleDouble_up,int_npoints,gleDouble_point_array,float_color_array,gleDouble_xform_array)()
+gleSpiral(int_ncp,gleDouble_contour,gleDouble_cont_normal,gleDouble_up,gleDouble_startRadius,gleDouble_drdTheta,gleDouble_startZ,gleDouble_dzdTheta,gleDouble_startXform,gleDouble_dXformdTheta,gleDouble_startTheta,gleDouble_sweepTheta)()
+gleLathe(int_ncp,gleDouble_contour,gleDouble_cont_normal,gleDouble_up,gleDouble_startRadius,gleDouble_drdTheta,gleDouble_startZ,gleDouble_dzdTheta,gleDouble_startXform,gleDouble_dXformdTheta,gleDouble_startTheta,gleDouble_sweepTheta)()
+gleHelicoid(gleDouble_rToroid,gleDouble_startRadius,gleDouble_drdTheta,gleDouble_startZ,gleDouble_dzdTheta,gleDouble_startXform,gleDouble_dXformdTheta,gleDouble_startTheta,gleDouble_sweepTheta)()
+gleToroid(gleDouble_rToroid,gleDouble_startRadius,gleDouble_drdTheta,gleDouble_startZ,gleDouble_dzdTheta,gleDouble_startXform,gleDouble_dXformdTheta,gleDouble_startTheta,gleDouble_sweepTheta)()
+gleScrew(int_ncp,gleDouble_contour,gleDouble_cont_normal,gleDouble_up,gleDouble_startz,gleDouble_endz,gleDouble_twist)()
+gleTextureMode(int_mode)()
+##end

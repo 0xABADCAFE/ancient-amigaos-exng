@@ -1,0 +1,102 @@
+STORMDOC1
+5;
+DOCE
+Hard failure of DisplayScreenBuffered class on open(), causes hang.
+1,0,1,0,0,0;
+HIST
+3;
+
+
+0,1107743546,0,0;
+
+Hard failure of DisplayScreenBuffered class on open(), causes hang.
+8,1107743620,0,0;
+
+
+7,1107743998,0,0;
+TEXT
+352;
+Need to completely rework the DisplayScreenBuffered class. The existing version
+has developed a serious hard error that causes a hang when the openScreen()
+method is called (possibly earlier).
+
+Planned rework is to take the DisplayScreen class as the basis and gradually
+rebuild from there, with stage testing.
+
+No idea yet where this problem appeared.
+
+DOCE
+Try simple refresh version of DisplayWindow implementation.
+0,0,1,0,0,0;
+HIST
+3;
+
+
+0,1107743657,0,0;
+
+Try simple refresh version of DisplayWindow implementation.
+8,1107743721,0,0;
+
+
+7,1107743890,0,0;
+TEXT
+295;
+Try a simple refresh version of the AmigaOS DisplayWindow implementation.
+This should use intuition messaging to notify the application of a refresh
+event, whereupon the refresh() method should be used. This could save
+considerable amounts of VRAM compared to the existing smart refresh version.
+
+DOCE
+Add DisplayProperties inspector to Display classes
+0,2,0,0,0,0;
+HIST
+4;
+
+
+0,1130552729,0,0;
+
+Update code to use consistent use of const qualifier
+8,1130552746,0,0;
+
+
+2,1130552748,0,0;
+
+Add DisplayProperties inspector to Display classes
+8,1130552774,0,0;
+TEXT
+0;
+
+
+DOCE
+Update code to consistently apply const qualifier
+0,2,0,0,0,0;
+HIST
+3;
+
+
+0,1130552811,0,0;
+
+Update code to consistently apply const qualifier
+8,1130552832,0,0;
+
+
+2,1130552837,0,0;
+TEXT
+0;
+
+
+DOCE
+Update DisplayProperties for windowed mode to give the parent screen info
+0,0,0,0,0,0;
+HIST
+2;
+
+
+0,1130552850,0,0;
+
+Update DisplayProperties for windowed mode to give the parent screen info
+8,1130552889,0,0;
+TEXT
+0;
+
+

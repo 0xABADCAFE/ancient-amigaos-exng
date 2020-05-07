@@ -1,0 +1,15 @@
+"Developer:C_CPlusPlus/StormC/StormSYS/startups/gccstartup.o"
+0,0,0,496,code_68k
+-
+2,4,0,164,bss
+-
+-
+5,4,164,4,bss
+"Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o"
+0,0,496,9484,code_68k
+-
+-
+-
+-
+"Developer:eXtropia/eXtropiaNG/proj/pixeltest/asmstuff.o"
+0,0,9988,200,code_68k

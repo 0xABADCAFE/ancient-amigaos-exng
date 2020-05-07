@@ -1,0 +1,354 @@
+
+#include <xbase.hpp>
+#include <SystemLib/timer.hpp>
+#include <GfxLib/gfxapp.hpp>
+extern "C" {
+	#include <string.h>
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+class GfxTestApp : public AppBase, public Windowed, Gfx2D {
+	private:
+		MilliClock				timer;
+		sint32						width;
+		sint32						height;
+		sint32						rowBytes;
+		P_F								testDataFormat;
+		void*							testData;
+		bool							quit;
+
+		sint32			createTestData();
+		uint32			testBus();
+
+	public:
+		sint32	initApplication();
+		sint32	runApplication();
+		void		keyPressNonPrintable(sint32 code);
+
+	public:
+		GfxTestApp();
+		~GfxTestApp();
+};
+
+////////////////////////////////////////////////////////////////////////////////
+
+sint32 AppBase::init()
+{
+	return GfxLib::init();
+}
+
+void AppBase::done()
+{
+	GfxLib::done();
+}
+
+AppBase* AppBase::createApplicationInstance()
+{
+	return new GfxTestApp;
+}
+
+void AppBase::destroyApplicationInstance(AppBase* app)
+{
+	delete app;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+GfxTestApp::GfxTestApp() : Windowed(InputFocus::IKEYPRESS), quit(false)
+{
+	width		= Clamp::integer(getInteger("width", false), 160, 1024);
+	height	= Clamp::integer(getInteger("height", false), 120, 768);
+	puts("\n--- GfxTestApp constructed ---\n");
+}
+
+GfxTestApp::~GfxTestApp()
+{
+	close();
+	if (testData)
+		Mem::free(testData);
+	puts("\n---- GfxTestApp destroyed ----\n");
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+void GfxTestApp::keyPressNonPrintable(sint32 code)
+{
+	switch (code)
+	{
+		case Key::ESC:
+			quit = true;
+			break;
+
+		default:
+			break;
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+sint32 GfxTestApp::initApplication()
+{
+	const char*	s	= getString("fmt", false);
+	if (s)
+	{
+		if (stricmp(s, "RGB15B")==0)
+			testDataFormat = Pixel::RGB15B;
+		else if (stricmp(s, "BGR15B")==0)
+			testDataFormat = Pixel::BGR15B;
+		else if (stricmp(s, "RGB15L")==0)
+			testDataFormat = Pixel::RGB15L;
+		else if (stricmp(s, "BGR15L")==0)
+			testDataFormat = Pixel::BGR15L;
+		else if (stricmp(s, "RGB16B")==0)
+			testDataFormat = Pixel::RGB16B;
+		else if (stricmp(s, "BGR16B")==0)
+			testDataFormat = Pixel::BGR16B;
+		else if (stricmp(s, "RGB16L")==0)
+			testDataFormat = Pixel::RGB16L;
+		else if (stricmp(s, "BGR16L")==0)
+			testDataFormat = Pixel::BGR16L;
+		else if (stricmp(s, "RGB24P")==0)
+			testDataFormat = Pixel::RGB24P;
+		else if (stricmp(s, "BGR24P")==0)
+			testDataFormat = Pixel::BGR24P;
+		else if (stricmp(s, "ARGB32B")==0)
+			testDataFormat = Pixel::ARGB32B;
+		else if (stricmp(s, "ABGR32B")==0)
+			testDataFormat = Pixel::ABGR32B;
+		else if (stricmp(s, "ARGB32L")==0)
+			testDataFormat = Pixel::ARGB32L;
+		else if (stricmp(s, "ABGR32L")==0)
+			testDataFormat = Pixel::ABGR32L;
+		else
+			testDataFormat = Pixel::RGB16B;
+	}
+	else
+		testDataFormat = Pixel::RGB16B;
+
+	if (open(width, height, Pixel::BPP16, "Software pixel conversion")!=OK)
+		return ERR_RSC_UNAVAILABLE;
+
+	return createTestData();
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+sint32 GfxTestApp::createTestData()
+{
+	switch (testDataFormat)
+	{
+		case Pixel::RGB15B:
+		case Pixel::RGB15L:
+		case Pixel::BGR15B:
+		case Pixel::BGR15L: {
+			testData = Mem::alloc(width*height*sizeof(uint16), false, Mem::ALIGN_CACHE);
+			if (!testData)
+				return ERR_NO_FREE_STORE;
+			else
+			{
+				rowBytes = width*sizeof(uint16);
+				ruint16* p = (uint16*)testData;
+				rfloat32 redStep = 31.0/(float32)height;
+				rfloat32 blueStep = 31.0/(float32)width;
+				rfloat32 greenStep = 31.0/(float32)width;
+				rfloat32 red=0;
+				for (rsint32 y = 0; y<height; y++)
+				{
+					rfloat32 blue=0;
+					rfloat32 green = 31.0;
+					for(rsint32 x = 0; x<width; x++)
+					{
+						// write as RGB16
+						*p++ = ((uint16)red)<<10 | ((uint16)green)<<5 | (uint16)blue;
+						blue+=blueStep;
+						green-=greenStep;
+					}
+					red += redStep;
+				}
+			}
+			return OK;
+		}
+		break;
+
+		case Pixel::RGB16B:
+		case Pixel::RGB16L:
+		case Pixel::BGR16B:
+		case Pixel::BGR16L: {
+			testData = Mem::alloc(width*height*sizeof(uint16), false, Mem::ALIGN_CACHE);
+			if (!testData)
+				return ERR_NO_FREE_STORE;
+			else
+			{
+				rowBytes = width*sizeof(uint16);
+				ruint16* p = (uint16*)testData;
+				rfloat32 redStep = 31.0/(float32)height;
+				rfloat32 blueStep = 31.0/(float32)width;
+				rfloat32 greenStep = 63.0/(float32)width;
+				rfloat32 red=0;
+				for (rsint32 y = 0; y<height; y++)
+				{
+					rfloat32 blue=0;
+					rfloat32 green = 63.0;
+					for(rsint32 x = 0; x<width; x++)
+					{
+						// write as RGB16
+						*p++ = ((uint16)red)<<11 | ((uint16)green)<<5 | (uint16)blue;
+						blue+=blueStep;
+						green-=greenStep;
+					}
+					red += redStep;
+				}
+			}
+			return OK;
+		}
+		break;
+
+		case Pixel::RGB24P:
+		case Pixel::BGR24P: {
+			testData = Mem::alloc(width*height*3, false, Mem::ALIGN_CACHE);
+			if (!testData)
+				return ERR_NO_FREE_STORE;
+			else
+			{
+				rowBytes = width*3;
+				ruint8* p = (uint8*)testData;
+				rfloat32 redStep = 255.0/(float32)height;
+				rfloat32 blueStep = 255.0/(float32)width;
+				rfloat32 greenStep = 255.0/(float32)width;
+				rfloat32 red=0;
+				for (rsint32 y = 0; y<height; y++)
+				{
+					rfloat32 blue=0;
+					rfloat32 green = 255.0;
+					for(rsint32 x = 0; x<width; x++)
+					{
+						*p++ = (uint32)red;
+						*p++ = (uint32)green;
+						*p++ = (uint32)blue;
+						blue+=blueStep;
+						green-=greenStep;
+					}
+					red += redStep;
+				}
+			}
+			return OK;
+		}
+		break;
+
+		case Pixel::ARGB32B:
+		case Pixel::ARGB32L:
+		case Pixel::ABGR32B:
+		case Pixel::ABGR32L: {
+			testData = Mem::alloc(width*height*sizeof(uint32), false, Mem::ALIGN_CACHE);
+			if (!testData)
+				return ERR_NO_FREE_STORE;
+			else
+			{
+				rowBytes = width*sizeof(uint32);
+				ruint32* p = (uint32*)testData;
+				rfloat32 redStep = 255.0/(float32)height;
+				rfloat32 blueStep = 255.0/(float32)width;
+				rfloat32 greenStep = 255.0/(float32)width;
+				rfloat32 red=0;
+				for (rsint32 y = 0; y<height; y++)
+				{
+					rfloat32 blue=0;
+					rfloat32 green = 255.0;
+					for(rsint32 x = 0; x<width; x++)
+					{
+						// write as RGB16
+						*p++ = ((uint32)red)<<16 | ((uint32)green)<<8 | (uint32)blue;
+						blue+=blueStep;
+						green-=greenStep;
+					}
+					red += redStep;
+				}
+			}
+			return OK;
+		}
+		break;
+
+		default:
+			rowBytes = width;
+			return ERR_VALUE;
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+#define REPS 64
+
+uint32 GfxTestApp::testBus()
+{
+	float64 timeTaken = 0;
+	Surface* t = getDrawSurface();
+	size_t	 totPix = (height*(width+t->getModulus()));
+
+	for (uint32 i=0; i<REPS; i++)
+	{
+		void* d = t->lockData();
+		if (d)
+		{
+			timer.set();
+			Mem::set32(d, i<<16|i, totPix>>1);
+			timeTaken += timer.elapsed();
+			t->unlockData();
+		}
+		refresh();
+	}
+	if (timeTaken > 0.0)
+		return (uint32)((((float64)totPix)*1000.0*REPS)/timeTaken);
+	return 1;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+sint32 GfxTestApp::runApplication()
+{
+	puts("\n----- GfxTestApp running -----\n");
+
+
+	Surface* t = getDrawSurface();
+	if (t)
+	{
+		sint32 m = t->getModulus();
+		printf("W:%d, H:%d, M:%d\n", width, height, m);
+
+		printf("Testing write (32-bit) : ");
+		uint32 maxSpeed = testBus();
+		printf("%lu pix/sec [%6.2lf MB/sec]\n", maxSpeed, (float64)(maxSpeed*sizeof(uint16))/1048576.0);
+
+		Gfx2D::PixConv conv = getConversion(t->getFormat(), testDataFormat);
+		ruint16* d = (uint16*)t->lockData();
+		if (d)
+		{
+			timer.set();
+			ruint8 *s = (uint8*)testData;
+			for (rsint32 y=0; y<height; y++, d+=(width+m), s+=rowBytes)
+				conv(d, s, width);
+			uint32 cTime = timer.elapsed();
+			t->unlockData();
+
+			uint32 testSpeed = (uint32)((float64)(1000*width*height)/(float64)cTime);
+
+			printf("Conversion took %lu ms : %lu pix/sec : %5.2lf efficient\n", cTime,
+						 testSpeed, 100.0*(float64)testSpeed/(float64)maxSpeed);
+		}
+		else
+			puts("Couldn't lock draw surface");
+	}
+	refresh();
+
+	while (!quit)
+	{
+		while (handleEvent())
+			;
+		waitEvent();
+	}
+
+	return 0;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+

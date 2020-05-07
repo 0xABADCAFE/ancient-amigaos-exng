@@ -1,0 +1,105 @@
+Storm Shell Project (0013)
+Settings (Start)
+C/C++ Environment
+"StormC:include"
+"EXNG:include"
+Includepath (End)
+0 "" 256
+0 ""
+C/C++ Preprozessor
+1 "NDEBUG" ""
+0 "PARANOID" ""
+1 "KARL_FIXES" ""
+0 "_INLINE_INCLUDES" ""
+0 "X_DEBUG" ""
+1 "STORMPRAGMAS" ""
+Defines (End)
+1 1 1
+C/C++ Options
+1 0 0 0 0 0 0 1 0 1 0 3 1 0 0
+C/C++ Optimizer
+6
+C/C++ Warnings
+1 1 1 1 1 1 0 1
+Assembler
+0 ""
+0 "CON://640/200/Storm Assembler/AUTO/WAIT/SCREEN StormScreen"
+0 0
+0 1 60 0 1 0 0 20 0
+Sets (End)
+0 1 0 0 0 2 1 0 0
+1 1 1 1 0 0 0 0 0
+1 0
+0 0 0 0 0
+Linker
+0 0 "PROGDIR:startup.o" 0 0 1 0 0 0 0
+"StormC:lib/" 0 "StormC:lib/logfile" 0 1 1
+0 "_WizardSurface"
+0 0 50 0 50 0 50 0 0
+0 0 0 0 0 0 0 0
+Run
+30 "" "" "" 0
+""
+width 640 height 480
+1 "CON://400/300/Storm Console/AUTO/WAIT/SCREEN StormScreen" "RAM:Output" "RAM:Input"
+1 0
+0 0 0 "" ""
+Settings (End)
+File
+1 "scribble.cpp"
+"scribble.cpp"
+Storm Shell Project (Dependencies)
+"scribble.o" "scribble.debug"
+""
+"scribble.o" "scribble.debug"
+Section
+1 1 100
+File
+10 "scribble"
+"test"
+"scribble"
+Storm Shell Project (Dependencies)
+"" ""
+""
+"scribble.link"
+Section
+10 1 40
+File
+5 "EXNG:libsrc/plat/amigaos3_68k/Projects/lib/SystemLib.lib"
+"EXNG:libsrc/plat/amigaos3_68k/Projects/lib/SystemLib.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+5 "EXNG:libsrc/plat/amigaos3_68k/Projects/lib/GfxLib.lib"
+"EXNG:libsrc/plat/amigaos3_68k/Projects/lib/GfxLib.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+5 "exng:libsrc/plat/amigaos3_68k/Projects/lib/IOLib.lib"
+"exng:libsrc/plat/amigaos3_68k/Projects/lib/IOLib.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+5 "storm020_far.lib"
+"storm020_far.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+5 "stormamiga_040.lib"
+"stormamiga_040.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+5 "stormamiga.lib"
+"stormamiga.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+Section
+5 1 -50
+Storm Shell Project (End)

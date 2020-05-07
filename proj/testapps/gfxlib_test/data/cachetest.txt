@@ -1,0 +1,72 @@
+[ Info    ] SystemLib initialised
+[ Info    ] Mem initialized
+[ Info    ] Rasterizer:: initialized
+
+--- GfxTestApp constructed ---
+
+Surface info : W:800, H:600, M:0
+
+----- GfxTestApp running -----
+
+Mesh1 : 64 x 64 [800 x 600] took 333 ms
+Mesh2 : 64 x 64 [800 x 600] took 147 ms
+[ Info    ] Rasterizer:: finalized
+
+---- GfxTestApp destroyed ----
+
+[ Info    ] Mem finalized
+[ Info    ] SystemLib finalized
+[ Info    ] SystemLib initialised
+[ Info    ] Mem initialized
+[ Info    ] Rasterizer:: initialized
+
+--- GfxTestApp constructed ---
+
+Surface info : W:800, H:600, M:0
+
+----- GfxTestApp running -----
+
+Mesh1 : 64 x 64 [800 x 600] took 1149 ms
+Mesh2 : 64 x 64 [800 x 600] took 475 ms
+[ Info    ] Rasterizer:: finalized
+
+---- GfxTestApp destroyed ----
+
+[ Info    ] Mem finalized
+[ Info    ] SystemLib finalized
+[ Info    ] SystemLib initialised
+[ Info    ] Mem initialized
+[ Info    ] Rasterizer:: initialized
+
+--- GfxTestApp constructed ---
+
+Surface info : W:800, H:600, M:0
+
+----- GfxTestApp running -----
+
+Mesh1 : 64 x 64 [800 x 600] took 758 ms
+Mesh2 : 64 x 64 [800 x 600] took 312 ms
+[ Info    ] Rasterizer:: finalized
+
+---- GfxTestApp destroyed ----
+
+[ Info    ] Mem finalized
+[ Info    ] SystemLib finalized
+[ Info    ] SystemLib initialised
+[ Info    ] Mem initialized
+[ Info    ] Rasterizer:: initialized
+
+--- GfxTestApp constructed ---
+
+Surface info : W:800, H:600, M:0
+
+----- GfxTestApp running -----
+
+Mesh1 : 64 x 64 [800 x 600] took 1628 ms
+Mesh2 : 64 x 64 [800 x 600] took 660 ms
+[ Info    ] Rasterizer:: finalized
+
+---- GfxTestApp destroyed ----
+
+[ Info    ] Mem finalized
+[ Info    ] SystemLib finalized

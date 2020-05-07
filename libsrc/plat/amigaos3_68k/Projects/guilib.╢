@@ -1,0 +1,174 @@
+Storm Shell Project (0018)
+Settings (Start)
+C/C++ Environment
+"StormC:include"
+0
+"EXNG:include"
+0
+Includepath (End)
+0 "" 256
+1 "EXNG:libsrc/plat/amigaos3_68k/Projects/obj/guilib"
+1 0 "makelog.txt"
+""
+0
+0 0
+0
+0 0
+C/C++ Preprozessor
+1 "NDEBUG" ""
+0
+0 "_INLINE_INCLUDES" ""
+0
+1 "STORMPRAGMAS" ""
+0
+Defines (End)
+1 1 1
+0 0
+C/C++ Options
+1 0 0 0 0 0 0 1 0 1 0 3 1 0 0
+0 0 0
+0
+0 1 0
+C/C++ Optimizer
+6
+C/C++ Warnings
+1 1 1 1 1 1 0 1
+0 0
+GCC Options (1)
+Defines (End)
+1 0 0 1 0
+3 0 1 1 0 1 0
+1 0 0 0 1
+1 0 0 0 1 1 0
+3 1 0 0
+1 ""
+2 1 1 0
+1 0 0 1 0 1 0 1 0 1
+1 1 0 1 0 1
+0 1 1 1 1 0 0
+1 0 0 0 0
+Assembler
+0 ""
+0 "CON://640/200/Storm Assembler/AUTO/WAIT/SCREEN StormScreen"
+0 0
+0 1 60 0 1 0 0 20 0
+Sets (End)
+0 1 0 0 0 2 1 0 0
+1 1 1 1 0 0 0 0 0
+1 0
+0 0 0 0 0
+Linker
+1 0 "PROGDIR:startup.o" 0 0 1 0 0 0 0
+"StormC:lib/" 0 "StormC:lib/logfile" 0 1 1
+0 "_WizardSurface"
+0 0 50 0 50 0 50 0 0
+0 0 0 0 0 0 0 0
+Run
+30 "" "" "" 0
+""
+
+1 "CON://400/180/Storm Console/AUTO/WAIT/SCREEN StormScreen" "RAM:Output" "RAM:Input"
+1 0
+0 0 0 "" ""
+Settings (End)
+Storm Shell Project (Custom Sections End)
+Section
+6 1 10
+0 1 1 0
+9
+File
+6 "EXNG:doc/GUI.TXT"
+"EXNG:doc/GUI.TXT"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+18 1 -128
+0 0 0 0
+7
+File
+18 "EXNG:libsrc/plat/amigaos3_68k/Projects/Librarian/guilib.lb"
+"EXNG:libsrc/plat/amigaos3_68k/Projects/Librarian/guilib.lb"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+2 1 95
+0 1 1 0
+2
+File
+2 "exng:include/guilib/guibase.hpp"
+"exng:include/guilib/abstract.hpp"
+"exng:include/guilib/guibase.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/guilib/abstract.hpp"
+"exng:include/guilib/abstract.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/iolib/inpdevs.hpp"
+"exng:include/iolib/inpdevs.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/gfxlib/draw.hpp"
+"exng:include/gfxlib/draw.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "Developer:eXtropia/eXtropiaNG/include/plat/amigaos3_68k/systemlib/base.hpp"
+"Developer:eXtropia/eXtropiaNG/include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "Developer:eXtropia/eXtropiaNG/include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+1 1 -128
+0 1 1 0
+4
+File
+1 "exng:libsrc/common/guilib/guiobject.cpp"
+"///common/guilib/guiobject.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"EXNG:libsrc/plat/amigaos3_68k/Projects/obj/guilib/guiobject.o" "EXNG:libsrc/plat/amigaos3_68k/Projects/obj/guilib/guiobject.debug"
+""
+1 1
+File
+1 "exng:libsrc/common/guilib/guibase.cpp"
+"///common/guilib/guibase.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"EXNG:libsrc/plat/amigaos3_68k/Projects/obj/guilib/guibase.o" "EXNG:libsrc/plat/amigaos3_68k/Projects/obj/guilib/guibase.debug"
+""
+1 1
+File
+1 "exng:libsrc/common/guilib/abstract.cpp"
+"///common/guilib/abstract.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+"////include/gfxlib/gfx_private.hpp"
+Storm Shell Project (Dependencies)
+"EXNG:libsrc/plat/amigaos3_68k/Projects/obj/guilib/abstract.o" "EXNG:libsrc/plat/amigaos3_68k/Projects/obj/guilib/abstract.debug"
+""
+1 1
+Storm Shell Project (End)

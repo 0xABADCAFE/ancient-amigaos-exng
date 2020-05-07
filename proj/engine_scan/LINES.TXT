@@ -1,0 +1,166 @@
+// THE EXTREMELY FAST LINE ALGORITHM Variation D (Addition Fixed Point)
+void myLine(SURFACE* surface, int x, int y, int x2, int y2) {
+	bool yLonger=false;
+	int incrementVal, endVal;
+	int shortLen=y2-y;
+	int longLen=x2-x;
+	if (abs(shortLen)>abs(longLen)) {
+		int swap=shortLen;
+		shortLen=longLen;
+		longLen=swap;
+		yLonger=true;
+	}
+	endVal=longLen;
+	if (longLen<0) {
+		incrementVal=-1;
+		longLen=-longLen;
+	} else incrementVal=1;
+	int decInc;
+	if (longLen==0) decInc=0;
+	else decInc = (shortLen << 16) / longLen;
+	int j=0;
+	if (yLonger) {	
+		for (int i=0;i!=endVal;i+=incrementVal) {
+			myPixel(surface,x+(j >> 16),y+i);	
+			j+=decInc;
+		}
+	} else {
+		for (int i=0;i!=endVal;i+=incrementVal) {
+			myPixel(surface,x+i,y+(j >> 16));
+			j+=decInc;
+		}
+	}
+
+
+}
+
+// THE EXTREMELY FAST LINE ALGORITHM Variation E (Addition Fixed Point PreCalc)
+void myLine(SURFACE* surface, int x, int y, int x2, int y2) {
+   	bool yLonger=false;
+	int shortLen=y2-y;
+	int longLen=x2-x;
+	if (abs(shortLen)>abs(longLen)) {
+		int swap=shortLen;
+		shortLen=longLen;
+		longLen=swap;				
+		yLonger=true;
+	}
+	int decInc;
+	if (longLen==0) decInc=0;
+	else decInc = (shortLen << 16) / longLen;
+
+	if (yLonger) {
+		if (longLen>0) {
+			longLen+=y;
+			for (int j=0x8000+(x<<16);y<=longLen;++y) {
+				myPixel(surface,j >> 16,y);	
+				j+=decInc;
+			}
+			return;
+		}
+		longLen+=y;
+		for (int j=0x8000+(x<<16);y>=longLen;--y) {
+			myPixel(surface,j >> 16,y);	
+			j-=decInc;
+		}
+		return;	
+	}
+
+	if (longLen>0) {
+		longLen+=x;
+		for (int j=0x8000+(y<<16);x<=longLen;++x) {
+			myPixel(surface,x,j >> 16);
+			j+=decInc;
+		}
+		return;
+	}
+	longLen+=x;
+	for (int j=0x8000+(y<<16);x>=longLen;--x) {
+		myPixel(surface,x,j >> 16);
+		j-=decInc;
+	}
+
+}
+
+
+
+//////////////////////////
+
+    public void lineFast(int x0, int y0, int x1, int y1, Color color)
+    {
+        int pix = color.getRGB();
+        int dy = y1 - y0;
+        int dx = x1 - x0;
+        int stepx, stepy;
+
+        if (dy < 0) { dy = -dy;  stepy = -raster.width; } else { stepy = raster.width; }
+        if (dx < 0) { dx = -dx;  stepx = -1; } else { stepx = 1; }
+        dy <<= 1;
+        dx <<= 1;
+
+        y0 *= raster.width;
+        y1 *= raster.width;
+        raster.pixel[x0+y0] = pix;
+        if (dx > dy) {
+            int fraction = dy - (dx >> 1);
+            while (x0 != x1) {
+                if (fraction >= 0) {
+                    y0 += stepy;
+                    fraction -= dx;
+                }
+                x0 += stepx;
+                fraction += dy;
+                raster.pixel[x0+y0] = pix;
+            }
+        } else {
+            int fraction = dx - (dy >> 1);
+            while (y0 != y1) {
+                if (fraction >= 0) {
+                    x0 += stepx;
+                    fraction -= dy;
+                }
+                y0 += stepy;
+                fraction += dx;
+                raster.pixel[x0+y0] = pix;
+            }
+        }
+    }
+
+
+////////////////////////////////////
+
+
+
+
+    public void circleSym8(int xCenter, int yCenter, int radius, Color c)
+    {
+        int pix = c.getRGB();
+        int x, y, r2;
+
+        r2 = radius * radius;
+        raster.setPixel(pix, xCenter, yCenter + radius);
+        raster.setPixel(pix, xCenter, yCenter - radius);
+        raster.setPixel(pix, xCenter + radius, yCenter);
+        raster.setPixel(pix, xCenter - radius, yCenter);
+        x = 1;
+        y = (int) (Math.sqrt(r2 - 1) + 0.5);
+        while (x < y) {
+            raster.setPixel(pix, xCenter + x, yCenter + y);
+            raster.setPixel(pix, xCenter + x, yCenter - y);
+            raster.setPixel(pix, xCenter - x, yCenter + y);
+            raster.setPixel(pix, xCenter - x, yCenter - y);
+            raster.setPixel(pix, xCenter + y, yCenter + x);
+            raster.setPixel(pix, xCenter + y, yCenter - x);
+            raster.setPixel(pix, xCenter - y, yCenter + x);
+            raster.setPixel(pix, xCenter - y, yCenter - x);
+            x += 1;
+            y = (int) (Math.sqrt(r2 - x*x) + 0.5);
+        }
+        if (x == y) {
+            raster.setPixel(pix, xCenter + x, yCenter + y);
+            raster.setPixel(pix, xCenter + x, yCenter - y);
+            raster.setPixel(pix, xCenter - x, yCenter + y);
+            raster.setPixel(pix, xCenter - x, yCenter - y);
+        }
+    }
+

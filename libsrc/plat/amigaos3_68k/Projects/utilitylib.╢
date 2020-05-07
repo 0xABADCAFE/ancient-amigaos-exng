@@ -1,0 +1,213 @@
+Storm Shell Project (0018)
+Settings (Start)
+C/C++ Environment
+"StormC:include"
+0
+"exng:include"
+0
+Includepath (End)
+0 "" 256
+1 "exng:libsrc/plat/amigaos3_68k/Projects/obj/utilitylib"
+1 0 "makelog.txt"
+""
+0
+0 0
+0
+0 0
+C/C++ Preprozessor
+1 "NDEBUG" ""
+0
+0 "_INLINE_INCLUDES" ""
+0
+0 "X_DEBUG" ""
+0
+1 "STORMPRAGMAS" ""
+0
+Defines (End)
+1 1 1
+0 0
+C/C++ Options
+1 0 0 0 0 0 2 1 0 1 0 3 1 0 0
+0 0 0
+0
+0 1 0
+C/C++ Optimizer
+6
+C/C++ Warnings
+1 1 1 1 1 1 0 1
+0 0
+GCC Options (1)
+Defines (End)
+1 0 0 1 0
+3 0 1 1 0 1 0
+1 0 0 0 1
+1 0 0 0 1 1 0
+3 1 0 0
+1 ""
+2 1 1 0
+1 0 0 1 0 1 0 1 0 1
+1 1 0 1 0 1
+0 1 1 1 1 0 0
+1 0 0 0 0
+Assembler
+0 ""
+0 "CON://640/200/Storm Assembler/AUTO/WAIT/SCREEN StormScreen"
+0 0
+0 1 60 0 1 0 0 20 0
+Sets (End)
+0 1 0 0 0 2 1 0 0
+1 1 1 1 0 0 0 0 0
+1 0
+0 0 0 0 0
+Linker
+1 0 "PROGDIR:startup.o" 0 0 1 0 0 0 0
+"StormC:lib/" 0 "StormC:lib/logfile" 0 1 1
+0 "_WizardSurface"
+0 0 50 0 50 0 50 0 0
+0 0 0 0 0 0 0 0
+Run
+30 "" "" "" 0
+""
+
+1 "CON://400/180/Storm Console/AUTO/WAIT/SCREEN StormScreen" "RAM:Output" "RAM:Input"
+1 0
+0 0 0 "" ""
+Settings (End)
+Storm Shell Project (Custom Sections End)
+Section
+18 1 65
+0 0 0 0
+7
+File
+18 "exng:libsrc/plat/amigaos3_68k/Projects/Librarian/utilitylib.lb"
+"exng:libsrc/plat/amigaos3_68k/Projects/Librarian/utilitylib.lb"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+2 1 -128
+0 1 1 0
+2
+File
+2 "exng:include/utilitylib/rangedint.hpp"
+"exng:include/utilitylib/rangedint.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/utilitylib/quickmath.hpp"
+"exng:include/utilitylib/quickmath.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/utilitylib/final.hpp"
+"exng:include/utilitylib/final.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/utilitylib/keys.hpp"
+"exng:include/utilitylib/keys.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/utilitylib/array.hpp"
+"exng:include/utilitylib/array.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/utilitylib/bitarray.hpp"
+"exng:include/utilitylib/bitarray.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/utilitylib/pool.hpp"
+"exng:include/utilitylib/pool.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/utilitylib/list.hpp"
+"exng:include/utilitylib/list.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/utilitylib/listbase.hpp"
+"exng:include/utilitylib/listbase.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "Developer:eXtropia/eXtropiaNG/include/plat/amigaos3_68k/systemlib/base.hpp"
+"Developer:eXtropia/eXtropiaNG/include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "exng:include/utilitylib/poll.hpp"
+"exng:include/utilitylib/poll.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+1 1 -128
+0 1 1 0
+4
+File
+1 "exng:libsrc/common/utilitylib/quickmath.cpp"
+"///common/utilitylib/quickmath.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/Projects/obj/utilitylib/quickmath.o" "exng:libsrc/plat/amigaos3_68k/Projects/obj/utilitylib/quickmath.debug"
+""
+1 1
+File
+1 "exng:libsrc/common/utilitylib/keys.cpp"
+"///common/utilitylib/keys.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/Projects/obj/utilitylib/keys.o" "exng:libsrc/plat/amigaos3_68k/Projects/obj/utilitylib/keys.debug"
+""
+1 1
+File
+1 "exng:libsrc/common/utilitylib/poll.cpp"
+"///common/utilitylib/poll.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/Projects/obj/utilitylib/poll.o" "exng:libsrc/plat/amigaos3_68k/Projects/obj/utilitylib/poll.debug"
+""
+1 1
+File
+1 "exng:libsrc/common/utilitylib/list.cpp"
+"///common/utilitylib/list.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/Projects/obj/utilitylib/list.o" "exng:libsrc/plat/amigaos3_68k/Projects/obj/utilitylib/list.debug"
+""
+1 1
+File
+1 "exng:libsrc/common/utilitylib/pool.cpp"
+"///common/utilitylib/pool.cpp"
+"////include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"exng:libsrc/plat/amigaos3_68k/Projects/obj/utilitylib/pool.o" "exng:libsrc/plat/amigaos3_68k/Projects/obj/utilitylib/pool.debug"
+""
+1 1
+Storm Shell Project (End)

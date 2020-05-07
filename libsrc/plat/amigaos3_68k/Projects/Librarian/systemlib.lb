@@ -1,0 +1,12 @@
+StormLibrarian Document (0003)
+lib/systemlib.lib
+1 0 0
+obj/systemlib/xbase.o
+obj/systemlib/base.o
+obj/systemlib/memopt.o
+obj/systemlib/cpu.o
+obj/systemlib/timer.o
+obj/systemlib/thread.o
+obj/systemlib/cpuopt.o
+obj/systemlib/fpuopt.o
+EOD

@@ -1,0 +1,223 @@
+//****************************************************************************//
+//**                                                                        **//
+//** File:         libsrc/common/utilitylib/list.cpp                        **//
+//** Description:  Simple containers                                        **//
+//** Comment(s):                                                            **//
+//** Library:      utilitylib                                               **//
+//** Created:      2003-02-09                                               **//
+//** Updated:      2003-02-09                                               **//
+//** Author(s):    Karl Churchill                                           **//
+//** Note(s):                                                               **//
+//** Copyright:    (C)1996-2003, eXtropia Studios                           **//
+//**               Serkan YAZICI, Karl Churchill                            **//
+//**               All Rights Reserved.                                     **//
+//**                                                                        **//
+//****************************************************************************//
+
+#include <utilitylib/list.hpp>
+
+
+_LLBase::_LLBase() : num(0), head(0), tail(0)
+{
+	head = createLink(0);
+	tail = createLink(0);
+	if (head && tail)
+	{
+		head->prev = 0;
+		head->next = tail;
+		tail->prev = head;
+		tail->next = 0;
+		crnt = tail;
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+_LLBase::~_LLBase()
+{
+	Link* t = head->next;
+	while (t && t!=(tail))
+	{
+		Link* nt = t->next;
+		destroyLink(t);
+		t = nt;
+	}
+	destroyLink(head);
+	destroyLink(tail);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+_LLBase::Link* _LLBase::createLink(void *p)
+{
+	return new Link(p);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+void _LLBase::destroyLink(_LLBase::Link* l)
+{
+	if (l) delete l;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+_LLBase::Link* _LLBase::findLink(void *p)
+{
+	if (p && num>0)
+	{	// search from both ends towards centre
+		register Link* rev = tail->prev;
+		register Link* fwd = head->next;
+		rsint32 n = num+1;
+		while (n>0)
+		{
+			if (fwd->item == p)
+				return fwd;
+			n--;
+			fwd = fwd->next;
+
+			if (rev->item == p)
+				return rev;
+			n--;
+			rev = rev->prev;
+		}
+	}
+	return 0;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+bool _LLBase::insertLast(void* p)
+{	// insert before list tail
+	if (p)
+	{
+		Link* add = createLink(p);
+		if (add)
+		{
+			add->prev				= tail->prev;
+			add->prev->next = add;
+			add->next				= tail;
+			tail->prev			= add;
+			num++;
+			return true;
+		}
+	}
+	return false;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+bool _LLBase::insertFirst(void* p)
+{	// insert after list head
+	if (p)
+	{
+		Link* add = createLink(p);
+		if (add)
+		{
+			add->next					= head->next;
+			head->next->prev	= add;
+			add->prev					= head;
+			head->next				= add;
+			num++;
+			return true;
+		}
+	}
+	return false;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+bool _LLBase::insertCurr(void* p)
+{	// insert before list crnt
+	if (p)
+	{
+		Link* add = createLink(p);
+		if (add)
+		{
+			Link* pre		= crnt->prev;
+			crnt->prev	= add;
+			add->next		= crnt;
+			add->prev		= pre;
+			pre->next		= add;
+			num++;
+			return true;
+		}
+	}
+	return false;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+void* _LLBase::removeLast()
+{
+	if (num>0)
+	{
+		Link*	p						= tail->prev;
+		void*	o						= p->item;
+		tail->prev				= p->prev;
+		tail->prev->next	= tail;
+
+		if (crnt == p)
+			crnt = tail->prev;
+
+		destroyLink(p);
+		num--;
+		return o;
+	}
+	return 0;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+void* _LLBase::removeFirst()
+{
+	if (num>0)
+	{
+		Link*	p						= head->next;
+		void*	o						= p->item;
+		head->next				= p->next;
+		head->next->prev	= head;
+		if (crnt == p)
+			crnt = head->next;
+		destroyLink(p);
+		num--;
+		return o;
+	}
+	return 0;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+void* _LLBase::removeCurr()
+{
+	if (num>0)
+	{
+		Link* p				= crnt;
+		void*	o				= p->item;
+		p->prev->next	= p->next;
+		p->next->prev	= p->prev;
+		crnt					= crnt->next;
+		destroyLink(p);
+		num--;
+		return o;
+	}
+	return 0;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+void* _LLBase::remove(void* p)
+{
+	Link* t = findLink(p);
+	if (t)
+	{
+		t->prev->next = t->next;
+		t->next->prev = t->prev;
+		destroyLink(t);
+		num--;
+		return p;
+	}
+	return 0;
+}
+
+////////////////////////////////////////////////////////////////////////////////

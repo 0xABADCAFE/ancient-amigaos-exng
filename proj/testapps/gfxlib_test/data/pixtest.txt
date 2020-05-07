@@ -1,0 +1,465 @@
+
+  GfxLib Utilities / pixeltest
+
+
+  Name  : pixeltest
+
+  Short : Tests the speed of VRAM access and GfxLib pixel conversion routines.
+          Conversion is from a specified source format to whatever format
+          the display on which the test window opens is using. Drawing is done
+          to an offscreen buffer.
+
+          DOES NOT WORK ON 8-BIT SCREENS
+
+  Usage : pixeltest [width <num>] [height <num>] [fmt <format>] [-sysdebug]
+
+          width     : width of window (160 - 1024)
+          height    : height of window (120 - 768)
+
+          fmt       : source data format, any one of the following pixel types
+                      (15-bit)  RGB15B,  RGB15L,  BGR15B,  BGR15L,
+                      (16-bit)  RGB16B,  RGB16L,  BGR16B,  BRG16L,
+                      (24-bit)  RGB24P,  BGR24P,
+                      (32-bit)  ARGB32B, ARGB32L, ABGR16B, ABRG16L
+
+          -sysdebug : enables library debug output
+
+  Detail:
+
+       Set test
+
+       Uses Mem::set()/set16()/set32(). These use 32-bit, aligned writes for
+       the largest 32-bit aligned block in the area written to, 16-bit or
+       8-bit writes (depending on method) are used for any non 32-bit aligned
+       leading / trailing addresses.
+
+
+       Zero test
+
+       Uses Mem::zero(). This method uses 32-bit aligned writes for the largest
+       32-bit aligned block in the area cleared. 8-bit writes are used for
+       any non 32-bit leading / trailing addresses.
+
+
+       Copy test
+
+       Uses Mem::copy(). This method uses 32-bit aligned moves for the
+       largest 32-bit aligned blocks in the area copied. 8-bit moves are used
+       for any non 32-bit leading / trailing addresses. When source and
+       destination are misaligned with respect to one another, exec/CopyMem()
+       is used. Note : Overlapping blocks are not supported.
+
+
+       Conv test
+
+       Uses Gfx2D::getConversion() to get the appropriate pixel conversion
+       routine (a function pointer) for the specified ource and destination
+       formats. Currently, only copy/byteswap conversions are optimised as
+       they use Mem::copy()/Mem::swap().
+
+
+
+  GfxLib Utilities / drawtest
+
+
+  Name  : drawtest
+
+  Short : Tests the speed of the Rasterizer mesh drawing methods (and hence the
+          underlying 3D driver performace) Drawing is done to an offscreen buffer.
+
+          DOES NOT WORK ON 8-BIT SCREENS
+
+  Usage : drawtest [width <num>] [flat] [cull] [zbuff] [-sysdebug]
+
+          width     : width of window (160 - 1024)
+          height    : height of window (120 - 768)
+
+          cull      : cull all polygons, for testing polygon setup speed
+          flat      : use flat shading
+          zbuff     : use z buffer test / update
+
+          -sysdebug : enables library debug output
+
+  Detail:
+
+          A series of window-filling meshes from 16x16 to 128x128 are calculated
+          and rendered using the Rasterizer mesh drawing methods. Two methods
+          exist:
+
+          drawTriMesh()  - renders the mesh as a series of unique triangles
+          drawTriMesh2() - renders the mesh as a series of triangle strips
+
+          The time interval measured is for the actual drawing stage only. The
+          impact that culling, shading and z buffering have can be inspected
+          using the optional cull, flat and zbuff arguments
+
+
+
+Surface width: 640, height: 480, modulus: 0
+
+Test data pixel format
+
+Bytes   : 2, endian swapped
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+Window pixel format
+
+Bytes   : 2, endian native
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+
+Set  :    5395389 pix/sec 10537.86 K/sec
+Zero :    3598243 pix/sec  7027.81 K/sec
+Copy :    3775115 pix/sec  7373.27 K/sec
+Conv :    3164971 pix/sec  6181.58 K/sec
+
+Conversion attained  83.83% copy speed
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//  W3D_Permedia2.library driver tests (drawtest)
+//
+//
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+Rasterizer test application log file
+----------------------------------------------
+Display Properties
+Width: 640, Height: 480, Modulus: 0
+
+Pixel format
+
+Bytes   : 2, endian native
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+
+States shade:gouraud, cull:off, zbuff:off
+
+Testing Rasterizer::drawTriMesh()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   640 x 480   17 ms    26470 18.0705
+ 32 x  32   640 x 480   75 ms    25626  4.0960
+ 48 x  48   640 x 480  172 ms    25686  1.7860
+ 64 x  64   640 x 480  317 ms    25041  0.9690
+ 80 x  80   640 x 480  486 ms    25683  0.6321
+ 96 x  96   640 x 480  704 ms    25639  0.4363
+112 x 112   640 x 480  958 ms    25722  0.3206
+128 x 128   640 x 480 1262 ms    25561  0.2434
+
+Testing Rasterizer::drawTriMesh2()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   640 x 480    8 ms    56250 38.4000
+ 32 x  32   640 x 480   33 ms    58242  9.3091
+ 48 x  48   640 x 480   76 ms    58131  4.0421
+ 64 x  64   640 x 480  136 ms    58367  2.2588
+ 80 x  80   640 x 480  215 ms    58055  1.4288
+ 96 x  96   640 x 480  313 ms    57667  0.9814
+112 x 112   640 x 480  423 ms    58255  0.7262
+128 x 128   640 x 480  555 ms    58122  0.5535
+
+
+Rasterizer test application log file
+----------------------------------------------
+Display Properties
+Width: 640, Height: 480, Modulus: 0
+
+Pixel format
+
+Bytes   : 2, endian native
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+
+States shade:flat, cull:off, zbuff:off
+
+Testing Rasterizer::drawTriMesh()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   640 x 480   11 ms    40909 27.9272
+ 32 x  32   640 x 480   47 ms    40893  6.5362
+ 48 x  48   640 x 480  111 ms    39801  2.7676
+ 64 x  64   640 x 480  199 ms    39889  1.5437
+ 80 x  80   640 x 480  315 ms    39625  0.9752
+ 96 x  96   640 x 480  458 ms    39410  0.6707
+112 x 112   640 x 480  622 ms    39617  0.4938
+128 x 128   640 x 480  816 ms    39531  0.3764
+
+Testing Rasterizer::drawTriMesh2()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   640 x 480    6 ms    75000 51.2000
+ 32 x  32   640 x 480   23 ms    83565 13.3565
+ 48 x  48   640 x 480   54 ms    81814  5.6889
+ 64 x  64   640 x 480   95 ms    83557  3.2337
+ 80 x  80   640 x 480  153 ms    81581  2.0078
+ 96 x  96   640 x 480  215 ms    83953  1.4288
+112 x 112   640 x 480  300 ms    82140  1.0240
+128 x 128   640 x 480  386 ms    83569  0.7958
+
+
+Rasterizer test application log file
+----------------------------------------------
+Display Properties
+Width: 640, Height: 480, Modulus: 0
+
+Pixel format
+
+Bytes   : 2, endian native
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+
+States shade:gouraud, cull:off, zbuff:on (LESS/UPDATE)
+
+Testing Rasterizer::drawTriMesh()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   640 x 480   17 ms    26470 18.0705
+ 32 x  32   640 x 480   75 ms    25626  4.0960
+ 48 x  48   640 x 480  176 ms    25102  1.7455
+ 64 x  64   640 x 480  320 ms    24806  0.9600
+ 80 x  80   640 x 480  496 ms    25165  0.6193
+ 96 x  96   640 x 480  720 ms    25069  0.4266
+112 x 112   640 x 480  981 ms    25119  0.3131
+128 x 128   640 x 480 1288 ms    25045  0.2385
+
+Testing Rasterizer::drawTriMesh2()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   640 x 480    8 ms    56250 38.4000
+ 32 x  32   640 x 480   35 ms    54914  8.7771
+ 48 x  48   640 x 480   82 ms    53878  3.7463
+ 64 x  64   640 x 480  138 ms    57521  2.2261
+ 80 x  80   640 x 480  215 ms    58055  1.4288
+ 96 x  96   640 x 480  316 ms    57120  0.9721
+112 x 112   640 x 480  430 ms    57306  0.7144
+128 x 128   640 x 480  561 ms    57500  0.5475
+
+
+Rasterizer test application log file
+----------------------------------------------
+Display Properties
+Width: 640, Height: 480, Modulus: 0
+
+Pixel format
+
+Bytes   : 2, endian native
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+
+States shade:flat, cull:off, zbuff:on (LESS/UPDATE)
+
+Testing Rasterizer::drawTriMesh()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   640 x 480   11 ms    40909 27.9272
+ 32 x  32   640 x 480   50 ms    38440  6.1440
+ 48 x  48   640 x 480  114 ms    38754  2.6947
+ 64 x  64   640 x 480  204 ms    38911  1.5059
+ 80 x  80   640 x 480  319 ms    39128  0.9630
+ 96 x  96   640 x 480  469 ms    38486  0.6550
+112 x 112   640 x 480  638 ms    38623  0.4815
+128 x 128   640 x 480  833 ms    38725  0.3687
+
+Testing Rasterizer::drawTriMesh2()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   640 x 480    8 ms    56250 38.4000
+ 32 x  32   640 x 480   24 ms    80083 12.8000
+ 48 x  48   640 x 480   54 ms    81814  5.6889
+ 64 x  64   640 x 480   98 ms    81000  3.1347
+ 80 x  80   640 x 480  153 ms    81581  2.0078
+ 96 x  96   640 x 480  219 ms    82420  1.4027
+112 x 112   640 x 480  304 ms    81059  1.0105
+128 x 128   640 x 480  395 ms    81665  0.7777
+
+
+Rasterizer test application log file
+----------------------------------------------
+Display Properties
+Width: 640, Height: 480, Modulus: 0
+
+Pixel format
+
+Bytes   : 2, endian native
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+
+States shade:gouraud, cull:on (CCW), zbuff:off
+
+Testing Rasterizer::drawTriMesh()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   640 x 480    4 ms   112500 76.8000
+ 32 x  32   640 x 480   18 ms   106777 17.0666
+ 48 x  48   640 x 480   43 ms   102744  7.1442
+ 64 x  64   640 x 480   80 ms    99225  3.8400
+ 80 x  80   640 x 480  124 ms   100661  2.4774
+ 96 x  96   640 x 480  183 ms    98633  1.6787
+112 x 112   640 x 480  245 ms   100579  1.2539
+128 x 128   640 x 480  326 ms    98950  0.9423
+
+Testing Rasterizer::drawTriMesh2()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   640 x 480   10 ms    45000 30.7200
+ 32 x  32   640 x 480   41 ms    46878  7.4927
+ 48 x  48   640 x 480   95 ms    46505  3.2337
+ 64 x  64   640 x 480  165 ms    48109  1.8618
+ 80 x  80   640 x 480  259 ms    48193  1.1861
+ 96 x  96   640 x 480  377 ms    47877  0.8148
+112 x 112   640 x 480  514 ms    47941  0.5976
+128 x 128   640 x 480  672 ms    48002  0.4571
+
+
+Rasterizer test application log file
+----------------------------------------------
+Display Properties
+Width: 640, Height: 480, Modulus: 0
+
+Pixel format
+
+Bytes   : 2, endian native
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+
+States shade:flat, cull:on (CCW), zbuff:off
+
+Testing Rasterizer::drawTriMesh()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   640 x 480    4 ms   112500 76.8000
+ 32 x  32   640 x 480   19 ms   101157 16.1684
+ 48 x  48   640 x 480   44 ms   100409  6.9818
+ 64 x  64   640 x 480   79 ms   100481  3.8886
+ 80 x  80   640 x 480  125 ms    99856  2.4576
+ 96 x  96   640 x 480  182 ms    99175  1.6879
+112 x 112   640 x 480  246 ms   100170  1.2488
+128 x 128   640 x 480  321 ms   100492  0.9570
+
+Testing Rasterizer::drawTriMesh2()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   640 x 480    7 ms    64285 43.8857
+ 32 x  32   640 x 480   31 ms    62000  9.9097
+ 48 x  48   640 x 480   72 ms    61361  4.2667
+ 64 x  64   640 x 480  124 ms    64016  2.4774
+ 80 x  80   640 x 480  195 ms    64010  1.5754
+ 96 x  96   640 x 480  283 ms    63780  1.0855
+112 x 112   640 x 480  383 ms    64339  0.8020
+128 x 128   640 x 480  502 ms    64258  0.6119
+
+
+Rasterizer test application log file
+----------------------------------------------
+Display Properties
+Width: 640, Height: 480, Modulus: 0
+
+Pixel format
+
+Bytes   : 2, endian native
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+
+States shade:gouraud, cull:on (CCW), zbuff:on (LESS/UPDATE)
+
+Testing Rasterizer::drawTriMesh()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   640 x 480    4 ms   112500 76.8000
+ 32 x  32   640 x 480   18 ms   106777 17.0666
+ 48 x  48   640 x 480   44 ms   100409  6.9818
+ 64 x  64   640 x 480   82 ms    96804  3.7463
+ 80 x  80   640 x 480  124 ms   100661  2.4774
+ 96 x  96   640 x 480  182 ms    99175  1.6879
+112 x 112   640 x 480  244 ms   100991  1.2590
+128 x 128   640 x 480  329 ms    98048  0.9337
+
+Testing Rasterizer::drawTriMesh2()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   640 x 480   11 ms    40909 27.9272
+ 32 x  32   640 x 480   41 ms    46878  7.4927
+ 48 x  48   640 x 480   97 ms    45546  3.1670
+ 64 x  64   640 x 480  165 ms    48109  1.8618
+ 80 x  80   640 x 480  265 ms    47101  1.1592
+ 96 x  96   640 x 480  378 ms    47751  0.8127
+112 x 112   640 x 480  519 ms    47479  0.5919
+128 x 128   640 x 480  679 ms    47508  0.4524
+
+
+Rasterizer test application log file
+----------------------------------------------
+Display Properties
+Width: 640, Height: 480, Modulus: 0
+
+Pixel format
+
+Bytes   : 2, endian native
+Bits    : A[  0] R[  5] G[  6] B[  5]
+Offsets : A[  0] R[ 11] G[  5] B[  0]
+Maxima  : A[  0] R[ 31] G[ 63] B[ 31]
+
+
+States shade:flat, cull:on (CCW), zbuff:on (LESS/UPDATE)
+
+Testing Rasterizer::drawTriMesh()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   640 x 480    4 ms   112500 76.8000
+ 32 x  32   640 x 480   20 ms    96100 15.3600
+ 48 x  48   640 x 480   44 ms   100409  6.9818
+ 64 x  64   640 x 480   79 ms   100481  3.8886
+ 80 x  80   640 x 480  123 ms   101479  2.4976
+ 96 x  96   640 x 480  181 ms    99723  1.6972
+112 x 112   640 x 480  245 ms   100579  1.2539
+128 x 128   640 x 480  322 ms   100180  0.9540
+
+Testing Rasterizer::drawTriMesh2()
+
+Row   Col   Draw Area    Time   Tris/s  MPix/s
+----------------------------------------------
+ 16 x  16   640 x 480    7 ms    64285 43.8857
+ 32 x  32   640 x 480   31 ms    62000  9.9097
+ 48 x  48   640 x 480   73 ms    60520  4.2082
+ 64 x  64   640 x 480  129 ms    61534  2.3814
+ 80 x  80   640 x 480  197 ms    63360  1.5594
+ 96 x  96   640 x 480  290 ms    62241  1.0593
+112 x 112   640 x 480  388 ms    63510  0.7917
+128 x 128   640 x 480  508 ms    63500  0.6047

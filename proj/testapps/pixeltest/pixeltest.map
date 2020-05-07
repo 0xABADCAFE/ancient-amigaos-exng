@@ -1,0 +1,2087 @@
+Global M68K Construktors
+	_INIT_1_DOSBaseDOS_c
+	_INIT_3_TimerBase
+	_INIT_4_MixedMem
+	_INIT_5_InitFiles
+	_INIT_6_InitStdIOFiles
+	_INIT_8_CyberGfxBasenative_D_cpp
+	_INIT_8_init__Q210Threadable9IdleTimerthread_cpp
+	_INIT_8_getPixelRep__6ColourP15PixelDescriptorgfxcomm_cpp
+Global M68K Destruktors
+	_EXIT_9_AtExitFunctionsCaller
+	_EXIT_6_InitStdIOFiles
+	_EXIT_5_InitFiles
+	_EXIT_4_MixedMem
+	_EXIT_3_TimerBase
+	_EXIT_1_DOSBaseDOS_c
+	_EXIT_0_Main
+No Global PPC Destruktors
+No Global PPC Destruktors
+
+M68K Code
+
+
+  Hunk #0 ( Far Public ) 52056 Bytes (0xcb58)
+  __startup68K = 384 (0x180) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/startups/gccstartup.o
+  __cleanup = 396 (0x18c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/startups/gccstartup.o
+  __exit = 404 (0x194) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/startups/gccstartup.o
+  __exit_68k = 434 (0x1b2) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/startups/gccstartup.o
+  abort__STANDARD = 464 (0x1d0) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/startups/gccstartup.o
+  _init__7AppBase = 506 (0x1fa) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _done__7AppBase = 520 (0x208) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _createApplicationInstance__7AppBase = 534 (0x216) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _destroyApplicationInstance__7AppBaseP7AppBase = 750 (0x2ee) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  ___10GfxTestApp = 826 (0x33a) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  __$_10GfxTestApp = 2148 (0x864) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _lockKernel__10GfxTestApp = 2268 (0x8dc) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _unlockKernel__10GfxTestApp = 2298 (0x8fa) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _readMem__10GfxTestAppPvUl = 2328 (0x918) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copyMem16__10GfxTestAppPvT1Ul = 2350 (0x92e) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _shuffleCopy16__10GfxTestAppPvT1Ul = 2376 (0x948) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _setMem16__10GfxTestAppPvlUl = 2402 (0x962) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _initApplication__10GfxTestApp = 2550 (0x9f6) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _dumpPixelInfo__10GfxTestAppP15PixelDescriptor = 3192 (0xc78) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _createTestData__10GfxTestApp = 3416 (0xd58) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testWriteVRAM__10GfxTestApp = 4268 (0x10ac) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testCLibWriteVRAM__10GfxTestApp = 4688 (0x1250) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testWrite16VRAM__10GfxTestApp = 5136 (0x1410) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testReadVRAM__10GfxTestApp = 5598 (0x15de) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testCopyRAM2VRAM__10GfxTestApp = 5994 (0x176a) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testCLibCopyRAM2VRAM__10GfxTestApp = 6410 (0x190a) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testCopy16RAM2VRAM__10GfxTestApp = 6826 (0x1aaa) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testShuffleCopy16RAM2VRAM__10GfxTestAppl = 7274 (0x1c6a) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testShuffleCopy16RAM2RAM__10GfxTestAppl = 7796 (0x1e74) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testOSCopyMemRAM2VRAM__10GfxTestAppl = 8108 (0x1fac) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testOSCopyMemRAM2RAM__10GfxTestAppl = 8620 (0x21ac) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testCopyVRAM2RAM__10GfxTestApp = 8890 (0x22ba) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testCopy16VRAM2RAM__10GfxTestApp = 9358 (0x248e) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testCopyRAM2RAM__10GfxTestApp = 9820 (0x265c) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testCopy16RAM2RAM__10GfxTestApp = 10108 (0x277c) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testCLibCopyRAM2RAM__10GfxTestApp = 10408 (0x28a8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testWriteRAM__10GfxTestApp = 10682 (0x29ba) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testWrite16RAM__10GfxTestApp = 10966 (0x2ad6) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testCLibWriteRAM__10GfxTestApp = 11248 (0x2bf0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testReadRAM__10GfxTestApp = 11518 (0x2cfe) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _testConversion__10GfxTestApp = 11790 (0x2e0e) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _runApplication__10GfxTestApp = 13810 (0x35f2) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  ___vt_10GfxTestApp = 16074 (0x3eca) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  readMem__GfxTestApp = 16996 (0x4264) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/asmstuff.o
+  copyMem16__GfxTestApp = 17092 (0x42c4) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/asmstuff.o
+  shuffleCopy16__GfxTestApp = 17196 (0x432c) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/asmstuff.o
+  set16__GfxTestApp = 17268 (0x4374) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/asmstuff.o
+  swapCopy32_16__GfxTestApp = 17368 (0x43d8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/asmstuff.o
+  _init__10StartupLibiPPc = 17478 (0x4446) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _runApplication__10StartupLib = 17656 (0x44f8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _done__10StartupLib = 17800 (0x4588) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _numArgs__7AppBase = 17836 (0x45ac) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _getArg__7AppBasel = 17850 (0x45ba) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _getString__7AppBasePCcb = 17886 (0x45de) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _getInteger__7AppBasePCcb = 18044 (0x467c) referenced 4 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _getFloat__7AppBasePCcb = 18088 (0x46a8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _getSwitch__7AppBasePCcb = 18134 (0x46d6) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _main = 18298 (0x477a) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _init__9SystemLib = 18638 (0x48ce) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _done__9SystemLib = 18954 (0x4a0a) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _printDebug__9SystemLibPCci = 19136 (0x4ac0) referenced 34 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _dialogueBox__9SystemLibPCcN21e = 19242 (0x4b2a) referenced 15 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _openDebugFile__9SystemLibPCc = 19392 (0x4bc0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _alloc__3MemUlbQ23Mem9AlignType = 19476 (0x4c14) referenced 8 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _free__3MemPv = 19608 (0x4c98) referenced 11 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _copy__3MemPvT1Ul = 19706 (0x4cfa) referenced 5 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _swap16__3MemPvT1Ul = 19732 (0x4d14) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _swap32__3MemPvT1Ul = 19758 (0x4d2e) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _swap64__3MemPvT1Ul = 19784 (0x4d48) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _zero__3MemPvUl = 19810 (0x4d62) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _set__3MemPviUl = 19832 (0x4d78) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _set16__3MemPvUsUl = 19858 (0x4d92) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _set32__3MemPvUlUl = 19884 (0x4dac) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _set64__3MemPvRCUxUl = 19910 (0x4dc6) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  Mem::zero(register __a0 void *,register __d0 unsigned int) = 19948 (0x4dec) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  Mem::set(register __a0 void *,register __d0 int,register __d1 unsigned int) = 19952 (0x4df0) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  Mem::set16(register __a0 void *,register __d0 unsigned short,register __d1 unsigned int) = 20130 (0x4ea2) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  Mem::set32(register __a0 void *,register __d0 unsigned long,register __d1 unsigned int) = 20296 (0x4f48) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  Mem::set64(register __a0 void *,register __a1 unsigned long long &,register __d0 unsigned int) = 20396 (0x4fac) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  Mem::copy(register __a0 void *,register __a1 void *,register __d0 unsigned int) = 20504 (0x5018) referenced 5 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  Mem::swap16(register __a0 void *,register __a1 void *,register __d0 unsigned int) = 20672 (0x50c0) referenced 3 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  Mem::swap32(register __a0 void *,register __a1 void *,register __d0 unsigned int) = 21022 (0x521e) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  Mem::swap64(register __a0 void *,register __a1 void *,register __d0 unsigned int) = 21310 (0x533e) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _cpuType__3CPU = 21698 (0x54c2) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _fpuType__3CPU = 21792 (0x5520) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _flushDataCache__3CPUPvUl = 21880 (0x5578) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _flushInstCache__3CPUPvUl = 21906 (0x5592) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _flushAllCaches__3CPUPvUl = 21932 (0x55ac) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _setPrecision__3CPUQ23CPU6FPPrec = 21958 (0x55c6) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _elapsed__10MilliClock = 21976 (0x55d8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _elapsedFrac__10MilliClock = 22050 (0x5622) referenced 21 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _elapsed__5Clock = 22204 (0x56bc) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _init__Q210Threadable9IdleTimer = 22318 (0x572e) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _done__Q210Threadable9IdleTimer = 22422 (0x5796) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _abortDelay__Q210Threadable9IdleTimer = 22536 (0x5808) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _suspend__Q210Threadable9IdleTimerUlUl = 22598 (0x5846) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _suspend__Q210Threadable9IdleTimer = 22772 (0x58f4) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  ___10MainThread = 22856 (0x5948) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  __$_10MainThread = 23134 (0x5a5e) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _getMain__6Thread = 23210 (0x5aaa) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _getCurrent__6Thread = 23262 (0x5ade) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _userBreak__6Thread = 23318 (0x5b16) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _sleep__6ThreadUlbN22 = 23342 (0x5b2e) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _sleepResume__6Thread = 23400 (0x5b68) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _sleepAbort__6Thread = 23426 (0x5b82) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _getUptime__6Thread = 23448 (0x5b98) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  ___10Threadable = 23504 (0x5bd0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  __$_10Threadable = 23766 (0x5cd6) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _entryPoint__10Threadable = 23824 (0x5d10) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _exitPoint__10Threadable = 23940 (0x5d84) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _sleep__10ThreadableUlbN22 = 23994 (0x5dba) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _sleepResume__10Threadable = 24246 (0x5eb6) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _sleepAbort__10Threadable = 24386 (0x5f42) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _start__10ThreadablePCcQ210Threadable8PriorityUl = 24432 (0x5f70) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _stop__10Threadable = 24828 (0x60fc) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _wake__10Threadable = 24988 (0x619c) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _setPriority__10ThreadableQ210Threadable8Priority = 25078 (0x61f6) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _getUptime__10Threadable = 25190 (0x6266) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _tryLock__8Lockable = 25238 (0x6296) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _waitLock__8Lockable = 25274 (0x62ba) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _tryReadOnlyLock__8Lockable = 25322 (0x62ea) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _waitReadOnlyLock__8Lockable = 25358 (0x630e) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _pending__8Lockable = 25406 (0x633e) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _freeLock__8Lockable = 25440 (0x6360) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _active__8Lockable = 25472 (0x6380) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _getExclusiveOwner__8Lockable = 25500 (0x639c) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  ___8Lockable = 25554 (0x63d2) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  __$_8Lockable = 25606 (0x6406) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  ___vt_10MainThread = 25700 (0x6464) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  ___vt_8Lockable = 25720 (0x6478) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  ___vt_10Threadable = 25736 (0x6488) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  ___tf10Threadable = 25850 (0x64fa) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _shutDownReq__10Threadable = 25888 (0x6520) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _hasStarted__C10Threadable = 25906 (0x6532) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _hasCompleted__C10Threadable = 25926 (0x6546) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _isSleeping__C10Threadable = 25944 (0x6558) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _isRunning__C10Threadable = 25976 (0x6578) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _getPriority__C10Threadable = 26014 (0x659e) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _getRetVal__C10Threadable = 26032 (0x65b0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _getName__C10Threadable = 26048 (0x65c0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  ___tf8Lockable = 26062 (0x65ce) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  ___tf10MainThread = 26100 (0x65f4) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _run__10MainThread = 26174 (0x663e) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _start__10MainThreadlUl = 26184 (0x6648) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _stop__10MainThread = 26194 (0x6652) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _INIT_8_init__Q210Threadable9IdleTimerthread_cpp = 26204 (0x665c) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  ___11_NatDisplay = 26254 (0x668e) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _waitForRefresh__11_NatDisplay = 26500 (0x6784) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _openFullScreen__11_NatDisplayUl = 26740 (0x6874) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _closeFullScreen__11_NatDisplay = 27156 (0x6a14) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setDisplayTitle__11_NatDisplayPCcb = 27252 (0x6a74) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  ___7_NatWin = 27350 (0x6ad6) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  __$_7_NatWin = 27554 (0x6ba2) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setBorderless__7_NatWinb = 27616 (0x6be0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setMoveable__7_NatWinb = 27648 (0x6c00) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setResizeable__7_NatWinb = 27680 (0x6c20) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setCloseable__7_NatWinb = 27712 (0x6c40) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _openWindow__7_NatWin = 28398 (0x6eee) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _closeWindow__7_NatWin = 29278 (0x725e) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _reopen__7_NatWin = 29490 (0x7332) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _close__7_NatWin = 29552 (0x7370) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _refresh__7_NatWin = 29568 (0x7380) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _refresh__7_NatWinssss = 29644 (0x73cc) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _open__7_NatWinssQ25Pixel5DepthPCc = 29946 (0x74fa) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _open__7_NatWinP17DisplayPropertiesPCc = 30148 (0x75c4) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  ___7_NatScr = 30176 (0x75e0) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  __$_7_NatScr = 30366 (0x769e) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _openScreen__7_NatScr = 30482 (0x7712) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _closeScreen__7_NatScr = 30592 (0x7780) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _open__7_NatScrssQ25Pixel5DepthPCc = 30738 (0x7812) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _open__7_NatScrP17DisplayPropertiesPCc = 31002 (0x791a) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _reopen__7_NatScr = 31192 (0x79d8) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _close__7_NatScr = 31248 (0x7a10) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  ___11_NatScrBufflb = 31264 (0x7a20) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  __$_11_NatScrBuff = 31586 (0x7b62) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setClone__11_NatScrBuffb = 31676 (0x7bbc) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setNumBuffers__11_NatScrBuffl = 31708 (0x7bdc) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _openScreen__11_NatScrBuff = 32226 (0x7de2) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _closeScreen__11_NatScrBuff = 32960 (0x80c0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _refresh__11_NatScrBuff = 33288 (0x8208) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _waitSync__11_NatScrBuff = 33482 (0x82ca) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _open__11_NatScrBuffssQ25Pixel5DepthPCc = 33656 (0x8378) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _open__11_NatScrBuffP17DisplayPropertiesPCc = 33928 (0x8488) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _reopen__11_NatScrBuff = 34122 (0x854a) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _close__11_NatScrBuff = 34178 (0x8582) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _getPixelRep__6ColourP15PixelDescriptor = 34522 (0x86da) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setFromPixel__6ColourP15PixelDescriptorUl = 35154 (0x8952) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _scaleAlpha__7PalettefScUcUc = 35466 (0x8a8a) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _scaleRed__7PalettefScUcUc = 36054 (0x8cd6) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _scaleGreen__7PalettefScUcUc = 36692 (0x8f54) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _scaleBlue__7PalettefScUcUc = 37330 (0x91d2) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _findBestMatch__7PaletteRC6Colourb = 37968 (0x9450) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _getDescriptor__11ImageBuffer = 37978 (0x945a) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setPalette__11ImageBufferP7Palettebs = 38020 (0x9484) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _create__11ImageBufferssQ25Pixel6HWTypeP7Palettebs = 38220 (0x954c) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _create__11ImageBufferssP15PixelDescriptorP7PalettebT5s = 38436 (0x9624) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _destroy__11ImageBuffer = 38972 (0x983c) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setIBData__19ImageBufferProviderP11ImageBufferPvb = 39090 (0x98b2) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setIBPalette__19ImageBufferProviderP11ImageBufferP7Paletteb = 39158 (0x98f6) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _createModeDatabase__25DisplayPropertiesProviderUl = 39236 (0x9944) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _freeModeDatabase__25DisplayPropertiesProvider = 39388 (0x99dc) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _getMode__25DisplayPropertiesProviderUl = 39424 (0x9a00) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setModeIndex__25DisplayPropertiesProviderUlUl = 39460 (0x9a24) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setTiming__25DisplayPropertiesProviderUlUlUl = 39504 (0x9a50) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setDimension__25DisplayPropertiesProviderUlss = 39554 (0x9a82) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setAspect__25DisplayPropertiesProviderUlf = 39652 (0x9ae4) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setPropertyFlags__25DisplayPropertiesProviderUlUs = 39696 (0x9b10) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setFormat__25DisplayPropertiesProviderUlQ25Pixel6HWTypeQ25Pixel5Depth = 39746 (0x9b42) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _setName__25DisplayPropertiesProviderUlPCc = 39878 (0x9bc6) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _findIndex__25DisplayPropertiesProviderssQ25Pixel5Depthb = 39934 (0x9bfe) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _INIT_8_getPixelRep__6ColourP15PixelDescriptorgfxcomm_cpp = 41478 (0xa206) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _init__6GfxLib = 41648 (0xa2b0) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _done__6GfxLib = 41744 (0xa310) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _buildDisplayDataBase__6GfxLib = 42004 (0xa414) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _freeDisplayDataBase__6GfxLib = 42456 (0xa5d8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _getWindowedLimits__6GfxLib = 42488 (0xa5f8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _getHardwareFormat__6_Nat2DQ25Pixel4Type = 42682 (0xa6ba) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _convertPixels__6_Nat2DPvT1Q25Pixel6HWTypeT3ssssP7Palette = 42704 (0xa6d0) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _none__6_Nat2DPvT1PUlssss = 42776 (0xa718) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _copy8__6_Nat2DPvT1PUlssss = 42784 (0xa720) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _INIT_8_CyberGfxBasenative_D_cpp = 43218 (0xa8d2) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::copy15XETo15XE(void *,void *,unsigned long *,short,short,short,short) = 43252 (0xa8f4) referenced 4 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::copy15XETo15YE(void *,void *,unsigned long *,short,short,short,short) = 43372 (0xa96c) referenced 4 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::rotate15BETo15BE(void *,void *,unsigned long *,short,short,short,short) = 43478 (0xa9d6) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::rotate15LETo15LE(void *,void *,unsigned long *,short,short,short,short) = 43612 (0xaa5c) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::rotate15BETo15LE(void *,void *,unsigned long *,short,short,short,short) = 43750 (0xaae6) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::rotate15LETo15BE(void *,void *,unsigned long *,short,short,short,short) = 43890 (0xab72) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::copy15BETo16BE(void *,void *,unsigned long *,short,short,short,short) = 44030 (0xabfe) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::copy15LETo16LE(void *,void *,unsigned long *,short,short,short,short) = 44148 (0xac74) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::copy15BETo16LE(void *,void *,unsigned long *,short,short,short,short) = 44286 (0xacfe) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::copy15LETo16BE(void *,void *,unsigned long *,short,short,short,short) = 44414 (0xad7e) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::rotate15BETo16BE(void *,void *,unsigned long *,short,short,short,short) = 44542 (0xadfe) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::rotate15LETo16LE(void *,void *,unsigned long *,short,short,short,short) = 44716 (0xaeac) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::rotate15BETo16LE(void *,void *,unsigned long *,short,short,short,short) = 44906 (0xaf6a) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::rotate15LETo16BE(void *,void *,unsigned long *,short,short,short,short) = 45090 (0xb022) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::copy15BETo24XGY(void *,void *,unsigned long *,short,short,short,short) = 45274 (0xb0da) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::copy15LETo24XGY(void *,void *,unsigned long *,short,short,short,short) = 45370 (0xb13a) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::rotate15BETo24XGY(void *,void *,unsigned long *,short,short,short,short) = 45468 (0xb19c) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::rotate15LETo24XGY(void *,void *,unsigned long *,short,short,short,short) = 45564 (0xb1fc) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::copy15BETo32BE(void *,void *,unsigned long *,short,short,short,short) = 45662 (0xb25e) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::copy15LETo32LE(void *,void *,unsigned long *,short,short,short,short) = 45816 (0xb2f8) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::copy15BETo32LE(void *,void *,unsigned long *,short,short,short,short) = 45996 (0xb3ac) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::copy15LETo32BE(void *,void *,unsigned long *,short,short,short,short) = 46168 (0xb458) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::rotate15BETo32BE(void *,void *,unsigned long *,short,short,short,short) = 46328 (0xb4f8) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::rotate15LETo32LE(void *,void *,unsigned long *,short,short,short,short) = 46476 (0xb58c) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::rotate15BETo32LE(void *,void *,unsigned long *,short,short,short,short) = 46648 (0xb638) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix15::rotate15LETo32BE(void *,void *,unsigned long *,short,short,short,short) = 46814 (0xb6de) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::copy16BETo15BE(void *,void *,unsigned long *,short,short,short,short) = 46968 (0xb778) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::copy16LETo15LE(void *,void *,unsigned long *,short,short,short,short) = 47090 (0xb7f2) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::copy16BETo15LE(void *,void *,unsigned long *,short,short,short,short) = 47224 (0xb878) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::copy16LETo15BE(void *,void *,unsigned long *,short,short,short,short) = 47352 (0xb8f8) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::rotate16BETo15BE(void *,void *,unsigned long *,short,short,short,short) = 47480 (0xb978) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::rotate16LETo15LE(void *,void *,unsigned long *,short,short,short,short) = 47626 (0xba0a) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::rotate16BETo15LE(void *,void *,unsigned long *,short,short,short,short) = 47784 (0xbaa8) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::rotate16LETo15BE(void *,void *,unsigned long *,short,short,short,short) = 47936 (0xbb40) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::copy16XETo16XE(void *,void *,unsigned long *,short,short,short,short) = 48088 (0xbbd8) referenced 4 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::copy16XETo16YE(void *,void *,unsigned long *,short,short,short,short) = 48208 (0xbc50) referenced 4 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::rotate16BETo16BE(void *,void *,unsigned long *,short,short,short,short) = 48314 (0xbcba) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::rotate16LETo16LE(void *,void *,unsigned long *,short,short,short,short) = 48418 (0xbd22) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::rotate16BETo16LE(void *,void *,unsigned long *,short,short,short,short) = 48534 (0xbd96) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::rotate16LETo16BE(void *,void *,unsigned long *,short,short,short,short) = 48644 (0xbe04) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::copy16BETo24XGY(void *,void *,unsigned long *,short,short,short,short) = 48754 (0xbe72) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::copy16LETo24XGY(void *,void *,unsigned long *,short,short,short,short) = 48850 (0xbed2) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::rotate16BETo24XGY(void *,void *,unsigned long *,short,short,short,short) = 48950 (0xbf36) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::rotate16LETo24XGY(void *,void *,unsigned long *,short,short,short,short) = 49046 (0xbf96) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::copy16BETo32BE(void *,void *,unsigned long *,short,short,short,short) = 49144 (0xbff8) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::copy16LETo32LE(void *,void *,unsigned long *,short,short,short,short) = 49298 (0xc092) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::copy16BETo32LE(void *,void *,unsigned long *,short,short,short,short) = 49478 (0xc146) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::copy16LETo32BE(void *,void *,unsigned long *,short,short,short,short) = 49650 (0xc1f2) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::rotate16BETo32BE(void *,void *,unsigned long *,short,short,short,short) = 49810 (0xc292) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::rotate16LETo32LE(void *,void *,unsigned long *,short,short,short,short) = 49964 (0xc32c) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::rotate16BETo32LE(void *,void *,unsigned long *,short,short,short,short) = 50144 (0xc3e0) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix16::rotate16LETo32BE(void *,void *,unsigned long *,short,short,short,short) = 50316 (0xc48c) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix24::copy24XGYTo15BE(void *,void *,unsigned long *,short,short,short,short) = 50476 (0xc52c) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix24::copy24XGYTo15LE(void *,void *,unsigned long *,short,short,short,short) = 50598 (0xc5a6) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix24::rotate24XGYTo15BE(void *,void *,unsigned long *,short,short,short,short) = 50726 (0xc626) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix24::rotate24XGYTo15LE(void *,void *,unsigned long *,short,short,short,short) = 50866 (0xc6b2) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix24::copy24XGYTo16BE(void *,void *,unsigned long *,short,short,short,short) = 51012 (0xc744) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix24::copy24XGYTo16LE(void *,void *,unsigned long *,short,short,short,short) = 51128 (0xc7b8) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix24::rotate24XGYTo16BE(void *,void *,unsigned long *,short,short,short,short) = 51250 (0xc832) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix24::rotate24XGYTo16LE(void *,void *,unsigned long *,short,short,short,short) = 51384 (0xc8b8) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix24::copy24To24(void *,void *,unsigned long *,short,short,short,short) = 51524 (0xc944) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix24::rotate24To24(void *,void *,unsigned long *,short,short,short,short) = 51654 (0xc9c6) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix24::copy24XGYTo32BE(void *,void *,unsigned long *,short,short,short,short) = 51734 (0xca16) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix24::copy24XGYTo32LE(void *,void *,unsigned long *,short,short,short,short) = 51812 (0xca64) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix24::rotate24XGYTo32BE(void *,void *,unsigned long *,short,short,short,short) = 51892 (0xcab4) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix24::rotate24XGYTo32LE(void *,void *,unsigned long *,short,short,short,short) = 51976 (0xcb08) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+
+  Hunk #1 ( Far Public ) 58196 Bytes (0xe354)
+  Pix32::copy32BETo15BE(void *,void *,unsigned long *,short,short,short,short) = 0 (0x0) referenced 3 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::copy32LETo15LE(void *,void *,unsigned long *,short,short,short,short) = 124 (0x7c) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::copy32BETo15LE(void *,void *,unsigned long *,short,short,short,short) = 272 (0x110) referenced 3 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::copy32LETo15BE(void *,void *,unsigned long *,short,short,short,short) = 400 (0x190) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::rotate32BETo15BE(void *,void *,unsigned long *,short,short,short,short) = 542 (0x21e) referenced 3 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::rotate32LETo15LE(void *,void *,unsigned long *,short,short,short,short) = 690 (0x2b2) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::rotate32BETo15LE(void *,void *,unsigned long *,short,short,short,short) = 860 (0x35c) referenced 3 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::rotate32LETo15BE(void *,void *,unsigned long *,short,short,short,short) = 1014 (0x3f6) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::copy32BETo16BE(void *,void *,unsigned long *,short,short,short,short) = 1180 (0x49c) referenced 3 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::copy32LETo16LE(void *,void *,unsigned long *,short,short,short,short) = 1292 (0x50c) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::copy32BETo16LE(void *,void *,unsigned long *,short,short,short,short) = 1428 (0x594) referenced 3 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::copy32LETo16BE(void *,void *,unsigned long *,short,short,short,short) = 1546 (0x60a) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::rotate32BETo16BE(void *,void *,unsigned long *,short,short,short,short) = 1672 (0x688) referenced 3 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::rotate32LETo16LE(void *,void *,unsigned long *,short,short,short,short) = 1790 (0x6fe) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::rotate32BETo16LE(void *,void *,unsigned long *,short,short,short,short) = 1932 (0x78c) referenced 3 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::rotate32LETo16BE(void *,void *,unsigned long *,short,short,short,short) = 2056 (0x808) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::copy32BETo24XGY(void *,void *,unsigned long *,short,short,short,short) = 2192 (0x890) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::copy32LETo24XGY(void *,void *,unsigned long *,short,short,short,short) = 2270 (0x8de) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::rotate32BETo24XGY(void *,void *,unsigned long *,short,short,short,short) = 2348 (0x92c) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::rotate32LETo24XGY(void *,void *,unsigned long *,short,short,short,short) = 2424 (0x978) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::copy32XETo32XE(void *,void *,unsigned long *,short,short,short,short) = 2502 (0x9c6) referenced 4 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::copy32XETo32YE(void *,void *,unsigned long *,short,short,short,short) = 2622 (0xa3e) referenced 4 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::rotate32BETo32BE(void *,void *,unsigned long *,short,short,short,short) = 2728 (0xaa8) referenced 3 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::rotate32LETo32LE(void *,void *,unsigned long *,short,short,short,short) = 2800 (0xaf0) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::rotate32BETo32LE(void *,void *,unsigned long *,short,short,short,short) = 2872 (0xb38) referenced 3 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  Pix32::rotate32LETo32BE(void *,void *,unsigned long *,short,short,short,short) = 2938 (0xb7a) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _blitCopy__7SurfaceP7SurfacessT1ssss = 3014 (0xbc6) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _putImageBuffer__7SurfaceP11ImageBufferssssss = 3372 (0xd2c) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _init__7Surface = 3868 (0xf1c) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _queryBitMap__7Surface = 3952 (0xf70) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _lockData__7Surface = 4110 (0x100e) referenced 12 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _unlockData__7Surface = 4198 (0x1066) referenced 12 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _create__7SurfacessP7Surface = 4240 (0x1090) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _create__7SurfacessPQ212AmigaOS3_68K6BitMap = 4682 (0x124a) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _destroy__7Surface = 4956 (0x135c) referenced 3 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _clear__7SurfaceG6Colour = 5022 (0x139e) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _assignSurface__15SurfaceProviderP7SurfacePQ212AmigaOS3_68K6BitMap = 5182 (0x143e) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _assignNewSurface__15SurfaceProviderPQ212AmigaOS3_68K6BitMap = 5408 (0x1520) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _createSurface__15SurfaceProviderPQ212AmigaOS3_68K6BitMapss = 5840 (0x16d0) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _convRGB15BE__5_Pix8PvT1PUlssss = 6544 (0x1990) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _convBGR15BE__5_Pix8PvT1PUlssss = 6682 (0x1a1a) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _convRGB15LE__5_Pix8PvT1PUlssss = 6820 (0x1aa4) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _convBGR15LE__5_Pix8PvT1PUlssss = 6958 (0x1b2e) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _convRGB16BE__5_Pix8PvT1PUlssss = 7096 (0x1bb8) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _convBGR16BE__5_Pix8PvT1PUlssss = 7234 (0x1c42) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _convRGB16LE__5_Pix8PvT1PUlssss = 7372 (0x1ccc) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _convBGR16LE__5_Pix8PvT1PUlssss = 7510 (0x1d56) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _convRGB24__5_Pix8PvT1PUlssss = 7648 (0x1de0) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _convBGR24__5_Pix8PvT1PUlssss = 7762 (0x1e52) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _convARGB32BE__5_Pix8PvT1PUlssss = 7876 (0x1ec4) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _convABGR32BE__5_Pix8PvT1PUlssss = 7974 (0x1f26) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _convARGB32LE__5_Pix8PvT1PUlssss = 8112 (0x1fb0) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _convABGR32LE__5_Pix8PvT1PUlssss = 8234 (0x202a) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  ___9_NatInput = 8704 (0x2200) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/iolib.lib
+  __$_9_NatInput = 8764 (0x223c) referenced 7 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/iolib.lib
+  _directReadMouseX__9_NatInput = 8848 (0x2290) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/iolib.lib
+  _directReadMouseY__9_NatInput = 8868 (0x22a4) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/iolib.lib
+  _directReadMouseState__9_NatInput = 8888 (0x22b8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/iolib.lib
+  _amigaclose = 8956 (0x22fc) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigaeof = 9084 (0x237c) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigaflush = 9104 (0x2390) referenced 9 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigagetc = 9332 (0x2474) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigagetcunget = 9380 (0x24a4) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigaputc = 9420 (0x24cc) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigaread = 9480 (0x2508) referenced 7 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigareadunget = 9860 (0x2684) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigaseek = 9964 (0x26ec) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigaungetc = 10288 (0x2830) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _amigawrite = 10324 (0x2854) referenced 4 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _atexit = 10816 (0x2a40) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _EXIT_9_AtExitFunctionsCaller = 10866 (0x2a72) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _bzero = 10904 (0x2a98) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _fflush = 10976 (0x2ae0) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___putfilech = 11484 (0x2cdc) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___putstringch = 11512 (0x2cf8) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___putfilestr = 11538 (0x2d12) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___putstringstr = 11566 (0x2d2e) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___getfilech = 11622 (0x2d66) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___getstringch = 11642 (0x2d7a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___ungetfilech = 11668 (0x2d94) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___ungetstringch = 11696 (0x2db0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _formatted_out = 11718 (0x2dc6) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _formatted_in = 13450 (0x348a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _INIT_5_InitFiles = 14540 (0x38cc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _EXIT_5_InitFiles = 14628 (0x3924) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _div = 14826 (0x39ea) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _abs = 14858 (0x3a0a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _labs = 14874 (0x3a1a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _llabs = 14890 (0x3a2a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _atoi = 14914 (0x3a42) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _atol = 14934 (0x3a56) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _strtol = 14954 (0x3a6a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _strtoul = 15434 (0x3c4a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _atoll = 15846 (0x3de6) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _strtoll = 15866 (0x3dfa) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _strtoull = 16562 (0x40b2) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _uinttostr = 17174 (0x4316) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _inttostr = 17298 (0x4392) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _ullongtostr = 17350 (0x43c6) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _llongtostr = 17578 (0x44aa) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___ioErr = 17640 (0x44e8) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _memcpy = 17728 (0x4540) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _memmove = 17758 (0x455e) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _memcmp = 17812 (0x4594) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _memchr = 17872 (0x45d0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _memset = 17910 (0x45f6) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _bcmp = 17944 (0x4618) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _bcopy = 18004 (0x4654) referenced 4 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _ffs = 18136 (0x46d8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _malloc = 18712 (0x4918) referenced 8 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _free = 19240 (0x4b28) referenced 9 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _calloc = 19258 (0x4b3a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _realloc = 19334 (0x4b86) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _INIT_4_MixedMem = 19504 (0x4c30) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _EXIT_4_MixedMem = 19660 (0x4ccc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _printf = 19796 (0x4d54) referenced 9 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _setvbuf = 19840 (0x4d80) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _signal = 20032 (0x4e40) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _raise = 20076 (0x4e6c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _abort = 20118 (0x4e96) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _sprintf = 20132 (0x4ea4) referenced 23 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _INIT_6_InitStdIOFiles = 20188 (0x4edc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _EXIT_6_InitStdIOFiles = 20364 (0x4f8c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _strcmp = 20408 (0x4fb8) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _strncmp = 20464 (0x4ff0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _strcpy = 20544 (0x5040) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _strncpy = 20568 (0x5058) referenced 6 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _stricmp = 20612 (0x5084) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _strnicmp = 20720 (0x50f0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _strlwr = 20856 (0x5178) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _strupr = 20908 (0x51ac) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _strlen = 20960 (0x51e0) referenced 4 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _system = 20984 (0x51f8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _signed_out = 21012 (0x5214) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _signed_out_l = 21688 (0x54b8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _unsigned_out = 21772 (0x550c) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _unsigned_out_l = 22420 (0x5794) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _char_out = 22934 (0x5996) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _string_out = 23100 (0x5a3c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _int_in = 23290 (0x5afa) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _char_in = 24150 (0x5e56) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _string_in = 24272 (0x5ed0) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _vsprintf = 24448 (0x5f80) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _InitXSemaphore = 24504 (0x5fb8) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _FreeXSemaphore = 24598 (0x6016) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _ObtainXSemaphore = 24646 (0x6046) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _ReleaseXSemaphore = 24680 (0x6068) referenced 6 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _CreateExtIO = 24716 (0x608c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _DeleteExtIO = 24778 (0x60ca) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  AllocCModeListTagList = 24816 (0x60f0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _AllocCModeListTagList = 24816 (0x60f0) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  FreeCModeList = 24836 (0x6104) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _FreeCModeList = 24836 (0x6104) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  GetCyberMapAttr = 24856 (0x6118) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _GetCyberMapAttr = 24856 (0x6118) referenced 7 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  GetCyberIDAttr = 24880 (0x6130) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _GetCyberIDAttr = 24880 (0x6130) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  LockBitMapTagList = 24904 (0x6148) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _LockBitMapTagList = 24904 (0x6148) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  UnLockBitMap = 24928 (0x6160) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _UnLockBitMap = 24928 (0x6160) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  Input = 24948 (0x6174) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _Input = 24948 (0x6174) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  Output = 24964 (0x6184) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _Output = 24964 (0x6184) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  IsInteractive = 24980 (0x6194) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _IsInteractive = 24980 (0x6194) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  CreateNewProc = 25000 (0x61a8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _CreateNewProc = 25000 (0x61a8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  GetProgramName = 25020 (0x61bc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _GetProgramName = 25020 (0x61bc) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  SystemTags = 25048 (0x61d8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _SystemTags = 25048 (0x61d8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  FilePart = 25080 (0x61f8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _FilePart = 25080 (0x61f8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  AddPart = 25100 (0x620c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _AddPart = 25100 (0x620c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  PutStr = 25128 (0x6228) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _PutStr = 25128 (0x6228) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  VPrintf = 25148 (0x623c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _VPrintf = 25148 (0x623c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  Disable = 25176 (0x6258) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _Disable = 25176 (0x6258) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  Enable = 25192 (0x6268) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _Enable = 25192 (0x6268) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  Forbid = 25208 (0x6278) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _Forbid = 25208 (0x6278) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  Permit = 25224 (0x6288) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _Permit = 25224 (0x6288) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  AllocMem = 25240 (0x6298) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _AllocMem = 25240 (0x6298) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  FreeMem = 25264 (0x62b0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _FreeMem = 25264 (0x62b0) referenced 6 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  FindTask = 25288 (0x62c8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _FindTask = 25288 (0x62c8) referenced 11 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  SetTaskPri = 25308 (0x62dc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _SetTaskPri = 25308 (0x62dc) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  SetSignal = 25332 (0x62f4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _SetSignal = 25332 (0x62f4) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  Wait = 25356 (0x630c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _Wait = 25356 (0x630c) referenced 7 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  Signal = 25376 (0x6320) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _Signal = 25376 (0x6320) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  GetMsg = 25400 (0x6338) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _GetMsg = 25400 (0x6338) referenced 4 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  CloseLibrary = 25420 (0x634c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _CloseLibrary = 25420 (0x634c) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  OpenDevice = 25440 (0x6360) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _OpenDevice = 25440 (0x6360) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  CloseDevice = 25472 (0x6380) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _CloseDevice = 25472 (0x6380) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  SendIO = 25492 (0x6394) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _SendIO = 25492 (0x6394) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  CheckIO = 25512 (0x63a8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _CheckIO = 25512 (0x63a8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  WaitIO = 25532 (0x63bc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _WaitIO = 25532 (0x63bc) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  AbortIO = 25552 (0x63d0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _AbortIO = 25552 (0x63d0) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  OpenLibrary = 25572 (0x63e4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _OpenLibrary = 25572 (0x63e4) referenced 4 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  InitSemaphore = 25596 (0x63fc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _InitSemaphore = 25596 (0x63fc) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  ObtainSemaphore = 25616 (0x6410) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _ObtainSemaphore = 25616 (0x6410) referenced 4 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  ReleaseSemaphore = 25636 (0x6424) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _ReleaseSemaphore = 25636 (0x6424) referenced 4 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  AttemptSemaphore = 25656 (0x6438) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _AttemptSemaphore = 25656 (0x6438) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  CopyMem = 25676 (0x644c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _CopyMem = 25676 (0x644c) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  CacheClearE = 25704 (0x6468) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _CacheClearE = 25704 (0x6468) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  CreateMsgPort = 25732 (0x6484) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _CreateMsgPort = 25732 (0x6484) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  DeleteMsgPort = 25748 (0x6494) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _DeleteMsgPort = 25748 (0x6494) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  ObtainSemaphoreShared = 25768 (0x64a8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _ObtainSemaphoreShared = 25768 (0x64a8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  CreatePool = 25788 (0x64bc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _CreatePool = 25788 (0x64bc) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  DeletePool = 25816 (0x64d8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _DeletePool = 25816 (0x64d8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  AllocPooled = 25836 (0x64ec) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _AllocPooled = 25836 (0x64ec) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  FreePooled = 25860 (0x6504) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _FreePooled = 25860 (0x6504) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  AttemptSemaphoreShared = 25888 (0x6520) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _AttemptSemaphoreShared = 25888 (0x6520) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  BltBitMap = 25908 (0x6534) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _BltBitMap = 25908 (0x6534) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  InitRastPort = 25944 (0x6558) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _InitRastPort = 25944 (0x6558) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  RectFill = 25964 (0x656c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _RectFill = 25964 (0x656c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  SetAPen = 25996 (0x658c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _SetAPen = 25996 (0x658c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  WaitBOVP = 26020 (0x65a4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _WaitBOVP = 26020 (0x65a4) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  ClipBlit = 26040 (0x65b8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _ClipBlit = 26040 (0x65b8) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  GetDisplayInfoData = 26076 (0x65dc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _GetDisplayInfoData = 26076 (0x65dc) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  ObtainBestPen = 26108 (0x65fc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _ObtainBestPen = 26108 (0x65fc) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  AllocBitMap = 26144 (0x6620) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _AllocBitMap = 26144 (0x6620) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  FreeBitMap = 26172 (0x663c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _FreeBitMap = 26172 (0x663c) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  ReleasePen = 26192 (0x6650) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _ReleasePen = 26192 (0x6650) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  CloseScreen = 26216 (0x6668) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _CloseScreen = 26216 (0x6668) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  CloseWindow = 26236 (0x667c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _CloseWindow = 26236 (0x667c) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  SetWindowTitles = 26256 (0x6690) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _SetWindowTitles = 26256 (0x6690) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  LockPubScreen = 26284 (0x66ac) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _LockPubScreen = 26284 (0x66ac) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  UnlockPubScreen = 26304 (0x66c0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _UnlockPubScreen = 26304 (0x66c0) referenced 7 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  EasyRequest = 26328 (0x66d8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _EasyRequest = 26328 (0x66d8) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  OpenWindowTags = 26360 (0x66f8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _OpenWindowTags = 26360 (0x66f8) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  OpenScreenTags = 26384 (0x6710) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _OpenScreenTags = 26384 (0x6710) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  AllocScreenBuffer = 26408 (0x6728) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _AllocScreenBuffer = 26408 (0x6728) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  FreeScreenBuffer = 26436 (0x6744) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _FreeScreenBuffer = 26436 (0x6744) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  ChangeScreenBuffer = 26460 (0x675c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _ChangeScreenBuffer = 26460 (0x675c) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  SubTime = 26484 (0x6774) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _SubTime = 26484 (0x6774) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  ReadEClock = 26508 (0x678c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _ReadEClock = 26508 (0x678c) referenced 24 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  GetSysTime = 26528 (0x67a0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _GetSysTime = 26528 (0x67a0) referenced 4 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _floor__r = 26548 (0x67b4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _floor = 26572 (0x67cc) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _pow__r = 26604 (0x67ec) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _pow = 26642 (0x6812) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _fabs = 26688 (0x6840) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _sin = 26712 (0x6858) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _cos = 26736 (0x6870) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _tan = 26760 (0x6888) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _sinh = 26784 (0x68a0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _cosh = 26808 (0x68b8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _tanh = 26832 (0x68d0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _asin = 26856 (0x68e8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _acos = 26880 (0x6900) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _atan = 26904 (0x6918) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _exp = 26928 (0x6930) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _log = 26952 (0x6948) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _log10 = 26976 (0x6960) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _sqrt = 27000 (0x6978) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _fmod = 27024 (0x6990) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  facoss::_060LSP() = 27060 (0x69b4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _acos__r = 27068 (0x69bc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  facosx::_060LSP() = 27076 (0x69c4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fasins::_060LSP() = 27084 (0x69cc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fasind::_060LSP() = 27092 (0x69d4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _asin__r = 27092 (0x69d4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fasinx::_060LSP() = 27100 (0x69dc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fatans::_060LSP() = 27108 (0x69e4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fatand::_060LSP() = 27116 (0x69ec) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _atan__r = 27116 (0x69ec) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fatanx::_060LSP() = 27124 (0x69f4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fatanhs::_060LSP() = 27132 (0x69fc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fatanhd::_060LSP() = 27140 (0x6a04) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fatanhx::_060LSP() = 27148 (0x6a0c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fcoss::_060LSP() = 27156 (0x6a14) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fcosd::_060LSP() = 27164 (0x6a1c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _cos__r = 27164 (0x6a1c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fcosx::_060LSP() = 27172 (0x6a24) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fcoshs::_060LSP() = 27180 (0x6a2c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fcoshd::_060LSP() = 27188 (0x6a34) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _cosh__r = 27188 (0x6a34) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fcoshx::_060LSP() = 27196 (0x6a3c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fetoxs::_060LSP() = 27204 (0x6a44) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fetoxd::_060LSP() = 27212 (0x6a4c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _exp__r = 27212 (0x6a4c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fetoxx::_060LSP() = 27220 (0x6a54) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fetoxm1s::_060LSP() = 27228 (0x6a5c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fetoxm1d::_060LSP() = 27236 (0x6a64) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fetoxm1x::_060LSP() = 27244 (0x6a6c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fgetexps::_060LSP() = 27252 (0x6a74) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fgetexpd::_060LSP() = 27260 (0x6a7c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fgetexpx::_060LSP() = 27268 (0x6a84) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fgetmans::_060LSP() = 27276 (0x6a8c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fgetmand::_060LSP() = 27284 (0x6a94) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fgetmanx::_060LSP() = 27292 (0x6a9c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  flog10s::_060LSP() = 27300 (0x6aa4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  flog10d::_060LSP() = 27308 (0x6aac) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _log10__r = 27308 (0x6aac) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  flog10x::_060LSP() = 27316 (0x6ab4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  flog2s::_060LSP() = 27324 (0x6abc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  flog2d::_060LSP() = 27332 (0x6ac4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  flog2x::_060LSP() = 27340 (0x6acc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  flogns::_060LSP() = 27348 (0x6ad4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  flognd::_060LSP() = 27356 (0x6adc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _log__r = 27356 (0x6adc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  flognx::_060LSP() = 27364 (0x6ae4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  flognp1s::_060LSP() = 27372 (0x6aec) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  flognp1d::_060LSP() = 27380 (0x6af4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  flognp1x::_060LSP() = 27388 (0x6afc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fmods::_060LSP() = 27396 (0x6b04) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fmodd::_060LSP() = 27404 (0x6b0c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _fmod__r = 27404 (0x6b0c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fmodx::_060LSP() = 27412 (0x6b14) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  frems::_060LSP() = 27420 (0x6b1c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fremd::_060LSP() = 27428 (0x6b24) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fremx::_060LSP() = 27436 (0x6b2c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fscales::_060LSP() = 27444 (0x6b34) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fscaled::_060LSP() = 27452 (0x6b3c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fscalex::_060LSP() = 27460 (0x6b44) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fsins::_060LSP() = 27468 (0x6b4c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fsind::_060LSP() = 27476 (0x6b54) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _sin__r = 27476 (0x6b54) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fsinx::_060LSP() = 27484 (0x6b5c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fsincoss::_060LSP() = 27492 (0x6b64) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fsincosd::_060LSP() = 27500 (0x6b6c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fsincosx::_060LSP() = 27508 (0x6b74) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fsinhs::_060LSP() = 27516 (0x6b7c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fsinhd::_060LSP() = 27524 (0x6b84) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _sinh__r = 27524 (0x6b84) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fsinhx::_060LSP() = 27532 (0x6b8c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  ftans::_060LSP() = 27540 (0x6b94) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  ftand::_060LSP() = 27548 (0x6b9c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _tan__r = 27548 (0x6b9c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  ftanx::_060LSP() = 27556 (0x6ba4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  ftanhs::_060LSP() = 27564 (0x6bac) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  ftanhd::_060LSP() = 27572 (0x6bb4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _tanh__r = 27572 (0x6bb4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  ftanhx::_060LSP() = 27580 (0x6bbc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  ftentoxs::_060LSP() = 27588 (0x6bc4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  ftentoxd::_060LSP() = 27596 (0x6bcc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  ftentoxx::_060LSP() = 27604 (0x6bd4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  ftwotoxs::_060LSP() = 27612 (0x6bdc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  ftwotoxd::_060LSP() = 27620 (0x6be4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  ftwotoxx::_060LSP() = 27628 (0x6bec) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fabss::_060LSP() = 27636 (0x6bf4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fabsd::_060LSP() = 27644 (0x6bfc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _fabs__r = 27644 (0x6bfc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fabsx::_060LSP() = 27652 (0x6c04) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fadds::_060LSP() = 27660 (0x6c0c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  faddd::_060LSP() = 27668 (0x6c14) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  faddx::_060LSP() = 27676 (0x6c1c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fdivs::_060LSP() = 27684 (0x6c24) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fdivd::_060LSP() = 27692 (0x6c2c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fdivx::_060LSP() = 27700 (0x6c34) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fints::_060LSP() = 27708 (0x6c3c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fintd::_060LSP() = 27716 (0x6c44) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fintx::_060LSP() = 27724 (0x6c4c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fintrzs::_060LSP() = 27732 (0x6c54) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fintrzd::_060LSP() = 27740 (0x6c5c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fintrzx::_060LSP() = 27748 (0x6c64) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fmuls::_060LSP() = 27756 (0x6c6c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fmuld::_060LSP() = 27764 (0x6c74) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fmulx::_060LSP() = 27772 (0x6c7c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fnegs::_060LSP() = 27780 (0x6c84) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fnegd::_060LSP() = 27788 (0x6c8c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fnegx::_060LSP() = 27796 (0x6c94) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fsqrts::_060LSP() = 27804 (0x6c9c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fsqrtd::_060LSP() = 27812 (0x6ca4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _sqrt__r = 27812 (0x6ca4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fsqrtx::_060LSP() = 27820 (0x6cac) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fsubs::_060LSP() = 27828 (0x6cb4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fsubd::_060LSP() = 27836 (0x6cbc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  fsubx::_060LSP() = 27844 (0x6cc4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  facosd::_060LSP() = 27068 (0x69bc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _060FPLSP_TOP = 27060 (0x69b4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+
+  Hunk #2 ( Far Public ) 17296 Bytes (0x4390)
+  _setjmp = 0 (0x0) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _longjmp = 22 (0x16) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _atof = 82 (0x52) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _strtod = 136 (0x88) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _isinf = 208 (0xd0) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _isnan = 248 (0xf8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _atan2 = 292 (0x124) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _ldexp = 542 (0x21e) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _frexp = 610 (0x262) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _modf = 692 (0x2b4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _double_out = 1154 (0x482) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _double_in = 2506 (0x9ca) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _va_putd = 3008 (0xbc0) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/mathgcc040.lib
+  _wbmain__FP9WBStartup = 3080 (0xc08) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  wbmain(WBStartup *) = 3080 (0xc08) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _wbmain = 3088 (0xc10) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  __gcc_main__ = 3102 (0xc1e) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _EXIT_0_Main = 3562 (0xdea) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _INIT_1_DOSBaseDOS_c = 3682 (0xe62) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _EXIT_1_DOSBaseDOS_c = 3702 (0xe76) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _InitModules = 3720 (0xe88) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _CleanupModules = 3800 (0xed8) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  ___8LibBaseCPcUls = 4006 (0xfa6) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  __$_8LibBaseC = 4364 (0x110c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _version__C8LibBaseC = 4416 (0x1140) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _INIT_3_TimerBase = 4458 (0x116a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _EXIT_3_TimerBase = 4574 (0x11de) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  ___mulsi3 = 4620 (0x120c) referenced 13 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___udivsi3 = 4660 (0x1234) referenced 9 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___divsi3 = 4748 (0x128c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___umodsi3 = 4792 (0x12b8) referenced 4 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___modsi3 = 4878 (0x130e) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___builtin_delete = 4930 (0x1342) referenced 28 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___builtin_vec_delete = 4952 (0x1358) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___dl__FPvRC9nothrow_t = 4974 (0x136e) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___vd__FPvRC9nothrow_t = 4996 (0x1384) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  _terminate__Fv = 5020 (0x139c) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___default_unexpected__Fv = 5034 (0x13aa) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  _set_terminate__FPFv_v = 5042 (0x13b2) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  _set_unexpected__FPFv_v = 5064 (0x13c8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  _unexpected__Fv = 5086 (0x13de) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___cp_exception_info = 5100 (0x13ec) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___cp_eh_info = 5120 (0x1400) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___start_cp_handler = 5138 (0x1412) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___eh_alloc = 5168 (0x1430) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___eh_free = 5196 (0x144c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___cplus_type_matcher = 5214 (0x145e) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___cp_push_exception = 5296 (0x14b0) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___cp_pop_exception = 5392 (0x1510) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___uncatch_exception = 5532 (0x159c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___check_eh_spec = 5564 (0x15bc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___throw_bad_cast = 6520 (0x1978) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___throw_bad_typeid = 6988 (0x1b4c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  _uncaught_exception__Fv = 7456 (0x1d20) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  _what__C9exception = 7490 (0x1d42) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___vt_9Exception = 7514 (0x1d5a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___vt_13bad_exception = 7530 (0x1d6a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___vt_9exception = 7546 (0x1d7a) referenced 8 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  __$_9Exception = 7562 (0x1d8a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___9Exception = 7596 (0x1dac) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tf9Exception = 7770 (0x1e5a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  __$_13bad_exception = 7820 (0x1e8c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___13bad_exception = 7854 (0x1eae) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tf13bad_exception = 8032 (0x1f60) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  __$_9exception = 8080 (0x1f90) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___9exception = 8114 (0x1fb2) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tf9exception = 8146 (0x1fd2) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  _exit = 8188 (0x1ffc) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___pure_virtual = 8246 (0x2036) referenced 11 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___eh_rtime_match = 8334 (0x208e) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___default_terminate = 8408 (0x20d8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___terminate = 8420 (0x20e4) referenced 30 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___throw_type_match = 8436 (0x20f4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___empty = 8478 (0x211e) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___get_eh_context = 8550 (0x2166) referenced 19 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___get_eh_info = 8566 (0x2176) referenced 9 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___get_dynamic_handler_chain = 8630 (0x21b6) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___sjthrow = 8648 (0x21c8) referenced 35 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___sjpopnthrow = 8858 (0x229a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___negdi2 = 9028 (0x2344) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___lshrdi3 = 9068 (0x236c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ashldi3 = 9146 (0x23ba) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ashrdi3 = 9222 (0x2406) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ffsdi2 = 9304 (0x2458) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___cmpdi2 = 9364 (0x2494) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ucmpdi2 = 9418 (0x24ca) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___udivmoddi4 = 9472 (0x2500) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___muldi3 = 11050 (0x2b2a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___divdi3 = 11222 (0x2bd6) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___moddi3 = 11328 (0x2c40) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___umoddi3 = 11454 (0x2cbe) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___udivdi3 = 11494 (0x2ce6) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___udiv_w_sdiv = 11524 (0x2d04) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  _nothrow = 11802 (0x2e1a) referenced 12 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  _set_new_handler__FPFv_v = 11804 (0x2e1c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___vt_9bad_alloc = 11826 (0x2e32) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___vn__FUlPv = 11842 (0x2e42) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___nw__FUlPv = 11854 (0x2e4e) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  _what__C9bad_alloc = 11866 (0x2e5a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tf9bad_alloc = 11892 (0x2e74) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  __$_9bad_alloc = 11944 (0x2ea8) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___nw__FUlRC9nothrow_t = 11990 (0x2ed6) referenced 7 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___builtin_new = 12360 (0x3048) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___builtin_vec_new = 12954 (0x329a) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___vn__FUlRC9nothrow_t = 12972 (0x32ac) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  __$_9type_info = 13006 (0x32ce) referenced 7 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___eq__C9type_infoRC9type_info = 13042 (0x32f2) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___rtti_class = 13088 (0x3320) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___rtti_si = 13132 (0x334c) referenced 11 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___rtti_user = 13170 (0x3372) referenced 4 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  _dcast__C16__user_type_infoRC9type_infoiPvPC9type_infoT3 = 13202 (0x3392) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  _dcast__C14__si_type_infoRC9type_infoiPvPC9type_infoT3 = 13244 (0x33bc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  _dcast__C17__class_type_infoRC9type_infoiPvPC9type_infoT3 = 13324 (0x340c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___vt_17__class_type_info = 13584 (0x3510) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___vt_14__si_type_info = 13600 (0x3520) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___vt_16__user_type_info = 13616 (0x3530) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___vt_10bad_typeid = 13632 (0x3540) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___vt_8bad_cast = 13648 (0x3550) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___vt_9type_info = 13664 (0x3560) referenced 23 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___17__class_type_infoPCcPCQ217__class_type_info9base_infoUl = 13676 (0x356c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tf17__class_type_info = 13742 (0x35ae) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  __$_17__class_type_info = 13790 (0x35de) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___14__si_type_infoPCcRC16__user_type_info = 13810 (0x35f2) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tf14__si_type_info = 13868 (0x362c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  __$_14__si_type_info = 13914 (0x365a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___16__user_type_infoPCc = 13934 (0x366e) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tf16__user_type_info = 13988 (0x36a4) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  __$_16__user_type_info = 14036 (0x36d4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  __$_10bad_typeid = 14056 (0x36e8) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___10bad_typeid = 14090 (0x370a) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tf10bad_typeid = 14124 (0x372c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  __$_8bad_cast = 14174 (0x375e) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___8bad_cast = 14208 (0x3780) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tf8bad_cast = 14238 (0x379e) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ne__C9type_infoRC9type_info = 14288 (0x37d0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  _name__C9type_info = 14312 (0x37e8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___9type_infoPCc = 14326 (0x37f6) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tf9type_info = 14364 (0x381c) referenced 21 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  _before__C9type_infoRC9type_info = 14414 (0x384e) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___throw_type_match_rtti = 14446 (0x386e) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___is_pointer__FPv = 15446 (0x3c56) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___rtti_ptr = 15508 (0x3c94) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___rtti_attr = 15546 (0x3cba) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___rtti_func = 15590 (0x3ce6) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___rtti_ptmf = 15622 (0x3d06) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___rtti_ptmd = 15654 (0x3d26) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___rtti_array = 15686 (0x3d46) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___dynamic_cast = 15718 (0x3d66) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tfv = 15792 (0x3db0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tfx = 15836 (0x3ddc) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tfl = 15880 (0x3e08) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tfi = 15924 (0x3e34) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tfs = 15968 (0x3e60) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tfb = 16012 (0x3e8c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tfc = 16056 (0x3eb8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tfw = 16100 (0x3ee4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tfr = 16144 (0x3f10) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tfd = 16188 (0x3f3c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tff = 16232 (0x3f68) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tfUi = 16278 (0x3f96) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tfUl = 16324 (0x3fc4) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tfUx = 16370 (0x3ff2) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tfUs = 16416 (0x4020) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tfUc = 16462 (0x404e) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tfSc = 16508 (0x407c) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+
+  Hunk #3 ( Merged Public ) 208 Bytes (0xd0)
+  _NewList = 0 (0x0) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _CreatePort = 20 (0x14) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+  _DeletePort = 144 (0x90) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/amiga.lib
+
+PowerPC Code
+
+
+Data
+
+
+  Hunk #4 ( Far Public ) 2320 Bytes (0x910)
+  __10StartupLib$numStartArgs = 0 (0x0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  __10StartupLib$startArgs = 4 (0x4) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  _IntuitionBase = 8 (0x8) referenced 14 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  __24_GLOBAL_$N$IntuitionBase$memSemaphore = 12 (0xc) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  __24_GLOBAL_$N$IntuitionBase$memPool = 16 (0x10) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  __24_GLOBAL_$N$IntuitionBase$puddleSize = 20 (0x14) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  __24_GLOBAL_$N$IntuitionBase$threshSize = 24 (0x18) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  __9SystemLib$debug = 28 (0x1c) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  __3CPU$fpuPrecision = 32 (0x20) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  __3CPU$cpuNames = 36 (0x24) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  __3CPU$fpuNames = 64 (0x40) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  __10MilliClock$clockFreq = 100 (0x64) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  __10Threadable$threadCnt = 104 (0x68) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  __10Threadable$threadsIdle = 108 (0x6c) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  __10Threadable$priTab = 112 (0x70) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  __11_NatDisplay$modeID = 132 (0x84) referenced 5 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  __25DisplayPropertiesProvider$modesAvail = 136 (0x88) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  __25DisplayPropertiesProvider$numModes = 140 (0x8c) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _CyberGfxBase = 144 (0x90) referenced 6 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _GfxBase = 148 (0x94) referenced 11 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  __6_Nat2D$abstractToNative = 152 (0x98) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  __6_Nat2D$nativeToAbstract = 212 (0xd4) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  __6_Nat2D$convTab = 296 (0x128) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _KeyMapBase = 1200 (0x4b0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/iolib.lib
+  __9_NatInput$openCount = 1204 (0x4b4) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/iolib.lib
+  __9_NatInput$nonPrintMap = 1208 (0x4b8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/iolib.lib
+  ___sF = 1748 (0x6d4) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _std__out = 1752 (0x6d8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _std__in = 1840 (0x730) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _std__err = 1928 (0x788) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  __8LibBaseC$not_open = 2216 (0x8a8) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  ___stacksize = 2220 (0x8ac) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  ___terminate_func = 2228 (0x8b4) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___init_table68k = 2240 (0x8c0) referenced 1 times
+    File <Internal Assembled>
+  ___exit_table68k = 2280 (0x8e8) referenced 1 times
+    File <Internal Assembled>
+
+BSS
+
+
+  Hunk #5 ( Far Public ) 3348 Bytes (0xd14)
+  _SysBase = 164 (0xa4) referenced 62 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/startups/gccstartup.o
+  _readVSpeed = 168 (0xa8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _writeVSpeed = 176 (0xb0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _write16VSpeed = 184 (0xb8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _writeCVSpeed = 192 (0xc0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copyR2VSpeed = 200 (0xc8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copy16R2VSpeed = 208 (0xd0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copyCR2VSpeed = 216 (0xd8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copyOS_0R2VSpeed = 224 (0xe0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copyOS_2R2VSpeed = 232 (0xe8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copyOS_4R2VSpeed = 240 (0xf0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copyOS_6R2VSpeed = 248 (0xf8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copyOS_8R2VSpeed = 256 (0x100) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copyOS_0R2RSpeed = 264 (0x108) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copyOS_2R2RSpeed = 272 (0x110) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copyOS_4R2RSpeed = 280 (0x118) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copyOS_6R2RSpeed = 288 (0x120) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copyOS_8R2RSpeed = 296 (0x128) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _shuffle16_0R2VSpeed = 304 (0x130) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _shuffle16_2R2VSpeed = 312 (0x138) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _shuffle16_4R2VSpeed = 320 (0x140) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _shuffle16_6R2VSpeed = 328 (0x148) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _shuffle16_8R2VSpeed = 336 (0x150) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _shuffle16_0R2RSpeed = 344 (0x158) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _shuffle16_2R2RSpeed = 352 (0x160) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _shuffle16_4R2RSpeed = 360 (0x168) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _shuffle16_6R2RSpeed = 368 (0x170) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _shuffle16_8R2RSpeed = 376 (0x178) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copyV2RSpeed = 384 (0x180) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copy16V2RSpeed = 392 (0x188) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _convSpeed = 400 (0x190) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _readRSpeed = 408 (0x198) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _writeRSpeed = 416 (0x1a0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _write16RSpeed = 424 (0x1a8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _writeCRSpeed = 432 (0x1b0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copyR2RSpeed = 440 (0x1b8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copy16R2RSpeed = 448 (0x1c0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copyOSR2RSpeed = 456 (0x1c8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  _copyCR2RSpeed = 464 (0x1d0) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/proj/pixeltest/pixeltest.o
+  __10Threadable$rootThread = 488 (0x1e8) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  ___ti10Threadable = 600 (0x258) referenced 4 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  ___ti8Lockable = 608 (0x260) referenced 1 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  ___ti10MainThread = 616 (0x268) referenced 2 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/systemlib.lib
+  ___ti7IFilter = 632 (0x278) referenced 6 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  ___ti7Display = 640 (0x280) referenced 15 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  ___ti7_NatWin = 648 (0x288) referenced 5 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  ___ti7_NatScr = 664 (0x298) referenced 5 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  ___ti11_NatScrBuff = 680 (0x2a8) referenced 5 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  ___ti11_NatDisplay = 696 (0x2b8) referenced 5 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  ___ti15SurfaceProvider = 712 (0x2c8) referenced 5 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  ___ti9_NatInput = 728 (0x2d8) referenced 5 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  ___ti11SurfaceUser = 744 (0x2e8) referenced 5 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  __15PixelDescriptor$propTab = 752 (0x2f0) referenced 18 times
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  __gfxLib = 932 (0x3a4) unused, maybe local
+    File Developer:eXtropia/eXtropiaNG/libsrc/plat/amigaos3_68k/Projects/lib/gfxlib.lib
+  _errno = 940 (0x3ac) referenced 8 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___fileList = 1968 (0x7b0) referenced 5 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___tmpnamList = 1984 (0x7c0) referenced 4 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___tmpnamNext = 1996 (0x7cc) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___protectFileList = 2000 (0x7d0) referenced 4 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___protectTmpnamList = 2048 (0x800) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  ___mempool = 2240 (0x8c0) referenced 33 times
+    File Developer:C_CPlusPlus/StormC/Lib/stormgcc020.lib
+  _DOSBase = 2936 (0xb78) referenced 33 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  _TimerBase = 2944 (0xb80) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccstartup020.lib
+  ___ti9Exception = 2952 (0xb88) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ti9exception = 2968 (0xb98) referenced 6 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ti13bad_exception = 2976 (0xba0) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___new_handler = 2992 (0xbb0) referenced 2 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ti9bad_alloc = 3000 (0xbb8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ti17__class_type_info = 3016 (0xbc8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ti16__user_type_info = 3032 (0xbd8) referenced 3 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ti14__si_type_info = 3048 (0xbe8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ti9type_info = 3064 (0xbf8) referenced 9 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ti10bad_typeid = 3072 (0xc00) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ti8bad_cast = 3088 (0xc10) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tiv = 3104 (0xc20) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tix = 3112 (0xc28) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___til = 3120 (0xc30) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tii = 3128 (0xc38) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tis = 3136 (0xc40) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tib = 3144 (0xc48) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tic = 3152 (0xc50) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tiw = 3160 (0xc58) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tir = 3168 (0xc60) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tid = 3176 (0xc68) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tif = 3184 (0xc70) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tiUi = 3192 (0xc78) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tiUl = 3200 (0xc80) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tiUx = 3208 (0xc88) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tiUs = 3216 (0xc90) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tiUc = 3224 (0xc98) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___tiSc = 3232 (0xca0) unused, maybe local
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ti17__array_type_info = 3240 (0xca8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ti16__ptmd_type_info = 3256 (0xcb8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ti16__ptmf_type_info = 3272 (0xcc8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ti16__func_type_info = 3288 (0xcd8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ti19__builtin_type_info = 3304 (0xce8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ti16__attr_type_info = 3320 (0xcf8) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+  ___ti19__pointer_type_info = 3336 (0xd08) referenced 1 times
+    File Developer:C_CPlusPlus/StormC/StormSYS/lib/stormgccsupport000.lib
+
+END

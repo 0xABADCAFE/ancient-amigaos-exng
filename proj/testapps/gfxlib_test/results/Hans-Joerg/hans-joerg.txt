@@ -1,0 +1,3 @@
+I've attached my results. The system is an 060/50, Mediator 4000 and a 
+Voodoo 5. Incidentially, the driver source code for the Voodoo drivers 
+on WIndows leaked, and I will have a very long look at that ;-)

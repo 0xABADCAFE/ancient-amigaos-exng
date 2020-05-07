@@ -1,0 +1,19 @@
+  Keys
+
+  Esc - quits
+  F1  - increase brush radius
+  F2  - decrease brush radius
+  F3  - reset brush radius
+  F4  - increase brush density
+  F5  - decrease brush density
+  F6  - reset brush density
+  F7  - reset brush radius and density
+  F8  - clear page to white
+  F9  - clear page to current brush colour
+  F10 - show palette / colour select mode
+
+  1-8 use brush preset 1..8
+  s  write image as ppm
+  a  use alpha paint mode
+  n  use negate paint mode
+  c  clear mask

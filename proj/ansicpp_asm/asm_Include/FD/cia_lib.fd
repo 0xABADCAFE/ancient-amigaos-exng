@@ -1,0 +1,8 @@
+##base _CIABase
+##bias 6
+##public
+AddICRVector(iCRBit,interrupt)(d0/a1)
+RemICRVector(iCRBit,interrupt)(d0/a1)
+AbleICR(mask)(d0)
+SetICR(mask)(d0)
+##end

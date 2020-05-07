@@ -1,0 +1,346 @@
+Key to the abstract GUI design are 3 classes
+ 
+GUIBase
+GUIObject
+GUIListener
+ 
+The GUIBase class is an implementation of the InputFocus overrides each of the
+event handler methods methods to pass the corresponding event directly to the
+GUIObjects in its tree.
+ 
+The GUIObject interface will define a set of methods similar to the InputFocus
+methods, including passive versions (that allow snooping of input for inactive
+GUIObjects).
+ 
+The GUIListener interface adds the ability to receive GUIObject specific events
+to the implementor.
+ 
+// simple intrusive List container for GUIObjects
+ 
+struct Link {
+   Link *pre, *suc;
+};
+ 
+class List {
+   Link* head;
+   Link* curr;
+ 
+   //... 
+};
+ 
+ 
+// The listener inteface, used for passing GUIObject references back to the listener
+ 
+class GUIObject;
+class GUIListener {
+  protected:
+    // the derived GUIObject calls this for each of it listeners, passing itself as the argument
+    // after the GUIObject has been touched by an event (such as a click etc.). The listener
+    // itself then asks what happened to the object via its getEventType() method.
+    virtual void handleGUIEvent(GUIObject*); 
+};
+ 
+ 
+// Basic GUIObject class. Inerits gfxlib/gfx.hpp/Rect class for area handling
+ 
+class GUIObject : public Link, public Rect {
+  friend class GUIBase;
+  private:
+    uint32 myID;
+    GUIObject* parent;
+    List children;
+    List listeners;  // multiple GUIListners may be listening for this GUIObjects' events
+ 
+    uint32 depth;   // each GUIObject has a depth value. This is used to resolve overlapping collision areas.
+ 
+    // input filtering states
+    uint32 activeInputStates;
+    uint32 passiveInputStates;
+ 
+    bool disabled; // a disabled object does not respond to input, nor pass it to its children
+ 
+    // recursive handlers - each one invokes the appropriate handler for itself and its children
+    // this is only done for passive events - the active GUIObject always has it's handler invoked
+    // directly
+ 
+    void recKeyPressNonPrintableInactive(sint32 code);
+    void recKeyReleaseNonPrintableInactive(sint32 code);
+    void recKeyPressPrintableInactive(sint32 code, char ch);
+    void recKeyReleasePrintableInactive(sint32 code, char ch);
+    void recMousePressInactive(uint32 code);
+    void recMouseReleaseInactive(uint32 code);
+    void recMouseMoveInactive(sint16 x, sint16 y, sint16 dx, sint16 dy);
+    void recMouseDragInactive(sint16 x, sint16 y, sint16 dx, sint16 dy, uint32 s);
+ 
+    void updateListeners(); // This method calls the handleGUIEvent() for each GUIListener in the listener list.
+ 
+  protected:
+    sint32 eventType; // the derived class defines meaningful values for this
+ 
+    enum {
+      // input filter state flags
+      KEYPRINTPRESS = 0x00000001,
+      KEYNONPRINTPRESS = 0x00000002,
+      KEYPRINTRELEASE = 0x00000004,
+      KEYNONPRINTRELEASE = 0x00000008,
+      MOUSELEFTPRESS = 0x00000010,
+      MOUSECENTREPRESS = 0x00000020,
+      MOUSERIGHTPRESS = 0x00000040,
+      MOUSEOTHERPRESS = 0x00000080
+      MOUSELEFTRELEASE = 0x00000100
+      MOUSECENTRERELEASE = 0x00000200,
+      MOUSERIGHTRELEASE = 0x00000400,
+      MOUSEOTHERRELEASE = 0x00000800,
+      MOUSENOCLIP = 0x00001000,
+      MOUSEMOVE = 0x00002000,
+      MOUSEDRAG = 0x00004000,
+      MOUSEPRESS = 0x00000F0, // any mouse press
+      MOUSERELEASE = 0x0000F000 // any mouse release
+    };
+ 
+    bool getActiveResponse(uint32 state) { return (activeInputState & state)!=0; }
+    bool getPassiveResponse(uint32 state) { return (activeInputState & state)!=0; }
+ 
+    // event handlers - called when this is the active object
+    virtual void keyPressNonPrintable(sint32 code);
+    virtual void keyReleaseNonPrintable(sint32 code);
+    virtual void keyPressPrintable(sint32 code, char ch);
+    virtual void keyReleasePrintable(sint32 code, char ch);
+    virtual void mousePress(uint32 code);
+    virtual void mouseRelease(uint32 code);
+    virtual void mouseMove(sint16 x, sint16 y, sint16 dx, sint16 dy);
+    virtual void mouseDrag(sint16 x, sint16 y, sint16 dx, sint16 dy, uint32 s);
+ 
+    // event handlers - called when this is not the active object
+    virtual void keyPressNonPrintableInactive(sint32 code);
+    virtual void keyReleaseNonPrintableInactive(sint32 code);
+    virtual void keyPressPrintableInactive(sint32 code, char ch);
+    virtual void keyReleasePrintableInactive(sint32 code, char ch);
+    virtual void mousePressInactive(uint32 code);
+    virtual void mouseReleaseInactive(uint32 code);
+    virtual void mouseMoveInactive(sint16 x, sint16 y, sint16 dx, sint16 dy);
+    virtual void mouseDragInactive(sint16 x, sint16 y, sint16 dx, sint16 dy, uint32 s);
+ 
+  public:
+    void addChild(GUIObject* obj);
+    void removeChild(GUIObject* obj);
+    void addListener(GUIListener* listen);
+    void removeListener(GUIListener* listen);
+ 
+    bool coordHit(sint16 x, sint16 y); // returns true if the coordinates are 'inside' this object's area
+    sint32 getEventType() { return eventType; }
+    uint32 getID() { return myID; }
+ 
+    //....
+};
+ 
+ 
+// GUIBase class. Topmost in GUI heirarchy, implements the InputFocus interface directly
+ 
+class GUIBase : public InputFocus {
+  private:
+    static GUIObject* activeObject; // this is the active object
+ 
+    GUIObject* rootObject; // this would usually be the topmost window etc.
+ 
+    bool passive; // global passive response flag
+ 
+    GUIObject* find(sint16 x, sint16 y); // searches the tree for the frontmost GUIObject under the specific coord
+ 
+  protected:
+    // event methods from InputFocus
+    void keyPressNonPrintable(sint32 code);
+    void keyReleaseNonPrintable(sint32 code);
+    void keyPressPrintable(sint32 code, char ch);
+    void keyReleasePrintable(sint32 code, char ch);
+    void mousePress(uint32 code);
+    void mouseRelease(uint32 code);
+    void mouseMove(sint16 x, sint16 y, sint16 dx, sint16 dy);
+    void mouseDrag(sint16 x, sint16 y, sint16 dx, sint16 dy, uint32 s);
+ 
+  public:
+    GUIObject* getRoot()    { return rootObject; }
+    static GUIObject* getActive()  { return activeObject; }
+    static void setActive(GUIObject* o) { if (o) activeObject = o; }
+    // ....
+};
+ 
+ 
+ 
+// examples GUIBase top level handler
+ 
+void GUIBase::mousePress(uint32 code)
+{
+   // process mouse key presses. If the keypress is a left click, do a test to
+   // see if the active object is still correct before proceeding
+ 
+   if (code & Mouse::KEYLEFT)
+   {
+      // check if the left click landed inside the current active object
+      // if so, find the new active object
+ 
+      if (!activeObject->coordHit(getMouseX(), getMouseY())
+         activeObject = find(getMouseX(), getMouseY());
+   }
+ 
+   // first send this event to the active GUIObject (if its not filtering it)
+ 
+   if (activeObject->getActiveResponse(MOUSEPRESS))
+      activeObject->mousePress(code);
+ 
+   // now send the inactive version to all objects in the tree
+ 
+   if (passive)
+      rootObject->recMousePress(code);
+}
+ 
+ 
+void GUIBase::keyPressedNonPrintable(sint32 code)
+{
+ 
+   // If passive input globally active, send the inactive version to all objects in the tree
+ 
+   if (passive)
+      rootObject->recKeyPressNonPrintableInactive(code);
+ 
+   // directly send this the event to the currently active GUIObject (if its not filtering it)
+   // we do this after the inactive calls because one of them may have reassigned the
+   // active object
+ 
+   if (activeObject->getActiveResponse(KEYPRESSNONPRINT))
+      activeObject->keyPressNonPrintable(code);
+}
+ 
+ 
+// example GUIObject recursive passive input handler
+ 
+void GUIObject::recKeyPressNonPrintableInactive(sint32 code)
+{
+   // A disabled object renders does not pass the input to its children either
+ 
+   if (disabled)
+      return;
+ 
+   // handle the passive event, if listening for it (and this isnt the active object!)
+ 
+   if (this!=GUIBase::getActive() && getPassiveResponse(KEYNONPRINTPRESS))
+      keyPressNonPrintableInactive(code);
+ 
+   // call the corresponding recKeyPressNonPrintableInactive for each child
+   // this is where the recursive bit of the name comes from :-)
+ 
+   for (GUIObject* obj = (GUIObject*)children.first(); obj; obj = (GUIObject*)obj->next())
+      obj->recKeyPressNonPrintableInactive(code);
+}
+ 
+ 
+Right, lets have a quick recap (in english this time)
+ 
+The InputFocus bridges the gap from the OS defined input dispatcher to our system. Our abstract gui handler's GUIBase sits on the other end of the bridge and maintains a tree of objects.
+ 
+GUIBase has the job of passing the simplistic InputFocus events to the tree of GUIObjects it maintains, passing both active and inactive events where appropriate.
+ 
+Each GUIObject sets it's own response filtering for active and inactive events alike.
+When we get to specific GUIObjects, such as Button, the simplistic key/mouse events are translated into that GUI objects corresponding event type.
+ 
+ 
+Example
+ 
+Suppose we want button has to passively react to the mouse in a javascript style 'onMouseOver' 'onMouseOut' type way. That could be achieved by setting the passive input for MOUSEMOVE and defining the mouseMoveInactive() method thus
+ 
+class RolloverButton : public GUIObject {
+   private:
+      bool mouseOver;
+      // ...
+ 
+   protected:
+      void mouseMoveInactive(sint16 x, sint16 y, sint16 dx, sint16 dy); // for rollover effect
+      void mousePress(uint32 code); // for clicks
+ 
+   public:
+      // Button class event types 
+      enum {
+         BUTTON_CLICKED = 1,
+         MOUSE_OVER,
+         MOUSE_OUT
+      };
+ 
+      // ...
+};
+ 
+ 
+// Override the mouseMoveInactive method to check for mouse over the button
+ 
+void RolloverButton::mouseMoveInactive(sint16 x, sint16 y, sint16 dx, sint16 dy)
+{
+   bool hit = coordHit(x, y);
+   if (hit != mouseOver)
+   {
+      // a change implies either over or out...
+      if (hit)
+         eventType = MOUSE_OVER;
+      else
+         eventType = MOUSE_OUT;
+      mouseOver = hit;
+ 
+      // redraw the button to reflect the new state.
+      redraw();
+ 
+      // update anybody who cares to know we had an event here :-)
+      updateListeners();
+   }
+}
+ 
+ 
+A GUIListener derived App would possibly react to our RolloverButton object follows
+ 
+void App::handleGUIEvent(GUIObject* o)
+{
+    if (o->getID() == myRollover->id())
+    {
+       switch (myRollover->getEventType()) {
+          case RolloverButton::BUTTON_CLICKED:
+          // ...
+          break;
+ 
+          case RolloverButton::MOUSE_OVER:
+          // ...
+          break;
+ 
+          case RolloverButton::MOUSE_OUT:
+          // ...
+          break;
+       }
+    }
+}
+ 
+ 
+The above example would cause or RolloverButton to react to passive input in the desired way. Other cool things are possible with passive input. Consider the following...
+ 
+void KeyActivatableObject::keyPressPrintableInavtive(sint32 code, char ch)
+{
+   if (myKey == code)
+   {
+      GUIBase::setActive(this);
+      // do whatever...
+ 
+      redraw();
+      updateListeners();
+   }   
+}
+ 
+The above would cause KeyActivatableObject to become the active GUIObject when the key corresponding to its myKey member was pressed, irrespective of what object was active before. Since the active object's message is sent after processing any inactive input, there is no risk that the existing active object would have the chance to respond.
+ 
+This is all well and good, but what if we dont want the object to become active at this particular time? Well, we can set the filter for the object to ignore passive input until such behaviour is warranted. Alternatively, if our KeyActivatableObject or any of its parent chain is set disabled it would never recieve this event either.
+ 
+ 
+In conclusion, the current design has a lot of scope for control flexibility
+ 
+1) We have an object base that is fully extensible to allow new GUI objects to be defined and integrated seamlessly into the code.
+ 
+2) We have a heirarchial tree of these objects, each with the potential for multiple listeners and the inherent ability to pass or supress input to its childen.
+ 
+3) We have completely generalized way of passing raw input to these objects and sending the object mapped event back to the listener.
+ 
+4) We dont have objects to represent events which would result in large numbers of temorary small objects at runtime.
+ 

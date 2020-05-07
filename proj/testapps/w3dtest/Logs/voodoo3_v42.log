@@ -1,0 +1,409 @@
+W3DTest Log
+
+3D Chipset                 : 3Dfx Voodoo 3/Compatible [Litte endian mode]
+
+Display information:
+
+Dimensions [visible]       : 640 x 480
+Dimensions [hardware]      : 640 x 480
+Bytes per Pixel            : 2, endian swapped
+Bits per Gun               : A[  0] R[  5] G[  6] B[  5]
+Bitwise Offset             : A[  0] R[ 11] G[  5] B[  0]
+Gun Maxima                 : A[  0] R[ 31] G[ 63] B[ 31]
+
+Quality of Implementation tests:
+
+W3D_VERTEX_F_F_F           : User passed test
+W3D_VERTEX_F_F_D           : User passed test
+W3D_VERTEX_D_D_D           : User passed test
+
+W3D_COLOR_UBYTE
+W3D_CMODE_RGB              : User passed test
+W3D_CMODE_BGR              : User passed test
+W3D_CMODE_RGBA             : User passed test
+W3D_CMODE_ARGB             : User passed test
+W3D_CMODE_BGRA             : User passed test
+
+W3D_COLOR_FLOAT
+W3D_CMODE_RGB              : User passed test
+W3D_CMODE_BGR              : User passed test
+W3D_CMODE_RGBA             : User passed test
+W3D_CMODE_ARGB             : User passed test
+W3D_CMODE_BGRA             : User passed test
+W3D_PRIMITIVE_POINTS       : User failed test
+W3D_PRIMITIVE_LINES        : User failed test
+W3D_PRIMITIVE_LINESTRIP    : User failed test
+W3D_PRIMITIVE_LINELOOP     : User failed test
+
+Performance tests:
+
+VRAM Write Bandwidth       : 9293.32 K/s
+VRAM Read Bandwidth        : 5604.20 K/s
+VRAM RAM to VRAM (move16)  : 8019.63 K/s
+Z Buffer Write Bandwidth   : 537650.37 z-pixels/s
+Z Buffer Read Bandwidth    : 507087.56 z-pixels/s
+Texture Upload Bandwidth   : 2862.33 K/s
+
+
+Triangle Render [Array Linear] 
+
+Vertex Format : FFF ----------------------------------
+Backface culled            : 16 x 16  30843 tris/s
+Colour Format [Flat]       : 16 x 16  32374 tris/s
+Colour Format RGB_U        : 16 x 16  23356 tris/s
+Colour Format BGR_U        : 16 x 16  23396 tris/s
+Colour Format RGBA_U       : 16 x 16  24635 tris/s
+Colour Format ARGB_U       : 16 x 16  24680 tris/s
+Colour Format BGRA_U       : 16 x 16  23356 tris/s
+Colour Format RGB_F        : 16 x 16  18533 tris/s
+Colour Format BGR_F        : 16 x 16  17763 tris/s
+Colour Format RGBA_F       : 16 x 16  16917 tris/s
+Colour Format ARGB_F       : 16 x 16  17045 tris/s
+Colour Format BGRA_F       : 16 x 16  16853 tris/s
+
+
+Vertex Format : FFD ----------------------------------
+Backface culled            : 16 x 16  31065 tris/s
+Colour Format [Flat]       : 16 x 16  30882 tris/s
+Colour Format RGB_U        : 16 x 16  23195 tris/s
+Colour Format BGR_U        : 16 x 16  23396 tris/s
+Colour Format RGBA_U       : 16 x 16  22380 tris/s
+Colour Format ARGB_U       : 16 x 16  24324 tris/s
+Colour Format BGRA_U       : 16 x 16  22784 tris/s
+Colour Format RGB_F        : 16 x 16  18274 tris/s
+Colour Format BGR_F        : 16 x 16  17964 tris/s
+Colour Format RGBA_F       : 16 x 16  16574 tris/s
+Colour Format ARGB_F       : 16 x 16  16853 tris/s
+Colour Format BGRA_F       : 16 x 16  16483 tris/s
+
+
+Vertex Format : DDD ----------------------------------
+Backface culled            : 16 x 16  27247 tris/s
+Colour Format [Flat]       : 16 x 16  29005 tris/s
+Colour Format RGB_U        : 16 x 16  23195 tris/s
+Colour Format BGR_U        : 16 x 16  23316 tris/s
+Colour Format RGBA_U       : 16 x 16  23396 tris/s
+Colour Format ARGB_U       : 16 x 16  23437 tris/s
+Colour Format BGRA_U       : 16 x 16  22365 tris/s
+Colour Format RGB_F        : 16 x 16  17964 tris/s
+Colour Format BGR_F        : 16 x 16  17716 tris/s
+Colour Format RGBA_F       : 16 x 16  15630 tris/s
+Colour Format ARGB_F       : 16 x 16  16666 tris/s
+Colour Format BGRA_F       : 16 x 16  16453 tris/s
+
+
+Vertex Format : FFF ----------------------------------
+Backface culled            : 32 x 32  31768 tris/s
+Colour Format [Flat]       : 32 x 32  31980 tris/s
+Colour Format RGB_U        : 32 x 32  23261 tris/s
+Colour Format BGR_U        : 32 x 32  23261 tris/s
+Colour Format RGBA_U       : 32 x 32  23728 tris/s
+Colour Format ARGB_U       : 32 x 32  24062 tris/s
+Colour Format BGRA_U       : 32 x 32  22835 tris/s
+Colour Format RGB_F        : 32 x 32  18235 tris/s
+Colour Format BGR_F        : 32 x 32  18132 tris/s
+Colour Format RGBA_F       : 32 x 32  16512 tris/s
+Colour Format ARGB_F       : 32 x 32  16771 tris/s
+Colour Format BGRA_F       : 32 x 32  16043 tris/s
+
+
+Vertex Format : FFD ----------------------------------
+Backface culled            : 32 x 32  30208 tris/s
+Colour Format [Flat]       : 32 x 32  29798 tris/s
+Colour Format RGB_U        : 32 x 32  22745 tris/s
+Colour Format BGR_U        : 32 x 32  22745 tris/s
+Colour Format RGBA_U       : 32 x 32  23439 tris/s
+Colour Format ARGB_U       : 32 x 32  23619 tris/s
+Colour Format BGRA_U       : 32 x 32  22305 tris/s
+Colour Format RGB_F        : 32 x 32  17099 tris/s
+Colour Format BGR_F        : 32 x 32  17763 tris/s
+Colour Format RGBA_F       : 32 x 32  16512 tris/s
+Colour Format ARGB_F       : 32 x 32  16684 tris/s
+Colour Format BGRA_F       : 32 x 32  16399 tris/s
+
+
+Vertex Format : DDD ----------------------------------
+Backface culled            : 32 x 32  27855 tris/s
+Colour Format [Flat]       : 32 x 32  27905 tris/s
+Colour Format RGB_U        : 32 x 32  21805 tris/s
+Colour Format BGR_U        : 32 x 32  22745 tris/s
+Colour Format RGBA_U       : 32 x 32  23156 tris/s
+Colour Format ARGB_U       : 32 x 32  23332 tris/s
+Colour Format BGRA_U       : 32 x 32  22176 tris/s
+Colour Format RGB_F        : 32 x 32  17763 tris/s
+Colour Format BGR_F        : 32 x 32  17472 tris/s
+Colour Format RGBA_F       : 32 x 32  15600 tris/s
+Colour Format ARGB_F       : 32 x 32  16512 tris/s
+Colour Format BGRA_F       : 32 x 32  16315 tris/s
+
+
+Vertex Format : FFF ----------------------------------
+Backface culled            : 48 x 48  31784 tris/s
+Colour Format [Flat]       : 48 x 48  31841 tris/s
+Colour Format RGB_U        : 48 x 48  23130 tris/s
+Colour Format BGR_U        : 48 x 48  23211 tris/s
+Colour Format RGBA_U       : 48 x 48  22812 tris/s
+Colour Format ARGB_U       : 48 x 48  24098 tris/s
+Colour Format BGRA_U       : 48 x 48  22773 tris/s
+Colour Format RGB_F        : 48 x 48  18281 tris/s
+Colour Format BGR_F        : 48 x 48  18131 tris/s
+Colour Format RGBA_F       : 48 x 48  16577 tris/s
+Colour Format ARGB_F       : 48 x 48  16124 tris/s
+Colour Format BGRA_F       : 48 x 48  16609 tris/s
+
+
+Vertex Format : FFD ----------------------------------
+Backface culled            : 48 x 48  29901 tris/s
+Colour Format [Flat]       : 48 x 48  30054 tris/s
+Colour Format RGB_U        : 48 x 48  22617 tris/s
+Colour Format BGR_U        : 48 x 48  22656 tris/s
+Colour Format RGBA_U       : 48 x 48  22313 tris/s
+Colour Format ARGB_U       : 48 x 48  23541 tris/s
+Colour Format BGRA_U       : 48 x 48  22313 tris/s
+Colour Format RGB_F        : 48 x 48  17935 tris/s
+Colour Format BGR_F        : 48 x 48  17672 tris/s
+Colour Format RGBA_F       : 48 x 48  16454 tris/s
+Colour Format ARGB_F       : 48 x 48  15863 tris/s
+Colour Format BGRA_F       : 48 x 48  16332 tris/s
+
+
+Vertex Format : DDD ----------------------------------
+Backface culled            : 48 x 48  27742 tris/s
+Colour Format [Flat]       : 48 x 48  27917 tris/s
+Colour Format RGB_U        : 48 x 48  22617 tris/s
+Colour Format BGR_U        : 48 x 48  22656 tris/s
+Colour Format RGBA_U       : 48 x 48  22201 tris/s
+Colour Format ARGB_U       : 48 x 48  23130 tris/s
+Colour Format BGRA_U       : 48 x 48  22163 tris/s
+Colour Format RGB_F        : 48 x 48  17742 tris/s
+Colour Format BGR_F        : 48 x 48  17428 tris/s
+Colour Format RGBA_F       : 48 x 48  16065 tris/s
+Colour Format ARGB_F       : 48 x 48  15750 tris/s
+Colour Format BGRA_F       : 48 x 48  16272 tris/s
+
+
+Vertex Format : FFF ----------------------------------
+Backface culled            : 64 x 64  31836 tris/s
+Colour Format [Flat]       : 64 x 64  31752 tris/s
+Colour Format RGB_U        : 64 x 64  23109 tris/s
+Colour Format BGR_U        : 64 x 64  23244 tris/s
+Colour Format RGBA_U       : 64 x 64  23625 tris/s
+Colour Format ARGB_U       : 64 x 64  24164 tris/s
+Colour Format BGRA_U       : 64 x 64  22777 tris/s
+Colour Format RGB_F        : 64 x 64  18227 tris/s
+Colour Format BGR_F        : 64 x 64  17640 tris/s
+Colour Format RGBA_F       : 64 x 64  16589 tris/s
+Colour Format ARGB_F       : 64 x 64  16746 tris/s
+Colour Format BGRA_F       : 64 x 64  16299 tris/s
+
+
+Vertex Format : FFD ----------------------------------
+Backface culled            : 64 x 64  29730 tris/s
+Colour Format [Flat]       : 64 x 64  29786 tris/s
+Colour Format RGB_U        : 64 x 64  22680 tris/s
+Colour Format BGR_U        : 64 x 64  22647 tris/s
+Colour Format RGBA_U       : 64 x 64  23278 tris/s
+Colour Format ARGB_U       : 64 x 64  23520 tris/s
+Colour Format BGRA_U       : 64 x 64  22080 tris/s
+Colour Format RGB_F        : 64 x 64  17918 tris/s
+Colour Format BGR_F        : 64 x 64  17758 tris/s
+Colour Format RGBA_F       : 64 x 64  16485 tris/s
+Colour Format ARGB_F       : 64 x 64  16520 tris/s
+Colour Format BGRA_F       : 64 x 64  16299 tris/s
+
+
+Vertex Format : DDD ----------------------------------
+Backface culled            : 64 x 64  27755 tris/s
+Colour Format [Flat]       : 64 x 64  27562 tris/s
+Colour Format RGB_U        : 64 x 64  22615 tris/s
+Colour Format BGR_U        : 64 x 64  22615 tris/s
+Colour Format RGBA_U       : 64 x 64  23109 tris/s
+Colour Format ARGB_U       : 64 x 64  22360 tris/s
+Colour Format BGRA_U       : 64 x 64  22080 tris/s
+Colour Format RGB_F        : 64 x 64  17718 tris/s
+Colour Format BGR_F        : 64 x 64  17427 tris/s
+Colour Format RGBA_F       : 64 x 64  15687 tris/s
+Colour Format ARGB_F       : 64 x 64  16350 tris/s
+Colour Format BGRA_F       : 64 x 64  16266 tris/s
+
+
+Triangle Strip Render [Array Linear] 
+
+Vertex Format : FFF ----------------------------------
+Backface culled            : 16 x 16  94082 tris/s
+Colour Format [Flat]       : 16 x 16  93713 tris/s
+Colour Format RGB_U        : 16 x 16  64033 tris/s
+Colour Format BGR_U        : 16 x 16  67092 tris/s
+Colour Format RGBA_U       : 16 x 16  73667 tris/s
+Colour Format ARGB_U       : 16 x 16  73456 tris/s
+Colour Format BGRA_U       : 16 x 16  67092 tris/s
+Colour Format RGB_F        : 16 x 16  52260 tris/s
+Colour Format BGR_F        : 16 x 16  52260 tris/s
+Colour Format RGBA_F       : 16 x 16  48945 tris/s
+Colour Format ARGB_F       : 16 x 16  48404 tris/s
+Colour Format BGRA_F       : 16 x 16  46603 tris/s
+
+
+Vertex Format : FFD ----------------------------------
+Backface culled            : 16 x 16  91873 tris/s
+Colour Format [Flat]       : 16 x 16  90141 tris/s
+Colour Format RGB_U        : 16 x 16  67222 tris/s
+Colour Format BGR_U        : 16 x 16  67222 tris/s
+Colour Format RGBA_U       : 16 x 16  70666 tris/s
+Colour Format ARGB_U       : 16 x 16  71123 tris/s
+Colour Format BGRA_U       : 16 x 16  66646 tris/s
+Colour Format RGB_F        : 16 x 16  49863 tris/s
+Colour Format BGR_F        : 16 x 16  52260 tris/s
+Colour Format RGBA_F       : 16 x 16  47134 tris/s
+Colour Format ARGB_F       : 16 x 16  47041 tris/s
+Colour Format BGRA_F       : 16 x 16  47513 tris/s
+
+
+Vertex Format : DDD ----------------------------------
+Backface culled            : 16 x 16  86305 tris/s
+Colour Format [Flat]       : 16 x 16  86727 tris/s
+Colour Format RGB_U        : 16 x 16  66118 tris/s
+Colour Format BGR_U        : 16 x 16  65342 tris/s
+Colour Format RGBA_U       : 16 x 16  64335 tris/s
+Colour Format ARGB_U       : 16 x 16  66947 tris/s
+Colour Format BGRA_U       : 16 x 16  62881 tris/s
+Colour Format RGB_F        : 16 x 16  51643 tris/s
+Colour Format BGR_F        : 16 x 16  51441 tris/s
+Colour Format RGBA_F       : 16 x 16  47134 tris/s
+Colour Format ARGB_F       : 16 x 16  46948 tris/s
+Colour Format BGRA_F       : 16 x 16  47134 tris/s
+
+
+Vertex Format : FFF ----------------------------------
+Backface culled            : 32 x 32  93267 tris/s
+Colour Format [Flat]       : 32 x 32  88867 tris/s
+Colour Format RGB_U        : 32 x 32  68428 tris/s
+Colour Format BGR_U        : 32 x 32  67842 tris/s
+Colour Format RGBA_U       : 32 x 32  71645 tris/s
+Colour Format ARGB_U       : 32 x 32  71258 tris/s
+Colour Format BGRA_U       : 32 x 32  67380 tris/s
+Colour Format RGB_F        : 32 x 32  52686 tris/s
+Colour Format BGR_F        : 32 x 32  52779 tris/s
+Colour Format RGBA_F       : 32 x 32  46768 tris/s
+Colour Format ARGB_F       : 32 x 32  48713 tris/s
+Colour Format BGRA_F       : 32 x 32  48317 tris/s
+
+
+Vertex Format : FFD ----------------------------------
+Backface culled            : 32 x 32  87966 tris/s
+Colour Format [Flat]       : 32 x 32  87966 tris/s
+Colour Format RGB_U        : 32 x 32  67038 tris/s
+Colour Format BGR_U        : 32 x 32  66033 tris/s
+Colour Format RGBA_U       : 32 x 32  70000 tris/s
+Colour Format ARGB_U       : 32 x 32  69876 tris/s
+Colour Format BGRA_U       : 32 x 32  65271 tris/s
+Colour Format RGB_F        : 32 x 32  52592 tris/s
+Colour Format BGR_F        : 32 x 32  52223 tris/s
+Colour Format RGBA_F       : 32 x 32  48004 tris/s
+Colour Format ARGB_F       : 32 x 32  47773 tris/s
+Colour Format BGRA_F       : 32 x 32  47927 tris/s
+
+
+Vertex Format : DDD ----------------------------------
+Backface culled            : 32 x 32  79108 tris/s
+Colour Format [Flat]       : 32 x 32  82679 tris/s
+Colour Format RGB_U        : 32 x 32  64213 tris/s
+Colour Format BGR_U        : 32 x 32  63595 tris/s
+Colour Format RGBA_U       : 32 x 32  67380 tris/s
+Colour Format ARGB_U       : 32 x 32  67266 tris/s
+Colour Format BGRA_U       : 32 x 32  63265 tris/s
+Colour Format RGB_F        : 32 x 32  50969 tris/s
+Colour Format BGR_F        : 32 x 32  51144 tris/s
+Colour Format RGBA_F       : 32 x 32  47260 tris/s
+Colour Format ARGB_F       : 32 x 32  47166 tris/s
+Colour Format BGRA_F       : 32 x 32  47166 tris/s
+
+
+Vertex Format : FFF ----------------------------------
+Backface culled            : 48 x 48  92650 tris/s
+Colour Format [Flat]       : 48 x 48  92809 tris/s
+Colour Format RGB_U        : 48 x 48  68318 tris/s
+Colour Format BGR_U        : 48 x 48  68708 tris/s
+Colour Format RGBA_U       : 48 x 48  68708 tris/s
+Colour Format ARGB_U       : 48 x 48  71713 tris/s
+Colour Format BGRA_U       : 48 x 48  67424 tris/s
+Colour Format RGB_F        : 48 x 48  53047 tris/s
+Colour Format BGR_F        : 48 x 48  53151 tris/s
+Colour Format RGBA_F       : 48 x 48  48658 tris/s
+Colour Format ARGB_F       : 48 x 48  48658 tris/s
+Colour Format BGRA_F       : 48 x 48  48397 tris/s
+
+
+Vertex Format : FFD ----------------------------------
+Backface culled            : 48 x 48  83654 tris/s
+Colour Format [Flat]       : 48 x 48  87383 tris/s
+Colour Format RGB_U        : 48 x 48  67298 tris/s
+Colour Format BGR_U        : 48 x 48  66553 tris/s
+Colour Format RGBA_U       : 48 x 48  70178 tris/s
+Colour Format ARGB_U       : 48 x 48  69771 tris/s
+Colour Format BGRA_U       : 48 x 48  66065 tris/s
+Colour Format RGB_F        : 48 x 48  52532 tris/s
+Colour Format BGR_F        : 48 x 48  50500 tris/s
+Colour Format RGBA_F       : 48 x 48  47883 tris/s
+Colour Format ARGB_F       : 48 x 48  48138 tris/s
+Colour Format BGRA_F       : 48 x 48  48053 tris/s
+
+
+Vertex Format : DDD ----------------------------------
+Backface culled            : 48 x 48  82733 tris/s
+Colour Format [Flat]       : 48 x 48  83038 tris/s
+Colour Format RGB_U        : 48 x 48  64414 tris/s
+Colour Format BGR_U        : 48 x 48  61873 tris/s
+Colour Format RGBA_U       : 48 x 48  67298 tris/s
+Colour Format ARGB_U       : 48 x 48  67298 tris/s
+Colour Format BGRA_U       : 48 x 48  63507 tris/s
+Colour Format RGB_F        : 48 x 48  51238 tris/s
+Colour Format BGR_F        : 48 x 48  51238 tris/s
+Colour Format RGBA_F       : 48 x 48  47297 tris/s
+Colour Format ARGB_F       : 48 x 48  47546 tris/s
+Colour Format BGRA_F       : 48 x 48  45468 tris/s
+
+
+Vertex Format : FFF ----------------------------------
+Backface culled            : 64 x 64  93190 tris/s
+Colour Format [Flat]       : 64 x 64  92833 tris/s
+Colour Format RGB_U        : 64 x 64  68779 tris/s
+Colour Format BGR_U        : 64 x 64  68429 tris/s
+Colour Format RGBA_U       : 64 x 64  71973 tris/s
+Colour Format ARGB_U       : 64 x 64  71717 tris/s
+Colour Format BGRA_U       : 64 x 64  65218 tris/s
+Colour Format RGB_F        : 64 x 64  53207 tris/s
+Colour Format BGR_F        : 64 x 64  53561 tris/s
+Colour Format RGBA_F       : 64 x 64  48633 tris/s
+Colour Format ARGB_F       : 64 x 64  48854 tris/s
+Colour Format BGRA_F       : 64 x 64  48487 tris/s
+
+
+Vertex Format : FFD ----------------------------------
+Backface culled            : 64 x 64  84852 tris/s
+Colour Format [Flat]       : 64 x 64  88420 tris/s
+Colour Format RGB_U        : 64 x 64  67063 tris/s
+Colour Format BGR_U        : 64 x 64  66730 tris/s
+Colour Format RGBA_U       : 64 x 64  70586 tris/s
+Colour Format ARGB_U       : 64 x 64  70217 tris/s
+Colour Format BGRA_U       : 64 x 64  66182 tris/s
+Colour Format RGB_F        : 64 x 64  50698 tris/s
+Colour Format BGR_F        : 64 x 64  52772 tris/s
+Colour Format RGBA_F       : 64 x 64  48269 tris/s
+Colour Format ARGB_F       : 64 x 64  48269 tris/s
+Colour Format BGRA_F       : 64 x 64  48077 tris/s
+
+
+Vertex Format : DDD ----------------------------------
+Backface culled            : 64 x 64  83103 tris/s
+Colour Format [Flat]       : 64 x 64  83246 tris/s
+Colour Format RGB_U        : 64 x 64  61770 tris/s
+Colour Format BGR_U        : 64 x 64  64488 tris/s
+Colour Format RGBA_U       : 64 x 64  67512 tris/s
+Colour Format ARGB_U       : 64 x 64  67287 tris/s
+Colour Format BGRA_U       : 64 x 64  63849 tris/s
+Colour Format RGB_F        : 64 x 64  51425 tris/s
+Colour Format BGR_F        : 64 x 64  51343 tris/s
+Colour Format RGBA_F       : 64 x 64  45542 tris/s
+Colour Format ARGB_F       : 64 x 64  47698 tris/s
+Colour Format BGRA_F       : 64 x 64  47604 tris/s

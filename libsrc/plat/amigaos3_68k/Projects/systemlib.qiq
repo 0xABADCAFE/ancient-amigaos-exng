@@ -1,0 +1,59 @@
+STORMDOC1
+3;
+DOCE
+Thread::sleep() failure to suspend current task
+1,2,1,0,0,0;
+HIST
+4;
+
+
+0,1107743358,0,0;
+
+Thread::sleep() failure to suspend task
+8,1107743403,0,0;
+
+Thread::sleep() failure to suspend current task
+8,1107743468,0,0;
+
+
+2,1107892443,0,0;
+TEXT
+0;
+
+
+DOCE
+Add 68060 detection to CPU interface
+0,2,0,0,0,0;
+HIST
+3;
+
+
+0,1130551874,0,0;
+
+Add 68060 detection to CPU interface
+8,1130551900,0,0;
+
+
+2,1130551905,0,0;
+TEXT
+0;
+
+
+DOCE
+Check and update source to ensure consistent use of const qualifiers
+0,2,0,0,0,0;
+HIST
+3;
+
+
+0,1130551954,0,0;
+
+
+2,1130551956,0,0;
+
+Check and update source to ensure consistent use of const qualifiers
+8,1130551991,0,0;
+TEXT
+0;
+
+

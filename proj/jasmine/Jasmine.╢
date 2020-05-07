@@ -1,0 +1,354 @@
+Storm Shell Project (0018)
+Settings (Start)
+C/C++ Environment
+"StormC:include"
+0
+"EXNG:include"
+0
+Includepath (End)
+0 "" 256
+1 "objects"
+1 0 "makelog.txt"
+""
+0
+0 0
+0
+0 0
+C/C++ Preprozessor
+1 "NDEBUG" ""
+0
+0 "PARANOID" ""
+0
+1 "KARL_FIXES" ""
+0
+0 "_INLINE_INCLUDES" ""
+0
+0 "X_DEBUG" ""
+0
+1 "STORMPRAGMAS" ""
+0
+Defines (End)
+1 1 1
+0 0
+C/C++ Options
+1 0 0 0 0 0 0 1 0 1 0 3 1 0 0
+0 0 0
+0
+0 1 0
+C/C++ Optimizer
+6
+C/C++ Warnings
+1 1 1 1 1 1 0 1
+0 0
+GCC Options (1)
+Defines (End)
+1 0 0 1 0
+3 0 0 0 0 1 0
+0 2 1 0 0
+0 0 0 0 1 1 0
+3 1 0 0
+0 ""
+2 0 0 0
+1 0 0 1 0 1 0 1 0 1
+1 1 0 1 0 1
+0 1 0 1 1 0 0
+1 0 0 0 0
+Assembler
+0 ""
+0 "CON://640/200/Storm Assembler/AUTO/WAIT/SCREEN StormScreen"
+0 0
+0 1 60 0 1 0 0 20 0
+Sets (End)
+0 1 0 0 0 2 1 0 0
+1 1 1 1 0 0 0 0 0
+1 0
+0 0 0 0 0
+Linker
+0 0 "PROGDIR:startup.o" 0 0 1 0 0 0 0
+"StormC:lib/" 0 "StormC:lib/logfile" 0 1 1
+0 "_WizardSurface"
+0 0 50 0 50 0 50 0 0
+0 0 0 0 0 0 0 0
+Run
+30 "" "" "" 0
+""
+
+1 "CON://400/180/Storm Console/AUTO/WAIT/SCREEN StormScreen" "RAM:Output" "RAM:Input"
+1 0
+0 0 0 "" ""
+Settings (End)
+Storm Shell Project (Custom Sections End)
+Section
+2 1 -128
+0 1 1 0
+2
+File
+2 "jasmineapp.hpp"
+"jasmineapp.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "jasmine.hpp"
+"jasmine.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "jasminecode.hpp"
+"jasminecode.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "jasminecore.hpp"
+"jasminecore.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "jasmineinline.hpp"
+"jasmineinline.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "jasmineobject.hpp"
+"jasmineobject.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+2 "Developer:eXtropia/eXtropiaNG/include/plat/amigaos3_68k/systemlib/base.hpp"
+"Developer:eXtropia/eXtropiaNG/include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+1 1 100
+0 1 1 0
+4
+File
+1 "jasmineapp.cpp"
+"jasmineapp.cpp"
+"jasmineapp.hpp"
+"jasmine.hpp"
+"jasminecode.hpp"
+"jasminecore.hpp"
+"jasmineinline.hpp"
+"jasmineobject.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"objects/jasmineapp.o" "objects/jasmineapp.debug"
+""
+1 1
+File
+1 "jasminecore.cpp"
+"jasminecore.cpp"
+"Jasmine.hpp"
+"jasminecode.hpp"
+"jasminecore.hpp"
+"jasmineinline.hpp"
+"jasmineobject.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"objects/jasminecore.o" "objects/jasminecore.debug"
+""
+1 1
+File
+1 "jasminesystem.cpp"
+"jasminesystem.cpp"
+"jasmine.hpp"
+"jasminecode.hpp"
+"jasminecore.hpp"
+"jasmineinline.hpp"
+"jasmineobject.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"objects/jasminesystem.o" "objects/jasminesystem.debug"
+""
+1 1
+File
+1 "jasmineea.cpp"
+"jasmine.hpp"
+"jasminecode.hpp"
+"jasminecore.hpp"
+"jasmineinline.hpp"
+"jasmineobject.hpp"
+"jasmineea.cpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"objects/jasmineea.o" "objects/jasmineea.debug"
+""
+1 1
+File
+1 "jasmineflow.cpp"
+"jasmineflow.cpp"
+"Jasmine.hpp"
+"jasminecode.hpp"
+"jasminecore.hpp"
+"jasmineinline.hpp"
+"jasmineobject.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"objects/jasmineflow.o" "objects/jasmineflow.debug"
+""
+1 1
+File
+1 "jasminedata.cpp"
+"jasminedata.cpp"
+"Jasmine.hpp"
+"jasminecode.hpp"
+"jasminecore.hpp"
+"jasmineinline.hpp"
+"jasmineobject.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"objects/jasminedata.o" "objects/jasminedata.debug"
+""
+1 1
+File
+1 "jasminecastuint.cpp"
+"jasminecastuint.cpp"
+"Jasmine.hpp"
+"jasminecode.hpp"
+"jasminecore.hpp"
+"jasmineinline.hpp"
+"jasmineobject.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"objects/jasminecastuint.o" "objects/jasminecastuint.debug"
+""
+1 1
+File
+1 "jasminecastsint.cpp"
+"jasminecastsint.cpp"
+"Jasmine.hpp"
+"jasminecode.hpp"
+"jasminecore.hpp"
+"jasmineinline.hpp"
+"jasmineobject.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"objects/jasminecastsint.o" "objects/jasminecastsint.debug"
+""
+1 1
+File
+1 "jasminecastfloat.cpp"
+"jasminecastfloat.cpp"
+"Jasmine.hpp"
+"jasminecode.hpp"
+"jasminecore.hpp"
+"jasmineinline.hpp"
+"jasmineobject.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"objects/jasminecastfloat.o" "objects/jasminecastfloat.debug"
+""
+1 1
+File
+1 "jasminearithmetic.cpp"
+"jasminearithmetic.cpp"
+"jasmine.hpp"
+"jasminecode.hpp"
+"jasminecore.hpp"
+"jasmineinline.hpp"
+"jasmineobject.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"objects/jasminearithmetic.o" "objects/jasminearithmetic.debug"
+""
+1 1
+File
+1 "jasminelogic.cpp"
+"jasminelogic.cpp"
+"jasmine.hpp"
+"jasminecode.hpp"
+"jasminecore.hpp"
+"jasmineinline.hpp"
+"jasmineobject.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"objects/jasminelogic.o" "objects/jasminelogic.debug"
+""
+1 1
+File
+1 "jasmineLUT.cpp"
+"jasmineLUT.cpp"
+"Jasmine.hpp"
+"jasminecode.hpp"
+"jasminecore.hpp"
+"jasmineinline.hpp"
+"jasmineobject.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"objects/jasmineLUT.o" "objects/jasmineLUT.debug"
+""
+1 1
+File
+1 "jasmineobject.cpp"
+"jasmineobject.cpp"
+"JasmineObject.hpp"
+"//include/plat/amigaos3_68k/systemlib/base.hpp"
+Storm Shell Project (Dependencies)
+"objects/jasmineobject.o" "objects/jasmineobject.debug"
+""
+1 1
+Section
+10 1 40
+0 0 0 0
+7
+File
+10 "jasmine"
+"jasmine"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Section
+5 1 -50
+0 0 0 0
+7
+File
+5 "EXNG:libsrc/plat/amigaos3_68k/Projects/lib/SystemLib.lib"
+"EXNG:libsrc/plat/amigaos3_68k/Projects/lib/SystemLib.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+5 "EXNG:libsrc/plat/amigaos3_68k/Projects/lib/UtilityLib.lib"
+"EXNG:libsrc/plat/amigaos3_68k/Projects/lib/UtilityLib.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+5 "EXNG:libsrc/plat/amigaos3_68k/Projects/lib/IOLib.lib"
+"EXNG:libsrc/plat/amigaos3_68k/Projects/lib/IOLib.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+5 "stormgcc020.lib"
+"stormgcc020.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+File
+5 "amiga.lib"
+"amiga.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+0 0
+Storm Shell Project (End)
